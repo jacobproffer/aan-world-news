@@ -1,0 +1,58 @@
+.site-header {
+  color: var(--white);
+  background-color: var(--red);
+
+  a {
+    color: var(--white);
+  }
+
+  &__skip-to-content {
+    position: fixed;
+    top: -2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 300ms ease-in-out;
+  
+    &:focus {
+      top: 0;
+    }
+  }
+
+  &__grid {
+    padding: 20px 0;
+  }
+
+  &__site-logo {
+    padding-left: 10px;
+  }
+
+  &__user-links {
+    padding-right: 34px;
+    text-align: right;
+
+    li {
+      display: inline-block;
+
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__navigation {
+    padding: 8px 10px;
+    background-color: var(--darkRed);
+
+    li {
+      display: inline-block;
+
+      &:not(:last-of-type) {
+        margin-right: 30px;
+      }
+    }
+
+    a {
+      text-transform: lowercase;
+    }
+  }
+}

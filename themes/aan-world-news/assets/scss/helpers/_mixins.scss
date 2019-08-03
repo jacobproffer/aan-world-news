@@ -1,0 +1,38 @@
+@mixin box-sizing($box-model) {
+  box-sizing: $box-model;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin screen-above($screen-size) {
+  @media screen and (min-width: $screen-size) {
+    @content;
+  }
+}
+
+@mixin screen-below($screen-size) {
+  @media screen and (max-width: ($screen-size - 1px)) {
+    @content;
+  }
+}
+
+@mixin screen-between($min-screen-size, $max-screen-size) {
+  @media screen and (min-width: $min-screen-size) and (max-width: ($max-screen-size - 1px)) {
+    @content;
+  }
+}
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    } @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}

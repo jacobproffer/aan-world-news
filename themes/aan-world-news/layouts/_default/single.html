@@ -1,0 +1,15 @@
+{{ define "main" -}}
+<article class="post">
+  <div class="container">
+    <div class="post__container">
+      <header class="post__header">
+        <h1>{{ .Title }}</h1>
+        <span class="post__author">by {{ .Params.author }}</span><time class="post__date" datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .Params.fictionalDate }}</time>
+      </header>
+      <p class="post__description">{{ .Description }}</p>
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ partial "pagination/post-pagination.html" . }}
+{{- end }}
