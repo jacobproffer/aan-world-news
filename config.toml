@@ -20,13 +20,12 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "usa"
     name = "USA"
-    url = "#"
     weight = 2
 
   [[menu.main]]
     identifier = "world"
     name = "World"
-    url = "#"
+    url = "/tags/world"
     weight = 3
 
   [[menu.main]]
@@ -38,25 +37,21 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "science"
     name = "Science"
-    url = "#"
     weight = 5
 
   [[menu.main]]
     identifier = "tech"
     name = "Tech"
-    url = "#"
     weight = 5
 
   [[menu.main]]
     identifier = "culture"
     name = "Culture"
-    url = "#"
     weight = 6
 
   [[menu.main]]
     identifier = "lifestyle"
     name = "Lifestyle"
-    url = "#"
     weight = 7
 
   [[menu.main]]
@@ -68,5 +63,4 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "magazine"
     name = "Magazine"
-    url = "#"
     weight = 9

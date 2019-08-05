@@ -1,7 +1,8 @@
 ---
 title: "Military Exercises Heighten Tensions"
 description: "US Forces arrive in Livonia for joint military exercises, amid growing concerns over Russia's CSAT status."
-author: "Katherine Bishop"
+author: "bishop"
+tags: ["world"]
 date: 2019-08-03T13:22:19-04:00
 fictionalDate: "17/6/2039"
 draft: true
@@ -16,3 +17,5 @@ Named Exercise Electron-39, the event will be the biggest of its kind and comes 
 Russia says that such a show of force, close to its borders, is a threat to its security.
 
 Foreign Minister Poda Makarovich said: "NATO sabre-rattling is counterproductive. The world is already on a precipice."
+
+{{< figure src="https://source.unsplash.com/762x380/" alt="British soldiers in training." caption="British special forces, in training during Exercise Electron 37. (AAN World News)" >}}

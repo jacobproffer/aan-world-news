@@ -1,9 +1,18 @@
-<nav class="site-header__navigation">
+<nav class="primary-navigation">
   <ul>
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
     <li class="mian-header__nav-item">
-      <a {{ if $currentPage.IsMenuCurrent "main" . }}class="active"{{ end }} href="{{ .URL }}">{{ .Name }}</a>
+      <a
+        {{ if $currentPage.IsMenuCurrent "main" . }}
+          class="active"
+        {{ end }}
+        {{ if .URL }}
+          href="{{ .URL }}"
+        {{ end }}
+        >
+          {{ .Name }}
+        </a>
     </li>
     {{ end }}
   </ul>

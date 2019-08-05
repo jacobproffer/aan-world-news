@@ -1,15 +1,45 @@
 {{ define "main" -}}
+
+{{ $author := index .Site.Data.authors .Params.author }}
+
 <article class="post">
   <div class="container">
     <div class="post__container">
       <header class="post__header">
-        <h1>{{ .Title }}</h1>
-        <span class="post__author">by {{ .Params.author }}</span><time class="post__date" datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .Params.fictionalDate }}</time>
+
+        {{ if isset .Params "title" }}
+          <h1>{{ .Title }}</h1>
+        {{ end }}
+
+        {{ if $author.name }}
+          <span class="post__author">by {{ $author.name }}</span>
+        {{ end }}
+
+        {{ if isset .Params "fictionalDate" }}
+          <time class="post__date" datetime="{{ .PublishDate.Format "2006-01-02" }}">
+            {{ .Params.fictionalDate }}
+          </time>
+        {{ end }}
+
       </header>
-      <p class="post__description">{{ .Description }}</p>
+
+      {{ if isset .Params "description" }}
+        <p class="post__description">{{ .Params.description }}</p>
+      {{ end }}
+
       {{ .Content }}
+      
+      {{ if isset .Params "author" }}
+        <footer class="post__footer grid">
+          <img src="{{ $author.image }}" alt="Portrait of {{ $author.name }}" />
+          <p>{{ $author.bio }}</p>
+        </footer>
+      {{ end }}
+
     </div>
   </div>
 </article>
+
 {{ partial "pagination/post-pagination.html" . }}
+
 {{- end }}

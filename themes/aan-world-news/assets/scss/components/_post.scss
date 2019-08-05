@@ -34,4 +34,17 @@
   &__description {
     line-height: 1.5;
   }
+
+  &__footer {
+    padding: 34px 0;
+    color: var(--darkGray);
+    border-top: 1px solid var(--border);
+    grid-template-columns: 100px auto;
+    grid-gap: 20px;
+
+    p {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+  }
 }
