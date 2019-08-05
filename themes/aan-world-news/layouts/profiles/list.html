@@ -5,7 +5,15 @@
     <header>
       <h1>{{ .Params.name }}</h1>
     </header>
-    {{ .Content }}
+    
+    {{ range .Data.Pages }}
+      <ul>
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      </ul>
+    {{ end }}
+
   </div>
 </article>
 

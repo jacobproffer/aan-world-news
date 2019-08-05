@@ -30,7 +30,7 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "world"
     name = "World"
-    url = "/world"
+    url = "/world/"
     weight = 3
 
   [[menu.main]]
@@ -61,7 +61,6 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "travel"
     name = "Travel"
-    url = "/tags/travel"
     weight = 8
 
   [[menu.main]]

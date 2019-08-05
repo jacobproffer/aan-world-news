@@ -8,7 +8,6 @@ category: ["world"]
 tags: ["europe"]
 date: 2019-08-03T13:22:19-04:00
 fictionaldate: "17/6/2039 10:15 CET"
-draft: true
 ---
 
 {{< figure src="https://source.unsplash.com/762x380/" alt="British soldiers in training." caption="British special forces, in training during Exercise Electron 37. (AAN World News)" >}}
