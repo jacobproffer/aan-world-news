@@ -9,6 +9,7 @@
   --gray: #f4f4f4;
   --mediumGray: #e5e5e5;
   --darkGray: #6b6b6b;
+  --border: #e7e7e7;
 }
 
 *,
@@ -64,21 +65,17 @@ ul {
 }
 
 a {
-  color: $blue;
+  color: var(--red);
   text-decoration: none;
   transition: color 300ms ease-in-out, outline 300ms ease-in-out;
 
   &:hover {
-    color: $black;
-    outline: dotted 1px $blue;
+    color: var(--darkGray);
+    outline: dotted 1px var(--darkGray);
   }
 
   &:active {
-    color: $purple;
-  }
-
-  &.current {
-    text-decoration: underline;
+    color: var(--darkRed);
   }
 }
 

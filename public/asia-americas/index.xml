@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asia, Americas on AAN World News</title>
+    <link>http://example.org/asia-americas/</link>
+    <description>Recent content in Asia, Americas on AAN World News</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/asia-americas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

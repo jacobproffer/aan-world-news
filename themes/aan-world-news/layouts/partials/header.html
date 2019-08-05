@@ -1,19 +1,28 @@
 <header class="site-header">
-  <div class="container">
-    <a class="site-header__skip-to-content" href="#content">Skip to Main Content</a>
-    <div class="grid grid__two-column site-header__grid">
-      <a class="site-header__site-logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-      <ul class="site-header__user-links">
-        <li>
-          <a href="#">Search</a>
-        </li>
-        <li>
-          <a href="#">Sign In</a>
-        </li>
-      </ul>
+  <div class="site-header__top">
+    <div class="container">
+      <a class="site-header__skip-to-content" href="#content">Skip to Main Content</a>
+      <div class="grid grid__two-column site-header__grid">
+        <a class="site-header__site-logo" href="{{ .Site.BaseURL }}">
+          {{ partial "svg/logo.html" }}
+        </a>
+        <ul class="site-header__user-links">
+          <li>
+            <a class="disabled" aria-hidden="true">Search</a>
+          </li>
+          <li>
+            <a class="disabled" aria-hidden="true">Sign In</a>
+          </li>
+        </ul>
+      </div>
+      {{ if .Site.Menus.main }}
+        {{ partial "navigation/main-navigation" . }}
+      {{ end }}
     </div>
-    {{ if .Site.Menus.main }}
-      {{ partial "navigation/main-navigation" . }}
-    {{ end }}
+  </div>
+  <div class="site-header__bottom">
+    <div class="container">
+      {{ partial "navigation/tags.html" . }}
+    </div>
   </div>
 </header>

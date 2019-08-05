@@ -9,64 +9,61 @@ paginatePath = "posts"
   description = "AAN is a privately-owned, independent news broadcaster that provides global coverage of worldwide events and conflicts."
   subTitle = "Our World, Your News"
 
+[taxonomies]
+  profile = "profiles"
+  tag = "tags"
+  category = "categories"
+
 [menu]
 
   [[menu.main]]
     identifier = "home"
     name = "Home"
-    url = "#"
+    url = "/"
     weight = 1
 
   [[menu.main]]
     identifier = "usa"
     name = "USA"
-    url = "#"
     weight = 2
 
   [[menu.main]]
     identifier = "world"
     name = "World"
-    url = "#"
+    url = "/world/"
     weight = 3
 
   [[menu.main]]
     identifier = "business"
     name = "Business"
-    url = "#"
     weight = 4
 
   [[menu.main]]
     identifier = "science"
     name = "Science"
-    url = "#"
     weight = 5
 
   [[menu.main]]
     identifier = "tech"
     name = "Tech"
-    url = "#"
     weight = 5
 
   [[menu.main]]
     identifier = "culture"
     name = "Culture"
-    url = "#"
     weight = 6
 
   [[menu.main]]
     identifier = "lifestyle"
     name = "Lifestyle"
-    url = "#"
     weight = 7
 
   [[menu.main]]
     identifier = "travel"
     name = "Travel"
-    url = "#"
     weight = 8
 
   [[menu.main]]
     identifier = "magazine"
     name = "Magazine"
-    url = "#"
     weight = 9

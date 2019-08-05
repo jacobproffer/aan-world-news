@@ -1,15 +1,15 @@
 .site-header {
-  color: var(--white);
-  background-color: var(--red);
-
-  a {
+  &__top {
     color: var(--white);
+    background-color: var(--red);
   }
 
   &__skip-to-content {
     position: fixed;
     top: -2.5em;
     left: 50%;
+    color: var(--white);
+    background-color: var(--darkRed);
     transform: translateX(-50%);
     transition: top 300ms ease-in-out;
   
@@ -23,7 +23,14 @@
   }
 
   &__site-logo {
-    padding-left: 10px;
+    height: 52px;
+    margin-left: 10px;
+    justify-self: start;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__user-links {
@@ -37,22 +44,9 @@
         margin-right: 20px;
       }
     }
-  }
-
-  &__navigation {
-    padding: 8px 10px;
-    background-color: var(--darkRed);
-
-    li {
-      display: inline-block;
-
-      &:not(:last-of-type) {
-        margin-right: 30px;
-      }
-    }
 
     a {
-      text-transform: lowercase;
+      color: var(--white);
     }
   }
 }
