@@ -25,7 +25,7 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "world"
     name = "World"
-    url = "/tags/world"
+    url = "/world"
     weight = 3
 
   [[menu.main]]

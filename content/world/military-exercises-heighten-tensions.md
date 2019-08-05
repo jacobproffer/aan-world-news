@@ -2,7 +2,8 @@
 title: "Military Exercises Heighten Tensions"
 description: "US Forces arrive in Livonia for joint military exercises, amid growing concerns over Russia's CSAT status."
 author: "bishop"
-tags: ["world"]
+category: ["world"]
+tags: ["europe"]
 date: 2019-08-03T13:22:19-04:00
 fictionaldate: "17/6/2039 10:15 CET"
 draft: true
