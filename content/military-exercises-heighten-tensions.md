@@ -4,7 +4,7 @@ description: "US Forces arrive in Livonia for joint military exercises, amid gro
 author: "bishop"
 tags: ["world"]
 date: 2019-08-03T13:22:19-04:00
-fictionalDate: "17/6/2039"
+fictionaldate: "17/6/2039 10:15 CET"
 draft: true
 ---
 

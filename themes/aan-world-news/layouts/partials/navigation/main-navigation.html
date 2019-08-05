@@ -2,18 +2,30 @@
   <ul>
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    <li class="mian-header__nav-item">
-      <a
-        {{ if $currentPage.IsMenuCurrent "main" . }}
-          class="active"
-        {{ end }}
-        {{ if .URL }}
-          href="{{ .URL }}"
-        {{ end }}
-        >
-          {{ .Name }}
-        </a>
-    </li>
+
+      {{ if .URL }}
+        <li>
+          <a
+          {{ if $currentPage.IsMenuCurrent "main" . }}
+            class="active"
+          {{ end }}
+          {{ if .URL }}
+            href="{{ .URL }}"
+          {{ end }}
+          >
+            {{ .Name }}
+          </a>
+        </li>
+      {{ else }}
+        <li>
+          <a
+            class="disabled"
+            >
+              {{ .Name }}
+            </a>
+        </li>
+      {{ end }}
+      
     {{ end }}
   </ul>
 </nav>

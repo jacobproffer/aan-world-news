@@ -14,7 +14,7 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "home"
     name = "Home"
-    url = "#"
+    url = "/"
     weight = 1
 
   [[menu.main]]
@@ -31,7 +31,6 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "business"
     name = "Business"
-    url = "#"
     weight = 4
 
   [[menu.main]]
@@ -57,7 +56,7 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "travel"
     name = "Travel"
-    url = "#"
+    url = "/tags/travel"
     weight = 8
 
   [[menu.main]]

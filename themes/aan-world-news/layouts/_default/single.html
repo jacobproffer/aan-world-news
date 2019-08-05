@@ -12,12 +12,14 @@
         {{ end }}
 
         {{ if $author.name }}
-          <span class="post__author">by {{ $author.name }}</span>
+          <span class="post__author">
+            by <a href="#">{{ $author.name }}</a>
+          </span>
         {{ end }}
 
-        {{ if isset .Params "fictionalDate" }}
+        {{ if isset .Params "fictionaldate" }}
           <time class="post__date" datetime="{{ .PublishDate.Format "2006-01-02" }}">
-            {{ .Params.fictionalDate }}
+            {{ .Params.fictionaldate }}
           </time>
         {{ end }}
 
