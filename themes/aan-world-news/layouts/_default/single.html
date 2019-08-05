@@ -1,7 +1,5 @@
 {{ define "main" -}}
 
-{{ $author := index .Site.Data.authors .Params.author }}
-
 <article class="post">
   <div class="container">
     <div class="post__container">
@@ -11,11 +9,9 @@
           <h1>{{ .Title }}</h1>
         {{ end }}
 
-        {{ if $author.name }}
-          <span class="post__author">
-            by <a href="#">{{ $author.name }}</a>
-          </span>
-        {{ end }}
+        <span class="post__author">
+          by <a href="{{ .Params.profileURL }}">{{ .Params.author }}</a>
+        </span>
 
         {{ if isset .Params "fictionaldate" }}
           <time class="post__date" datetime="{{ .PublishDate.Format "2006-01-02" }}">
@@ -31,11 +27,13 @@
 
       {{ .Content }}
       
-      {{ if isset .Params "author" }}
-        <footer class="post__footer grid">
-          <img src="{{ $author.image }}" alt="Portrait of {{ $author.name }}" />
-          <p>{{ $author.bio }}</p>
-        </footer>
+      {{ range .Params.profiles }}
+        {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
+          <footer class="post__footer grid">
+            <img src="{{ .Params.photo }}" alt="Portrait of {{ .Params.name }}" />
+            <p>{{ .Params.bio }}</p>
+          </footer>
+        {{ end }}
       {{ end }}
 
     </div>

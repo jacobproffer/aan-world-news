@@ -1,11 +1,15 @@
 .site-header {
-  color: var(--white);
-  background-color: var(--red);
+  &__top {
+    color: var(--white);
+    background-color: var(--red);
+  }
 
   &__skip-to-content {
     position: fixed;
     top: -2.5em;
     left: 50%;
+    color: var(--white);
+    background-color: var(--darkRed);
     transform: translateX(-50%);
     transition: top 300ms ease-in-out;
   
