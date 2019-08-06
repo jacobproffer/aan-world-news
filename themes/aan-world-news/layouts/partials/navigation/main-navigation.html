@@ -4,7 +4,7 @@
     {{ range .Site.Menus.main }}
 
       {{ if .URL }}
-        <li>
+        <li class="inline-link">
           <a
           {{ if $currentPage.IsMenuCurrent "main" . }}
             class="active"
@@ -17,7 +17,7 @@
           </a>
         </li>
       {{ else }}
-        <li>
+        <li class="inline-link">
           <a
             class="disabled"
             aria-hidden="true"

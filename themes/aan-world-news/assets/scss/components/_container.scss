@@ -1,4 +1,8 @@
 .container {
   max-width: var(--container);
   margin: auto;
+
+  &--white {
+    background-color: var(--white);
+  }
 }

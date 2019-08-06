@@ -1,26 +1,31 @@
 {{ define "main" }}
   <section class="posts">
-    <div class="container">
+    <div class="container container--white">
+      <header>
+        <h1>Test</h1>
+      </header>
       {{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") }}
+
       {{ range $index, $page := $paginator.Pages }}
-        <article class="posts__single">
+        <article class="posts__single grid">
           <figure>
             <img src="{{ .Params.thumbnail }}" alt="{{ .Params.thumbnailCaption }}" />
           </figure>
           <header>
             <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
             <span>- {{ .ReadingTime }} min read</span>
-            <h3>
-              <a class="blog__post-link" href="{{ .Permalink }}">
+            <h2>
+              <a href="{{ .Permalink }}">
                 {{ .Title }}
               </a>
-            </h3>
+            </h2>
             {{ range .Params.categories }}
               <small class="category">{{ . }}</small>
             {{ end }}
           </header>
         </article>
       {{ end }}
+
     </div>
   </section>
 

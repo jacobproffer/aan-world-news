@@ -1,18 +1,28 @@
 {{ define "main" }}
 
 <article>
-  <div class="container">
+  <div class="container container--white">
+
     <header>
       <h1>{{ .Params.name }}</h1>
     </header>
-    
-    {{ range .Data.Pages }}
-      <ul>
-        <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
-      </ul>
-    {{ end }}
+
+    <p>{{ .Params.bio }}</p>
+
+    <section>
+      <header>
+        <h2>Posts by {{ .Params.name }}</h2>
+      </header>
+
+      {{ range .Data.Pages }}
+        <ul>
+          <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+        </ul>
+      {{ end }}
+
+    </section>
 
   </div>
 </article>

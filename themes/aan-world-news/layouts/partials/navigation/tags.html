@@ -2,7 +2,7 @@
   <ul>
     {{ $currentPage := . }}
     {{ range .Site.Taxonomies.tags }}
-      <li>
+      <li class="inline-link">
         <a
         href="{{ .Page.Permalink }}"
         >

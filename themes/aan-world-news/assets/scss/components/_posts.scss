@@ -1,0 +1,6 @@
+.posts {
+  &__single {
+    grid-template-columns: 156px auto;
+    grid-column-gap: 20px;
+  }
+}
