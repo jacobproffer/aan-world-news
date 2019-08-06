@@ -4,5 +4,7 @@
 }
 
 .padding {
-  padding: 0 14px;
+  @include screen-above($laptop) {
+    padding: 0 14px;
+  }
 }

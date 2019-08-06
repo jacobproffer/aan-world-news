@@ -1,8 +1,9 @@
 .post {
-
   p {
-    padding-left: 14px;
-    padding-right: 14px;
+    @include screen-above($laptop) {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
   }
 
   .container {
