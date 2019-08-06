@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.css",
-	"sourceRoot": "/Applications/MAMP/htdocs/aan",
+	"sourceRoot": "/Applications/MAMP/htdocs/aan-world-news",
 	"sources": [
 		"themes/aan-world-news/assets/scss/project-main.scss",
 		"themes/aan-world-news/assets/scss/helpers/_variables.scss",

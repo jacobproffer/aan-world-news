@@ -4,7 +4,8 @@ description: Post description
 author: "author"
 date: {{ .Date }}
 fictionalDate: ""
-image: Social media image
+images:
+  - /images/placeholder.png
 thumbnail: Thumbnail image
 categories: []
 draft: true

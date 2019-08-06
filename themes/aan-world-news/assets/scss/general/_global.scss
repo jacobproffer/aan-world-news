@@ -10,6 +10,14 @@
   --mediumGray: #e5e5e5;
   --darkGray: #6b6b6b;
   --border: #e7e7e7;
+
+  @include screen-below($laptop) {
+    --container: 952px;
+  }
+
+  @include screen-below($laptop-sm) {
+    --container: 840px;
+  }
 }
 
 *,

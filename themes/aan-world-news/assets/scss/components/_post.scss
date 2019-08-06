@@ -1,11 +1,37 @@
 .post {
   .container {
+    position: relative;
     background-color: var(--white);
   }
 
   &__container {
-    max-width: var(--postContainer);
-    margin: auto;
+    @include screen-above($laptop) {
+      grid-template-columns: 242px 760px;
+      grid-gap: 12px;
+    }
+
+    @include screen-between($laptop-sm, $laptop) {
+      grid-template-columns: 182px 570px;
+      grid-gap: 9px;
+    }
+
+    @include screen-below($laptop-sm) {
+      max-width: var(--postContainer);
+      margin: auto;
+    }
+  }
+
+  &__aside {
+    margin-left: 10px;
+    align-self: center;
+
+    @include screen-between($laptop-sm, $laptop) {
+      margin-left: 8px;
+    }
+
+    @include screen-below($laptop-sm) {
+      display: none;
+    }
   }
 
   &__header {

@@ -2,39 +2,52 @@
 
 <article class="post">
   <div class="container">
-    <div class="post__container">
-      <header class="post__header">
+    <div class="post__container grid">
+      <aside class="post__aside">
+        <figure>
+          <img src="{{ .Params.asidePhoto }}" alt="This is some text." />
+          <figcaption>
+            <p>{{ .Params.asideText }}</p>
+          </figcaption>
+        </figure>
+      </aside>
 
-        {{ if isset .Params "title" }}
-          <h1>{{ .Title }}</h1>
+      <div class="content">
+
+        <header class="post__header">
+
+          {{ if isset .Params "title" }}
+            <h1>{{ .Title }}</h1>
+          {{ end }}
+
+          <span class="post__author">
+            by <a href="{{ .Params.profileURL }}">{{ .Params.author }}</a>
+          </span>
+
+          {{ if isset .Params "fictionaldate" }}
+            <time class="post__date" datetime="{{ .PublishDate.Format "2006-01-02" }}">
+              {{ .Params.fictionaldate }}
+            </time>
+          {{ end }}
+
+        </header>
+
+        {{ if isset .Params "description" }}
+          <p class="post__description">{{ .Params.description }}</p>
         {{ end }}
 
-        <span class="post__author">
-          by <a href="{{ .Params.profileURL }}">{{ .Params.author }}</a>
-        </span>
-
-        {{ if isset .Params "fictionaldate" }}
-          <time class="post__date" datetime="{{ .PublishDate.Format "2006-01-02" }}">
-            {{ .Params.fictionaldate }}
-          </time>
+        {{ .Content }}
+        
+        {{ range .Params.profiles }}
+          {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
+            <footer class="post__footer grid">
+              <img src="{{ .Params.photo }}" alt="Portrait of {{ .Params.name }}" />
+              <p>{{ .Params.bio }}</p>
+            </footer>
+          {{ end }}
         {{ end }}
 
-      </header>
-
-      {{ if isset .Params "description" }}
-        <p class="post__description">{{ .Params.description }}</p>
-      {{ end }}
-
-      {{ .Content }}
-      
-      {{ range .Params.profiles }}
-        {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
-          <footer class="post__footer grid">
-            <img src="{{ .Params.photo }}" alt="Portrait of {{ .Params.name }}" />
-            <p>{{ .Params.bio }}</p>
-          </footer>
-        {{ end }}
-      {{ end }}
+      </div>
 
     </div>
   </div>
