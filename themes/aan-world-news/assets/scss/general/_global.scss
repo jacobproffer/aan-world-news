@@ -15,7 +15,7 @@
     --container: 952px;
   }
 
-  @include screen-below($laptop-sm) {
+  @include screen-below($tablet) {
     --container: 840px;
   }
 }

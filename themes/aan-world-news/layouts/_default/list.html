@@ -1,13 +1,9 @@
 {{ define "main" }}
-  <section class="blog spacing">
-    <div class="container container--small">
-      <header>
-        <span lang="ja">旅行と日本語</span>
-        <h1>Journal</h1>
-      </header>
+  <section class="posts">
+    <div class="container">
       {{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") }}
       {{ range $index, $page := $paginator.Pages }}
-        <article class="blog__post grid grid--posts">
+        <article class="posts__single">
           <figure>
             <img src="{{ .Params.thumbnail }}" alt="{{ .Params.thumbnailCaption }}" />
           </figure>
@@ -27,6 +23,7 @@
       {{ end }}
     </div>
   </section>
+
   <div class="pagination pagination--numbers">
     <div class="container container--small">
       <ul class="pagination__numbers">
@@ -40,4 +37,5 @@
       </ul>
     </div>
   </div>
+  
 {{ end }}

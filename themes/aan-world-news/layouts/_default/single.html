@@ -14,7 +14,7 @@
 
       <div class="content">
 
-        <header class="post__header">
+        <header class="post__header padding">
 
           {{ if isset .Params "title" }}
             <h1>{{ .Title }}</h1>
@@ -33,7 +33,7 @@
         </header>
 
         {{ if isset .Params "description" }}
-          <p class="post__description">{{ .Params.description }}</p>
+          <p class="post__description padding">{{ .Params.description }}</p>
         {{ end }}
 
         {{ .Content }}
@@ -53,6 +53,6 @@
   </div>
 </article>
 
-{{ partial "pagination/post-pagination.html" . }}
+<!-- {{ partial "pagination/post-pagination.html" . }} -->
 
 {{- end }}

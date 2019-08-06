@@ -1,4 +1,10 @@
 .post {
+
+  p {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
   .container {
     position: relative;
     background-color: var(--white);
@@ -10,12 +16,12 @@
       grid-gap: 12px;
     }
 
-    @include screen-between($laptop-sm, $laptop) {
+    @include screen-between($tablet, $laptop) {
       grid-template-columns: 182px 570px;
       grid-gap: 9px;
     }
 
-    @include screen-below($laptop-sm) {
+    @include screen-below($tablet) {
       max-width: var(--postContainer);
       margin: auto;
     }
@@ -25,11 +31,11 @@
     margin-left: 10px;
     align-self: center;
 
-    @include screen-between($laptop-sm, $laptop) {
+    @include screen-between($tablet, $laptop) {
       margin-left: 8px;
     }
 
-    @include screen-below($laptop-sm) {
+    @include screen-below($tablet) {
       display: none;
     }
   }
@@ -70,6 +76,7 @@
 
     p {
       font-size: 1rem;
+      padding: 0;
       margin-top: 0;
     }
   }
