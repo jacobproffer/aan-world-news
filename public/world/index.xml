@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Worlds on AAN World News</title>
-    <link>http://example.org/world/</link>
-    <description>Recent content in Worlds on AAN World News</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 03 Aug 2019 13:22:19 -0400</lastBuildDate>
-    
-	<atom:link href="http://example.org/world/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Military Exercises Heighten Tensions</title>
-      <link>http://example.org/world/military-exercises-heighten-tensions/</link>
-      <pubDate>Sat, 03 Aug 2019 13:22:19 -0400</pubDate>
-      
-      <guid>http://example.org/world/military-exercises-heighten-tensions/</guid>
-      <description>British special forces, in training during Exercise Electron 37. (AAN World News)
-  Some 25,000 Livonian, US, and British troops are participating in joint training operations, less than 15 km from the Russian exclave of Kaliningrad.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Worlds on AAN World News</title><link>http://example.org/world/</link><description>Recent content in Worlds on AAN World News</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 03 Aug 2019 13:22:19 -0400</lastBuildDate><atom:link href="http://example.org/world/index.xml" rel="self" type="application/rss+xml"/><item><title>Military Exercises Heighten Tensions</title><link>http://example.org/world/military-exercises-heighten-tensions/</link><pubDate>Sat, 03 Aug 2019 13:22:19 -0400</pubDate><guid>http://example.org/world/military-exercises-heighten-tensions/</guid><description>British special forces, in training during Exercise Electron 37. (AAN World News)
+Some 25,000 Livonian, US, and British troops are participating in joint training operations, less than 15 km from the Russian exclave of Kaliningrad.
 Named Exercise Electron-39, the event will be the biggest of its kind and comes just weeks ahead of a Kremlin decision on a CSAT membership action plan.
-Russia says that such a show of force, close to its borders, is a threat to its security.</description>
-    </item>
-    
-  </channel>
-</rss>
+Russia says that such a show of force, close to its borders, is a threat to its security.</description></item></channel></rss>

@@ -1,0 +1,25 @@
+.list {
+  &__grid {
+    padding: 10px;
+    grid-gap: 10px;
+  }
+
+  &__article {
+    padding: 20px;
+    border: 1px solid var(--border);
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &--featured {
+      height: 100%;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+}

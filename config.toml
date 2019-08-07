@@ -2,7 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "AAN World News"
 theme = "aan-world-news"
-paginate = 8
+paginate = 9
 paginatePath = "posts"
 
 [params]
@@ -61,6 +61,7 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "travel"
     name = "Travel"
+    url = "/travel/"
     weight = 8
 
   [[menu.main]]

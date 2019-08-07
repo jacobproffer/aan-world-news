@@ -1,9 +1,9 @@
 ---
 title: "Nato Invades Takistan"
 description: "Post description"
-author: "Jacob Proffer"
-profiles: ["Jacob Proffer"]
-profileURL: /profiles/jacob-proffer
+author: "Katherine Bishop"
+profiles: ["Katherine Bishop"]
+profileURL: /profiles/katherine-bishop
 category: ["world"]
 tags: ["middle east"]
 date: 2019-08-06T15:11:10-04:00

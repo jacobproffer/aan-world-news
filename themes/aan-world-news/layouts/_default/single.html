@@ -1,7 +1,7 @@
 {{ define "main" -}}
 
-<article class="post">
-  <div class="container container--white">
+<div class="post">
+  <div class="container container--wide container--white">
     <div class="post__container grid">
       <aside class="post__aside">
         <figure>
@@ -12,7 +12,7 @@
         </figure>
       </aside>
 
-      <div class="content">
+      <article class="content">
 
         <header class="post__header padding">
 
@@ -20,12 +20,12 @@
             <h1>{{ .Title }}</h1>
           {{ end }}
 
-          <span class="post__author">
+          <span class="post__author h4">
             by <a href="{{ .Params.profileURL }}">{{ .Params.author }}</a>
           </span>
 
           {{ if isset .Params "fictionaldate" }}
-            <time class="post__date" datetime="{{ .PublishDate.Format "2006-01-02" }}">
+            <time class="h4" datetime="{{ .PublishDate.Format "2006-01-02" }}">
               {{ .Params.fictionaldate }}
             </time>
           {{ end }}
@@ -33,7 +33,7 @@
         </header>
 
         {{ if isset .Params "description" }}
-          <p class="post__description padding">{{ .Params.description }}</p>
+          <p class="post__description h4 padding">{{ .Params.description }}</p>
         {{ end }}
 
         {{ .Content }}
@@ -47,11 +47,11 @@
           {{ end }}
         {{ end }}
 
-      </div>
+      </article>
 
     </div>
   </div>
-</article>
+</div>
 
 <!-- {{ partial "pagination/post-pagination.html" . }} -->
 

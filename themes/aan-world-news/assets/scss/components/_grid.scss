@@ -4,4 +4,9 @@
   &__two-column {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  &__four-column {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+  }
 }

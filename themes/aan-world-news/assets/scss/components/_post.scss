@@ -6,10 +6,6 @@
     }
   }
 
-  .container {
-    position: relative;
-  }
-
   &__container {
     @include screen-above($laptop) {
       grid-template-columns: 242px 760px;
@@ -38,25 +34,6 @@
     @include screen-below($tablet) {
       display: none;
     }
-  }
-
-  &__header {
-    padding-top: 18px;
-
-    h1 {
-      margin: 0;
-    }
-  }
-
-  &__author,
-  &__description {
-    font-weight: 400;
-  }
-
-  &__author,
-  &__description,
-  &__date {
-    font-size: 1.25rem;
   }
 
   &__author {

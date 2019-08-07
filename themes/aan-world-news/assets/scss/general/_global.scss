@@ -35,7 +35,7 @@
   &:focus {
     border-color: var(--darkRed);
     outline: none;
-    box-shadow: inset 0 1px 2px var(--darkRed), 0 0 0 .2em var(--darkRed);
+    box-shadow: 0 1px 1px var(--darkRed), 0 0 0 .1em var(--darkRed);
   }
 }
 
@@ -93,11 +93,5 @@ hr {
   padding: 0;
   margin: 2rem 0;
   border: 0;
-  border-top: 1px solid var(--black);
-}
-
-header {
-  h1 {
-    margin-bottom: 50px;
-  }
+  border-top: 1px solid var(--border);
 }
