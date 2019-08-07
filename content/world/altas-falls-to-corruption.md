@@ -1,6 +1,6 @@
 ---
 title: "Altas Falls to Corruption"
-description: "Post description"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 author: "Katherine Bishop"
 profiles: ["Katherine Bishop"]
 profileURL: /profiles/katherine-bishop
