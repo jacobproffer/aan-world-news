@@ -8,5 +8,9 @@
   &__four-column {
     grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: dense;
+
+    @include screen-below($laptop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
