@@ -18,6 +18,10 @@
 
   &:not(:last-of-type) {
     margin-right: 30px;
+
+    @include screen-below($mobile) {
+      margin-right: 15px;
+    }
   }
 }
 
