@@ -38,6 +38,11 @@
 
   &__author {
     margin-right: 15px;
+
+    @include screen-below($mobile) {
+      display: block;
+      margin-bottom: 10px;
+    }
   }
 
   &__description {

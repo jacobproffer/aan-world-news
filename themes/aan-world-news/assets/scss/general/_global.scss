@@ -113,4 +113,8 @@ hr {
   margin: 2rem 0;
   border: 0;
   border-top: 1px solid var(--border);
+
+  @include screen-below($mobile) {
+    margin: 1.5rem 0;
+  }
 }

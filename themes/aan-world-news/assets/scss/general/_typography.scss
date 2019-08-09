@@ -11,6 +11,7 @@ h1 {
 
   @include screen-below($mobile) {
     line-height: 1.4;
+    margin-bottom: 10px;
   }
 }
 

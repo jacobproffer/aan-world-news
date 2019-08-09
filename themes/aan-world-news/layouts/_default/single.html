@@ -3,13 +3,17 @@
 <div class="post gray-background">
   <div class="container container--wide container--white">
     <div class="post__container grid">
+
+
       <aside class="post__aside">
-        <figure>
-          <img src="{{ .Params.asidePhoto }}" alt="This is some text." />
-          <figcaption>
-            <p>{{ .Params.asideText }}</p>
-          </figcaption>
-        </figure>
+        {{ if .Params.asideText }}
+          <figure>
+            <img src="{{ .Params.asidePhoto }}" alt="This is some text." />
+            <figcaption>
+              <p>{{ .Params.asideText }}</p>
+            </figcaption>
+          </figure>
+        {{ end }}
       </aside>
 
       <article class="content">
