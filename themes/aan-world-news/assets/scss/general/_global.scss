@@ -18,6 +18,16 @@
   @include screen-below($tablet) {
     --container: 840px;
   }
+
+  @include screen-below($portrait) {
+    --container: 635px;
+    --postContainer: 570px;
+  }
+
+  @include screen-below($mobile) {
+    --container: 92.5%;
+    --postContainer: 85%;
+  }
 }
 
 *,
@@ -41,10 +51,14 @@
 
 body {
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   color: var(--black);
-  background-color: var(--gray);
+  background-color: var(--red);
+
+  @include screen-above($tablet) {
+    font-size: 18px;
+  }
 }
 
 img {
@@ -53,6 +67,10 @@ img {
 
 figure {
   margin: 40px 0;
+
+  @include screen-below($mobile) {
+    margin: 25px 0;
+  }
 }
 
 figcaption {
@@ -75,11 +93,12 @@ ul {
 a {
   color: var(--red);
   text-decoration: none;
-  transition: color 300ms ease-in-out, outline 300ms ease-in-out;
+  transition: color 300ms ease-in-out, outline 300ms ease-in-out, text-decoration 300ms ease-in-out;
 
   &:hover {
     color: var(--darkGray);
     outline: dotted 1px var(--darkGray);
+    text-decoration: underline;
   }
 
   &:active {

@@ -8,6 +8,10 @@ h1 {
   padding-bottom: 0;
   margin: 0;
   line-height: 1.8;
+
+  @include screen-below($mobile) {
+    line-height: 1.4;
+  }
 }
 
 h2 {
@@ -31,4 +35,8 @@ h3,
 .h4 {
   font-size: 1.25rem;
   font-weight: 400;
+
+  @include screen-below($mobile) {
+    font-size: 1rem;
+  }
 }

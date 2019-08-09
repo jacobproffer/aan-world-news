@@ -8,8 +8,12 @@
     padding: 20px;
     border: 1px solid var(--border);
 
-    header {
-      margin-top: 20px;
+    img {
+      margin-bottom: 10px;
+
+      @include screen-above($tablet) {
+        margin-bottom: 15px;
+      }
     }
 
     h2 {
@@ -22,8 +26,20 @@
 
     &--featured {
       height: 100%;
-      grid-column: span 2;
-      grid-row: span 2;
+
+      @include screen-above($portrait) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      @include screen-between($mobile, $portrait) {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      @include screen-between($mobile-sm, $mobile) {
+        grid-column: span 2;
+      }
     }
   }
 }

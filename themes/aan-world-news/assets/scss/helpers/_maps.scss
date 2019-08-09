@@ -2,26 +2,29 @@
 
 $h1-font-sizes: (
   null: 32px,
-  320px: 1.75rem,
+  320px: 1.5rem,
+  880px: 1.75rem,
   1080px: 2rem,
   1380px: 2.5rem
 );
 
 $h2-font-sizes: (
   null: 24px,
-  320px: 1.5rem,
+  320px: 1.25rem,
+  880px: 1.5rem,
   1080px: 1.75rem,
   1280px: 2rem,
 );
 
 $h3-font-sizes: (
-  null: 22px,
-  1024px: 1.25rem,
+  null: 18px,
+  880px: 1.125rem,
+  1080px: 1.25rem,
   1380px: 1.5rem
 );
 
 $p-font-sizes: (
   null: 16px,
   320px: 1rem,
-  1024px: 1.125rem
+  1080px: 1.125rem
 );

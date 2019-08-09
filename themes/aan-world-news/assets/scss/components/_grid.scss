@@ -12,5 +12,13 @@
     @include screen-below($laptop) {
       grid-template-columns: repeat(3, 1fr);
     }
+
+    @include screen-below($mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include screen-below($mobile-sm) {
+      grid-template-columns: 1fr;
+    }
   }
 }
