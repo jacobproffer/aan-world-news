@@ -1,0 +1,21 @@
+.pagination {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  li {
+    display: inline-block;
+
+    &:not(:nth-last-of-type) {
+      margin-left: 20px;
+    }
+  }
+
+  &__number {
+    padding: 5px 10px;
+
+    &--current {
+      border: 1px dotted var(--red);
+    }
+  }
+}

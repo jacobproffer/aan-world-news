@@ -43,9 +43,7 @@
 
 * {
   &:focus {
-    border-color: var(--darkRed);
-    outline: none;
-    box-shadow: 0 1px 1px var(--darkRed), 0 0 0 .1em var(--darkRed);
+    outline: 1px dotted var(--darkGray);
   }
 }
 
@@ -99,10 +97,6 @@ a {
     color: var(--darkGray);
     outline: dotted 1px var(--darkGray);
     text-decoration: underline;
-  }
-
-  &:active {
-    color: var(--darkRed);
   }
 }
 

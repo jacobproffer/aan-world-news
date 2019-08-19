@@ -2,7 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "AAN World News"
 theme = "aan-world-news"
-paginate = 9
+paginate = 3
 paginatePath = "posts"
 
 [params]
