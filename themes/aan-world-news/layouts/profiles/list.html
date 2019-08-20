@@ -1,15 +1,15 @@
 {{ define "main" }}
 
-<article class="profile gray-background">
+<article class="profile gray-background" itemscope itemtype="https://schema.org/Person">
   <div class="container container--wide container--white">
     <div class="container container--small">
 
       <header class="profile__header">
-        <h1>{{ .Params.name }}</h1>
-        <span class="h4">{{ .Params.title }}</span>
+        <h1 itemprop="name">{{ .Params.name }}</h1>
+        <span class="h4" itemprop="jobTitle">{{ .Params.title }}</span>
       </header>
 
-      <p>{{ .Params.bio }}</p>
+      <p itemprop="description">{{ .Params.bio }}</p>
 
       <hr />
 
@@ -19,14 +19,19 @@
         </header>
 
         {{ range .Data.Pages }}
-          <article class="article-card">
+          <article class="article-card" itemscope itemtype="https://schema.org/NewsArticle">
+
+            <meta itemprop="wordCount" content="{{ .WordCount }}" />
+            <meta itemprop="image" content="{{ .Params.thumbnail }}" />
+            <meta itemprop="author" content="{{ .Params.author }}" />
+
             <header>
-              <h3>
+              <h3 itemprop="headline">
                 <a href="{{ .Permalink }}">
                   {{ .Title }}
                 </a>
               </h3>
-              <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+              <time itemprop="datePublished" datetime="{{ .PublishDate.Format "2006-01-02" }}">
                 {{ .Params.fictionalDate }}
               </time>
             </header>
