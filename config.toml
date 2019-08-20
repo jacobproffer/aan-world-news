@@ -2,12 +2,13 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "AAN World News"
 theme = "aan-world-news"
-paginate = 3
+paginate = 8
 paginatePath = "posts"
 
 [params]
   description = "AAN is a privately-owned, independent news broadcaster that provides global coverage of worldwide events and conflicts."
   subTitle = "Our World, Your News"
+  logo = "/images/aan-world-news-logo.png"
 
 [taxonomies]
   profile = "profiles"

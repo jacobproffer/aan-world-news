@@ -16,20 +16,23 @@
         {{ end }}
       </aside>
 
-      <article class="content">
+      <article class="content" itemscope itemtype="https://schema.org/NewsArticle">
+
+        <meta itemprop="wordCount" content="{{ .WordCount }}" />
+        <meta itemprop="image" content="{{ .Params.thumbnail }}" />
 
         <header class="post__header padding">
 
           {{ if isset .Params "title" }}
-            <h1>{{ .Title }}</h1>
+            <h1 itemprop="headline">{{ .Title }}</h1>
           {{ end }}
 
-          <span class="post__author h4">
-            by <a href="{{ .Params.profileURL }}">{{ .Params.author }}</a>
+          <span class="post__author h4" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            by <a href="{{ .Params.profileURL }}"><span itemprop="name">{{ .Params.author }}</span></a>
           </span>
 
           {{ if isset .Params "fictionaldate" }}
-            <time class="h4" datetime="{{ .PublishDate.Format "2006-01-02" }}">
+            <time class="h4" itemprop="datePublished" datetime="{{ .PublishDate.Format "2006-01-02" }}">
               {{ .Params.fictionaldate }}
             </time>
           {{ end }}
@@ -37,14 +40,23 @@
         </header>
 
         {{ if isset .Params "description" }}
-          <p class="post__description h4 padding">{{ .Params.description }}</p>
+          <p class="post__description h4 padding" itemprop="description">{{ .Params.description }}</p>
         {{ end }}
 
-        {{ .Content }}
+        <div itemprop="articleBody">
+          {{ .Content }}
+        </div>
         
         {{ range .Params.profiles }}
           {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
-            <footer class="post__footer grid">
+            <footer class="post__footer grid" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+              <meta itemprop="name" content="{{ .Site.Title }}" />
+              <div class="visually-hide" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <img src="{{ .Site.Params.logo }}" alt="AAN World News logo." />
+                <meta itemprop="url" content="{{ .Site.Params.logo }}" />
+                <meta itemprop="width" content="386" />
+                <meta itemprop="height" content="104" />
+              </div>
               <img src="{{ .Params.photo }}" alt="Portrait of {{ .Params.name }}" />
               <p>{{ .Params.bio }}</p>
             </footer>
