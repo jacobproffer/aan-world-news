@@ -20,6 +20,7 @@
 
         <meta itemprop="wordCount" content="{{ .WordCount }}" />
         <meta itemprop="image" content="{{ .Params.thumbnail }}" />
+        <meta itemprop="datePublished" content="{{ .PublishDate }}" />
 
         <header class="post__header padding">
 
@@ -32,7 +33,7 @@
           </span>
 
           {{ if isset .Params "fictionaldate" }}
-            <time class="h4" itemprop="datePublished" datetime="{{ .PublishDate.Format "2006-01-02" }}">
+            <time class="h4" datetime="{{ .PublishDate.Format "2006-01-02" }}">
               {{ .Params.fictionaldate }}
             </time>
           {{ end }}

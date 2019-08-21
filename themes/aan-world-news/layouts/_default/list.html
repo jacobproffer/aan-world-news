@@ -12,19 +12,7 @@
 
         {{ range $index, $page := $paginator.Pages }}
           
-          <article class="list__article">
-            <header>
-              <h2 class="h3">
-                <a href="{{ .Permalink }}">
-                  {{ .Title }}
-                </a>
-              </h2>
-              <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-                {{ .Params.fictionalDate }}
-              </time>
-            </header>
-            <p>{{ .Params.description }}</p>
-          </article>
+          {{ partial "articles/article-footer-hidden.html" . }}
 
         {{ end }}
 

@@ -1,0 +1,22 @@
+<article class="list__article" itemscope itemtype="https://schema.org/NewsArticle">
+
+  <meta itemprop="wordCount" content="{{ .WordCount }}" />
+  <meta itemprop="image" content="{{ .Params.thumbnail }}" />
+  <meta itemprop="author" content="{{ .Params.author }}" />
+  <meta itemprop="datePublished" content="{{ .PublishDate }}" />
+
+  <header>
+    <h2 class="h3" itemprop="headline">
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </h2>
+    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+      {{ .Params.fictionalDate }}
+    </time>
+  </header>
+  <p>{{ .Params.description }}</p>
+
+  {{ partial "seo/publisher-hidden.html" . }}
+
+</article>
