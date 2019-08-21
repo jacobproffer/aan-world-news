@@ -42,7 +42,7 @@ paginatePath = "posts"
     weight = 1
   
   [[menu.tags]]
-    identifier = "middle-east"
-    Name = "middle east"
-    url = "/tags/middle-east/"
+    identifier = "oceania"
+    Name = "oceania"
+    url = "/tags/oceania/"
     weight = 2
