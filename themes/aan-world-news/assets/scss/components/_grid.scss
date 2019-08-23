@@ -4,4 +4,21 @@
   &__two-column {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  &__four-column {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+
+    @include screen-below($laptop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include screen-below($mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include screen-below($mobile-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
 }

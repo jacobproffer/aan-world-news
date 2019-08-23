@@ -7,7 +7,14 @@ profileURL: /profiles/katherine-bishop
 category: ["world"]
 tags: ["europe"]
 date: 2019-08-03T13:22:19-04:00
+images:
+  - /images/placeholder.png
+thumbnail: https://source.unsplash.com/720x405
 fictionaldate: "17/6/2039 10:15 CET"
+asidePhoto: https://source.unsplash.com/230x114
+asideText: "Livonia logistics chaos leaves British and US soldiers stranded."
+featured: true
+weight: 1
 ---
 
 {{< figure src="https://source.unsplash.com/762x380/" alt="British soldiers in training." caption="British special forces, in training during Exercise Electron 37. (AAN World News)" >}}

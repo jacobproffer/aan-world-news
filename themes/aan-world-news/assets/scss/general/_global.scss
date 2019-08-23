@@ -10,12 +10,30 @@
   --mediumGray: #e5e5e5;
   --darkGray: #6b6b6b;
   --border: #e7e7e7;
+
+  @include screen-below($laptop) {
+    --container: 952px;
+  }
+
+  @include screen-below($tablet) {
+    --container: 840px;
+  }
+
+  @include screen-below($portrait) {
+    --container: 635px;
+    --postContainer: 570px;
+  }
+
+  @include screen-below($mobile) {
+    --container: 92.5%;
+    --postContainer: 85%;
+  }
 }
 
 *,
 *::after,
 *::before {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 ::selection {
@@ -25,18 +43,21 @@
 
 * {
   &:focus {
-    border-color: var(--darkRed);
-    outline: none;
-    box-shadow: inset 0 1px 2px var(--darkRed), 0 0 0 .2em var(--darkRed);
+    outline: 1px dotted var(--darkGray);
   }
 }
 
 body {
   position: relative;
-  font-size: 18px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
   font-weight: 200;
   color: var(--black);
-  background-color: var(--gray);
+  background-color: var(--red);
+
+  @include screen-above($tablet) {
+    font-size: 18px;
+  }
 }
 
 img {
@@ -45,6 +66,10 @@ img {
 
 figure {
   margin: 40px 0;
+
+  @include screen-below($mobile) {
+    margin: 25px 0;
+  }
 }
 
 figcaption {
@@ -67,15 +92,12 @@ ul {
 a {
   color: var(--red);
   text-decoration: none;
-  transition: color 300ms ease-in-out, outline 300ms ease-in-out;
+  transition: color 300ms ease-in-out, outline 300ms ease-in-out, text-decoration 300ms ease-in-out;
 
   &:hover {
     color: var(--darkGray);
     outline: dotted 1px var(--darkGray);
-  }
-
-  &:active {
-    color: var(--darkRed);
+    text-decoration: underline;
   }
 }
 
@@ -85,11 +107,9 @@ hr {
   padding: 0;
   margin: 2rem 0;
   border: 0;
-  border-top: 1px solid var(--black);
-}
+  border-top: 1px solid var(--border);
 
-header {
-  h1 {
-    margin-bottom: 50px;
+  @include screen-below($mobile) {
+    margin: 1.5rem 0;
   }
 }

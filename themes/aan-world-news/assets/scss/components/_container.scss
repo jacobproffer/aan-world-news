@@ -1,4 +1,15 @@
 .container {
-  max-width: var(--container);
   margin: auto;
+
+  &--wide {
+    max-width: var(--container);
+  }
+
+  &--small {
+    max-width: var(--postContainer);
+  }
+
+  &--white {
+    background-color: var(--white);
+  }
 }

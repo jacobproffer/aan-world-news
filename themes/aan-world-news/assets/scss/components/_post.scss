@@ -1,34 +1,48 @@
 .post {
-  .container {
-    background-color: var(--white);
-  }
-
-  &__container {
-    max-width: var(--postContainer);
-    margin: auto;
-  }
-
-  &__header {
-    padding-top: 18px;
-
-    h1 {
-      margin: 0;
+  p {
+    @include screen-above($laptop) {
+      padding-left: 14px;
+      padding-right: 14px;
     }
   }
 
-  &__author,
-  &__description {
-    font-weight: 400;
+  &__container {
+    @include screen-above($laptop) {
+      grid-template-columns: 242px 760px;
+      grid-gap: 12px;
+    }
+
+    @include screen-between($tablet, $laptop) {
+      grid-template-columns: 182px 570px;
+      grid-gap: 9px;
+    }
+
+    @include screen-below($tablet) {
+      max-width: var(--postContainer);
+      margin: auto;
+    }
   }
 
-  &__author,
-  &__description,
-  &__date {
-    font-size: 1.25rem;
+  &__aside {
+    margin-left: 10px;
+    align-self: center;
+
+    @include screen-between($tablet, $laptop) {
+      margin-left: 8px;
+    }
+
+    @include screen-below($tablet) {
+      display: none;
+    }
   }
 
   &__author {
     margin-right: 15px;
+
+    @include screen-below($mobile) {
+      display: block;
+      margin-bottom: 10px;
+    }
   }
 
   &__description {
@@ -44,6 +58,7 @@
 
     p {
       font-size: 1rem;
+      padding: 0;
       margin-top: 0;
     }
   }

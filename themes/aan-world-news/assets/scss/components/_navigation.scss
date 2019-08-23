@@ -1,25 +1,16 @@
-.primary-navigation,
-.tag-navigation {
+.navigation {
   padding: 8px 10px;
-}
 
-.primary-navigation {
-  background-color: var(--mediumRed);
+  &--primary {
+    background-color: var(--mediumRed);
 
-  li {
-    display: inline-block;
-
-    &:not(:last-of-type) {
-      margin-right: 30px;
+    a {
+      color: var(--white);
+      text-transform: lowercase;
     }
   }
 
-  a {
-    color: var(--white);
-    text-transform: lowercase;
+  &--tag {
+    background-color: var(--mediumGray);
   }
-}
-
-.tag-navigation {
-  background-color: var(--mediumGray);
 }

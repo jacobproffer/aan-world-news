@@ -1,19 +1,51 @@
 {{ define "main" }}
 
-<article>
-  <div class="container">
-    <header>
-      <h1>{{ .Params.name }}</h1>
-    </header>
-    
-    {{ range .Data.Pages }}
-      <ul>
-        <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
-      </ul>
-    {{ end }}
+<article class="profile gray-background" itemscope itemtype="https://schema.org/Person">
+  <div class="container container--wide container--white">
+    <div class="container container--small">
 
+      <header class="profile__header">
+        <h1 itemprop="name">{{ .Params.name }}</h1>
+        <span class="h4" itemprop="jobTitle">{{ .Params.title }}</span>
+      </header>
+
+      <p itemprop="description">{{ .Params.bio }}</p>
+
+      <hr />
+
+      <section class="profile__articles">
+        <header>
+          <h2>Articles by {{ .Params.name }}</h2>
+        </header>
+
+        {{ range .Data.Pages }}
+          <article class="article-card" itemscope itemtype="https://schema.org/NewsArticle">
+
+            <meta itemprop="wordCount" content="{{ .WordCount }}" />
+            <meta itemprop="image" content="{{ .Params.thumbnail }}" />
+            <meta itemprop="author" content="{{ .Params.author }}" />
+            <meta itemprop="datePublished" content="{{ .PublishDate }}" />
+            <meta itemprop="dateModified" content="{{ .Params.lastmod }}" />
+
+            <header>
+              <h3 itemprop="headline">
+                <a href="{{ .Permalink }}">
+                  {{ .Title }}
+                </a>
+              </h3>
+              <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+                {{ .Params.fictionalDate }}
+              </time>
+            </header>
+
+            {{ partial "seo/publisher-hidden.html" . }}
+
+          </article>
+        {{ end }}
+
+      </section>
+
+    </div>
   </div>
 </article>
 

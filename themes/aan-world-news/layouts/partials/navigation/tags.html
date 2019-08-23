@@ -1,12 +1,15 @@
-<nav class="tag-navigation">
+<nav class="navigation navigation--tag">
   <ul>
     {{ $currentPage := . }}
-    {{ range .Site.Taxonomies.tags }}
-      <li>
+    {{ range .Site.Menus.tags }}
+      <li class="inline-link">
         <a
-        href="{{ .Page.Permalink }}"
+        {{ if $currentPage.IsMenuCurrent "tags" . }}
+          class="active"
+        {{ end }}
+        href="{{ .URL }}"
         >
-          {{ .Page.Title }}
+          {{ .Name }}
         </a>
       </li>
     {{ end }}

@@ -1,0 +1,45 @@
+.list {
+  &__grid {
+    padding: 10px;
+    grid-gap: 10px;
+  }
+
+  &__article {
+    padding: 20px;
+    border: 1px solid var(--border);
+
+    img {
+      margin-bottom: 10px;
+
+      @include screen-above($tablet) {
+        margin-bottom: 15px;
+      }
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &--featured {
+      height: 100%;
+
+      @include screen-above($portrait) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      @include screen-between($mobile, $portrait) {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      @include screen-between($mobile-sm, $mobile) {
+        grid-column: span 2;
+      }
+    }
+  }
+}

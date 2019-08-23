@@ -1,11 +1,17 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-description: Post description
-author: "author"
+description: "Post description"
+author: "Katherine Bishop"
+profiles: ["Katherine Bishop"]
+profileURL: /profiles/katherine-bishop
+category: ["world"]
+tags: []
 date: {{ .Date }}
 fictionalDate: ""
-image: Social media image
+asidePhoto:
+asideText:
+images:
+  - /images/placeholder.png
 thumbnail: Thumbnail image
-categories: []
 draft: true
 ---
