@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://aan-news.proffer.dev"
 languageCode = "en-us"
 title = "AAN World News"
 theme = "aan-world-news"
