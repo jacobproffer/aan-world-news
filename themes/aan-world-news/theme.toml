@@ -3,9 +3,9 @@
 
 name = "Aan World News"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/jacobproffer/aan-world-news/blob/master/themes/aan-world-news/LICENSE"
 description = "Fictional Arma 3 / AAN World News theme."
-homepage = "http://example.com/"
+homepage = "https://aan-news.proffer.dev"
 tags = ["arma", "news", "articles"]
 features = ["profiles"]
 min_version = "0.41"
