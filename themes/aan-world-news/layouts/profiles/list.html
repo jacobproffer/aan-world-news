@@ -4,19 +4,37 @@
   <div class="container container--wide container--white">
     <div class="container container--small">
 
-      <header class="profile__header">
-        <h1 itemprop="name">{{ .Params.name }}</h1>
-        <span class="h4" itemprop="jobTitle">{{ .Params.title }}</span>
-      </header>
+      {{ if or .Params.name .Params.title }}
+        <header class="profile__header">
 
-      <p itemprop="description">{{ .Params.bio }}</p>
+          {{ if .Params.name }}
+            <h1 itemprop="name">
+              {{ .Params.name }}
+            </h1>
+          {{ end }}
+
+          {{ if .Params.title }}
+            <span class="h4" itemprop="jobTitle">
+              {{ .Params.title }}
+            </span>
+          {{ end }}
+
+        </header>
+      {{ end }}
+
+      {{ if .Params.bio }}
+        <p itemprop="description">{{ .Params.bio }}</p>
+      {{ end }}
 
       <hr />
 
       <section class="profile__articles">
-        <header>
-          <h2>Articles by {{ .Params.name }}</h2>
-        </header>
+
+        {{ if .Params.name }}
+          <header>
+            <h2>Articles by {{ .Params.name }}</h2>
+          </header>
+        {{ end }}
 
         {{ range .Data.Pages }}
           <article class="article-card" itemscope itemtype="https://schema.org/NewsArticle">
@@ -33,9 +51,13 @@
                   {{ .Title }}
                 </a>
               </h3>
-              <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-                {{ .Params.fictionalDate }}
-              </time>
+
+              {{ if .Params.fictionalDate }}
+                <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+                  {{ .Params.fictionalDate }}
+                </time>
+              {{ end }}
+
             </header>
 
             {{ partial "seo/publisher-hidden.html" . }}

@@ -12,11 +12,18 @@
         {{ .Title }}
       </a>
     </h2>
-    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-      {{ .Params.fictionalDate }}
-    </time>
+
+    {{ if .Params.fictionalDate }}
+      <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+        {{ .Params.fictionalDate }}
+      </time>
+    {{ end }}
+
   </header>
-  <p>{{ .Params.description }}</p>
+
+  {{ if .Params.description }}
+    <p>{{ .Params.description }}</p>
+  {{ end }}
 
   {{ partial "seo/publisher-hidden.html" . }}
 
