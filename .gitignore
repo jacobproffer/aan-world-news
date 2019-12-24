@@ -1,0 +1,7 @@
+# Hugo
+public/*
+!public/images
+resources/
+
+# OSX
+.DS_Store
