@@ -6,7 +6,7 @@
         <h1>{{ .Title | singularize }}</h1>
       </header>
 
-      <div class="grid grid__four-column list__grid">
+      <div class="grid grid--four-column list__grid">
 
         {{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") }}
 
