@@ -37,30 +37,7 @@
         {{ end }}
 
         {{ range .Data.Pages }}
-          <article class="article-card" itemscope itemtype="https://schema.org/NewsArticle">
-
-            <meta itemprop="wordCount" content="{{ .WordCount }}" />
-            <meta itemprop="image" content="{{ .Params.thumbnail }}" />
-            <meta itemprop="author" content="{{ .Params.author }}" />
-            <meta itemprop="datePublished" content="{{ .PublishDate }}" />
-            <meta itemprop="dateModified" content="{{ .Params.lastmod }}" />
-
-            <header>
-              <h3 itemprop="headline">
-                <a href="{{ .Permalink }}">
-                  {{ .Title }}
-                </a>
-              </h3>
-
-              <time class="h4" datetime="{{ .PublishDate.Format "2006-01-02" }}">
-                {{ .PublishDate.Format "2006-01-02 400 EDT" }}
-              </time>
-
-            </header>
-
-            {{ partial "seo/publisher-hidden.html" . }}
-
-          </article>
+          {{ .Render "card" }}
         {{ end }}
 
       </section>

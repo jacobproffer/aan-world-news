@@ -12,7 +12,7 @@
 
         {{ range $index, $page := $paginator.Pages }}
 
-          {{ partial "articles/article-footer-hidden.html" . }}
+          {{ .Render "summary" }}
 
         {{ end }}
 

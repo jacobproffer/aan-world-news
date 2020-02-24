@@ -12,34 +12,11 @@
 
           {{ if eq .Params.featured true }}
 
-            <article class="list__article list__article--featured" itemscope itemtype="https://schema.org/NewsArticle">
-
-              <meta itemprop="wordCount" content="{{ .WordCount }}" />
-              <meta itemprop="image" content="{{ .Params.thumbnail }}" />
-              <meta itemprop="author" content="{{ .Params.author }}" />
-              <meta itemprop="datePublished" content="{{ .PublishDate }}" />
-              <meta itemprop="dateModified" content="{{ .Params.lastmod }}" />
-
-              <img src="{{ .Params.thumbnail }}" alt="Test" />
-              <header>
-                <h2 class="h3" itemprop="headline">
-                  <a href="{{ .Permalink }}">
-                    {{ .Title }}
-                  </a>
-                </h2>
-                <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-                  {{ .PublishDate.Format "2006-01-02 400 EDT" }}
-                </time>
-              </header>
-              <p>{{ .Params.description }}</p>
-
-              {{ partial "seo/publisher-hidden" . }}
-
-            </article>
+            {{ .Render "featured" }}
 
           {{ else }}
 
-            {{ partial "articles/article-footer-hidden.html" . }}
+            {{ .Render "summary" }}
 
           {{ end }}
 
