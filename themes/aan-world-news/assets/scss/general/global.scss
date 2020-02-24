@@ -99,6 +99,10 @@ a {
     outline: dotted 1px var(--dark-gray);
     text-decoration: underline;
   }
+
+  &[aria-current="page"] {
+    text-decoration: underline;
+  }
 }
 
 hr {

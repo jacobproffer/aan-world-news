@@ -6,12 +6,10 @@
       {{ if .URL }}
         <li class="inline-link">
           <a
-          {{ if $currentPage.IsMenuCurrent "main" . }}
-            class="active"
-          {{ end }}
-          {{ if .URL }}
-            href="{{ .URL }}"
-          {{ end }}
+            {{ if $currentPage.IsMenuCurrent "main" . }}
+              aria-current="page"
+            {{ end }}
+              href="{{ .URL }}"
           >
             {{ .Name }}
           </a>
