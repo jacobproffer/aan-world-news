@@ -19,9 +19,12 @@
 
         <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" />
         <meta itemprop="wordCount" content="{{ .WordCount }}" />
-        <meta itemprop="image" content="{{ .Params.thumbnail }}" />
         <meta itemprop="datePublished" content="{{ .PublishDate }}" />
         <meta itemprop="dateModified" content="{{ .Params.lastmod }}" />
+
+        {{ if isset .Params "thumbnail" }}
+          <meta itemprop="image" content="{{ .Params.thumbnail }}" />
+        {{ end }}
 
         <header class="post__header padding">
 
@@ -29,13 +32,17 @@
             <h1 itemprop="headline">{{ .Title }}</h1>
           {{ end }}
 
-          <span class="post__author h4" itemprop="author" itemscope itemtype="https://schema.org/Person">
-            by <a href="{{ .Params.profileURL }}"><span itemprop="name">{{ .Params.author }}</span></a>
-          </span>
+          {{ if isset .Params "author" }}
+            <span class="post__author h4" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              by <a href="{{ .Params.profileURL }}"><span itemprop="name">{{ .Params.author }}</span></a>
+            </span>
+          {{ end }}
 
-          <time class="h4" datetime="{{ .PublishDate.Format "2006-01-02" }}">
-            {{ .PublishDate.Format "2006-01-02 400 EDT" }}
-          </time>
+          {{ if isset .Params "PublishDate" }}
+            <time class="h4" datetime="{{ .PublishDate.Format "2006-01-02" }}">
+              {{ .PublishDate.Format "2006-01-02 400 EDT" }}
+            </time>
+          {{ end }}
 
         </header>
 
