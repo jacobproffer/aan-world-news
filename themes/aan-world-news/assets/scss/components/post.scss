@@ -18,7 +18,7 @@
     }
 
     @include screen-below($tablet) {
-      max-width: var(--postContainer);
+      max-width: var(--post-container);
       margin: auto;
     }
   }
@@ -51,7 +51,7 @@
 
   &__footer {
     padding: 34px 0;
-    color: var(--darkGray);
+    color: var(--dark-gray);
     border-top: 1px solid var(--border);
     grid-template-columns: 100px auto;
     grid-gap: 20px;
