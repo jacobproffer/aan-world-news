@@ -2,18 +2,14 @@
 title: "Skydive Into Tanoa"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 author: "Katherine Bishop"
-profiles:
-  - Katherine Bishop
+profiles: ["Katherine Bishop"]
 profileURL: /profiles/katherine-bishop
-categories:
-  - Travel
-tags:
-  - Oceania
+categories: ["Travel"]
+tags: ["Oceania"]
 date: 2019-08-07T14:12:40-04:00
 asidePhoto:
 asideText:
-images:
-  - /images/placeholder.png
+images: ["/images/placeholder.png"]
 thumbnail: /images/altis.jpg
 ---
 

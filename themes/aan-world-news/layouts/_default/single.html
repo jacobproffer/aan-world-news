@@ -53,6 +53,7 @@
         </div>
 
         {{ range .Params.profiles }}
+
           {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
             <footer class="post__footer grid" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
               <meta itemprop="name" content="{{ .Site.Title }}" />
@@ -66,14 +67,35 @@
               <p>{{ .Params.bio }}</p>
             </footer>
           {{ end }}
+
         {{ end }}
 
       </article>
 
+      {{ $related := .Site.RegularPages.Related . | first 3 }}
+
+      {{ with $related }}
+
+        <div class="post__related">
+
+          <header>
+            <h2 id="related-posts">Related Posts</h2>
+          </header>
+
+          <ul aria-labelledby="related-posts">
+            {{ range . }}
+              <li>
+                {{ .Render "card" }}
+              </li>
+            {{ end }}
+          </ul>
+
+        </div>
+
+      {{ end }}
+
     </div>
   </div>
 </div>
-
-<!-- {{ partial "pagination/post-pagination.html" . }} -->
 
 {{- end }}
