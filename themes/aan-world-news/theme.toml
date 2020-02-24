@@ -8,7 +8,7 @@ description = "Fictional Arma 3 / AAN World News theme."
 homepage = "https://aan-news.proffer.dev"
 tags = ["arma", "news", "articles"]
 features = ["profiles"]
-min_version = "0.41"
+min_version = "0.65.0"
 
 [author]
   name = "Jacob Proffer"
