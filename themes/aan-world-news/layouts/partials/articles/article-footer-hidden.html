@@ -13,11 +13,9 @@
       </a>
     </h2>
 
-    {{ if isset .Params "PublishDate" }}
-      <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-        {{ .PublishDate.Format "2006-01-02 400 EDT" }}
-      </time>
-    {{ end }}
+    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+      {{ .PublishDate.Format "2006-01-02 400 EDT" }}
+    </time>
 
   </header>
 
