@@ -33,11 +33,9 @@
             by <a href="{{ .Params.profileURL }}"><span itemprop="name">{{ .Params.author }}</span></a>
           </span>
 
-          {{ if isset .Params "fictionaldate" }}
-            <time class="h4" datetime="{{ .PublishDate.Format "2006-01-02" }}">
-              {{ .Params.fictionaldate }}
-            </time>
-          {{ end }}
+          <time class="h4" datetime="{{ .PublishDate.Format "2006-01-02" }}">
+            {{ .PublishDate.Format "2006-01-02 400 EDT" }}
+          </time>
 
         </header>
 

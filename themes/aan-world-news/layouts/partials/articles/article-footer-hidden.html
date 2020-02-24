@@ -13,11 +13,9 @@
       </a>
     </h2>
 
-    {{ if .Params.fictionalDate }}
-      <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-        {{ .Params.fictionalDate }}
-      </time>
-    {{ end }}
+    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+      {{ .PublishDate.Format "2006-01-02 400 EDT" }}
+    </time>
 
   </header>
 

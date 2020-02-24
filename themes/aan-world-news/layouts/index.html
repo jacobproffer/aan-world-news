@@ -28,7 +28,7 @@
                   </a>
                 </h2>
                 <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-                  {{ .Params.fictionalDate }}
+                  {{ .PublishDate.Format "2006-01-02 400 EDT" }}
                 </time>
               </header>
               <p>{{ .Params.description }}</p>
