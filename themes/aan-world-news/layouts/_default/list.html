@@ -6,13 +6,13 @@
         <h1>{{ .Title | singularize }}</h1>
       </header>
 
-      <div class="grid grid__four-column list__grid">
+      <div class="grid grid--four-column list__grid">
 
         {{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") }}
 
         {{ range $index, $page := $paginator.Pages }}
 
-          {{ partial "articles/article-footer-hidden.html" . }}
+          {{ .Render "summary" }}
 
         {{ end }}
 
@@ -23,11 +23,11 @@
         <div class="pagination pagination--numbers">
           <ul class="pagination__numbers">
             {{ range $paginator.Pagers }}
-            <li>
-              <a class="pagination__number{{ if eq . $paginator }} pagination__number--current{{ end }}" href="{{ .URL }}">
-                {{ .PageNumber }}
-              </a>
-            </li>
+              <li>
+                <a class="pagination__number{{ if eq . $paginator }} pagination__number--current{{ end }}" href="{{ .URL }}">
+                  {{ .PageNumber }}
+                </a>
+              </li>
             {{ end }}
           </ul>
         </div>

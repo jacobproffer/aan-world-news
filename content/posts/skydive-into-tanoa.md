@@ -4,15 +4,13 @@ description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
 author: "Katherine Bishop"
 profiles: ["Katherine Bishop"]
 profileURL: /profiles/katherine-bishop
-category: ["world"]
+categories: ["Travel"]
 tags: ["Oceania"]
 date: 2019-08-07T14:12:40-04:00
-fictionalDate: "17/6/2039 10:15 CET"
 asidePhoto:
 asideText:
-images:
-  - /images/placeholder.png
-thumbnail: https://source.unsplash.com/720x405
+images: ["/images/placeholder.png"]
+thumbnail: /images/altis.jpg
 ---
 
 Lorem Khaled Ipsum is a major key to success. Congratulations, you played yourself. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. Every chance I get, I water the plants, Lion! It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. The key to success is to keep your head above the water, never give up. Wraith talk. They don’t want us to win. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel.

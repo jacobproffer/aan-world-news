@@ -26,13 +26,13 @@ paginatePath = "posts"
   [[menu.main]]
     identifier = "world"
     name = "World"
-    url = "/world/"
+    url = "/categories/world/"
     weight = 2
 
   [[menu.main]]
     identifier = "travel"
     name = "Travel"
-    url = "/travel/"
+    url = "/categories/travel/"
     weight = 3
 
   [[menu.tags]]
@@ -40,7 +40,7 @@ paginatePath = "posts"
     name = "europe"
     url = "/tags/europe/"
     weight = 1
-  
+
   [[menu.tags]]
     identifier = "oceania"
     Name = "oceania"

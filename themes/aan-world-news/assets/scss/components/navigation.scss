@@ -2,7 +2,7 @@
   padding: 8px 10px;
 
   &--primary {
-    background-color: var(--mediumRed);
+    background-color: var(--medium-red);
 
     a {
       color: var(--white);
@@ -11,6 +11,6 @@
   }
 
   &--tag {
-    background-color: var(--mediumGray);
+    background-color: var(--medium-gray);
   }
 }

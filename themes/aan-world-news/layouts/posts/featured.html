@@ -1,4 +1,4 @@
-<article class="list__article" itemscope itemtype="https://schema.org/NewsArticle">
+<article class="list__article list__article--featured" itemscope itemtype="https://schema.org/NewsArticle">
 
   <meta itemprop="wordCount" content="{{ .WordCount }}" />
   <meta itemprop="image" content="{{ .Params.thumbnail }}" />
@@ -6,25 +6,19 @@
   <meta itemprop="datePublished" content="{{ .PublishDate }}" />
   <meta itemprop="dateModified" content="{{ .Params.lastmod }}" />
 
+  <img src="{{ .Params.thumbnail }}" alt="Test" />
   <header>
     <h2 class="h3" itemprop="headline">
       <a href="{{ .Permalink }}">
         {{ .Title }}
       </a>
     </h2>
-
-    {{ if .Params.fictionalDate }}
-      <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-        {{ .Params.fictionalDate }}
-      </time>
-    {{ end }}
-
+    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+      {{ .PublishDate.Format "2006-01-02 400 EDT" }}
+    </time>
   </header>
+  <p>{{ .Params.description }}</p>
 
-  {{ if .Params.description }}
-    <p>{{ .Params.description }}</p>
-  {{ end }}
-
-  {{ partial "seo/publisher-hidden.html" . }}
+  {{ partial "seo/publisher-hidden" . }}
 
 </article>
