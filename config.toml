@@ -18,19 +18,7 @@ paginatePath = "posts"
 [menu]
 
   [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
-    identifier = "world"
-    name = "World"
-    url = "/categories/world/"
-    weight = 2
-
-  [[menu.tags]]
     identifier = "asia"
-    name = "asia"
+    name = "Asia"
     url = "/tags/asia/"
     weight = 1
