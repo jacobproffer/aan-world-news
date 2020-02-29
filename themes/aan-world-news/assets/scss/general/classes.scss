@@ -32,3 +32,11 @@
   clip: rec(0, 0, 0, 0);
   pointer-events: none;
 }
+
+.red {
+  color: var(--red);
+}
+
+.article-link {
+  display: block;
+}

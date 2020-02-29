@@ -1,22 +1,22 @@
 <article class="list__article list__article--featured">
+  <a class="article-link" href="{{ .Permalink }}">
 
-  {{ if isset .Params "thumbnail" }}
-    <img src="{{ .Params.thumbnail }}" alt="Test" />
-  {{ end }}
+    {{ if isset .Params "thumbnail" }}
+      <img src="{{ .Params.thumbnail }}" alt="Test" />
+    {{ end }}
 
-  <header>
-    <h2 class="h3">
-      <a href="{{ .Permalink }}">
+    <header>
+      <h2 class="h3 red">
         {{ .Title }}
-      </a>
-    </h2>
-    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-      {{ .PublishDate.Format "2006-01-02 400 EDT" }}
-    </time>
-  </header>
+      </h2>
+      <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+        {{ .PublishDate.Format "2006-01-02 400 EDT" }}
+      </time>
+    </header>
 
-  {{ if isset .Params "description" }}
-    <p>{{ .Params.description }}</p>
-  {{ end }}
+    {{ if isset .Params "description" }}
+      <p>{{ .Params.description }}</p>
+    {{ end }}
 
+  </a>
 </article>
