@@ -1,14 +1,15 @@
 ---
 title: "Blackwater in Cambodia"
 description: "Blackwater, a private military company, has been operating in Cambodia within the area of Prei Khmaoch Luong."
-author: "Katherine Bishop"
-profiles: ["Katherine Bishop"]
-profileURL: /profiles/katherine-bishop
+author: "Jacob Proffer"
+profiles: ["Jacob Proffer"]
+profileURL: /profiles/jacob-proffer
 category: ["World"]
 tags: ["Asia"]
 date: 2020-02-28T23:16:41-05:00
 asidePhoto: /images/prei-khmaoch-luong.jpg
-asideText: "Prei Khmaoch Luong, Cambodia"
+asideAltText: "A muddy road in Prei Khmaoch Luong, Cambodia."
+asideText: "Prei Khmaoch Luong, Cambodia."
 images: ["/images/blackwater-contractor.jpg"]
 thumbnail: /images/blackwater-contractor.jpg
 featured: true

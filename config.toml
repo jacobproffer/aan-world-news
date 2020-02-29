@@ -21,3 +21,15 @@ enableRobotsTXT = true
     name = "Asia"
     url = "/tags/asia/"
     weight = 1
+
+  [[menu.internal]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.internal]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 2

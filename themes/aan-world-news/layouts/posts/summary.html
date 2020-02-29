@@ -1,19 +1,21 @@
 <article class="list__article">
-  <header>
-    <h2 class="h3">
-      <a href="{{ .Permalink }}">
+  <a class="article-link" href="{{ .Permalink }}">
+
+    <header>
+
+      <h2 class="h3 red">
         {{ .Title }}
-      </a>
-    </h2>
+      </h2>
 
-    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-      {{ .PublishDate.Format "2006-01-02 400 EDT" }}
-    </time>
+      <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+        {{ .PublishDate.Format "2006-01-02 400 EDT" }}
+      </time>
 
-  </header>
+    </header>
 
-  {{ if isset .Params "description" }}
-    <p>{{ .Params.description }}</p>
-  {{ end }}
+    {{ if .Params.description }}
+      <p>{{ .Params.description }}</p>
+    {{ end }}
 
+  </a>
 </article>

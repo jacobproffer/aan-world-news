@@ -1,27 +1,23 @@
 # AAN World News Hugo Theme
 
-Hugo handles Sass and JavaScript compiling and minification.
+This repository contains the content and theme for the fictional news agency AAN News, which is featured throughout the various Arma games.
 
-## Commands
-
-There are a variety of commands specific to Hugo. Below are the most common.
-
-### Compile public folder
+## Compile public folder
 
 `hugo`
 
-### Compile public folder with minification
+## Compile public folder with minification
 
 `hugo --minify`
 
-### Run Hugo server
+## Run Hugo server
 
 `hugo server`
 
-### Run Hugo server with drafts
+## Run Hugo server with drafts
 
 `hugo server -D`
 
-#### Note
+### Note
 
 This repository uses Netlify.

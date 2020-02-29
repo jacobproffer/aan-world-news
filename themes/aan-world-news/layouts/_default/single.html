@@ -5,27 +5,33 @@
     <div class="post__container grid">
 
       <aside class="post__aside">
-        {{ if .Params.asideText }}
+
+        {{ if .Params.asidePhoto }}
           <figure>
-            <img src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideText }}" />
-            <figcaption>
-              <p>{{ .Params.asideText }}</p>
-            </figcaption>
+            <img src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideAltText }}" />
+
+            {{ if .Params.asideText }}
+              <figcaption>
+                <p>{{ .Params.asideText }}</p>
+              </figcaption>
+            {{ end }}
+
           </figure>
         {{ end }}
+
       </aside>
 
       <article class="content">
 
         <header class="post__header padding">
 
-          {{ if isset .Params "title" }}
+          {{ if .Params.title }}
             <h1>{{ .Title }}</h1>
           {{ end }}
 
-          {{ if isset .Params "author" }}
+          {{ if .Params.author }}
             <span class="post__author h4">
-              by <a href="{{ .Params.profileURL }}">{{ .Params.author }}</a>
+              by <a class="red" href="{{ .Params.profileURL }}">{{ .Params.author }}</a>
             </span>
           {{ end }}
 
@@ -35,7 +41,7 @@
 
         </header>
 
-        {{ if isset .Params "description" }}
+        {{ if .Params.description }}
           <p class="post__description h4 padding">{{ .Params.description }}</p>
         {{ end }}
 
@@ -45,7 +51,7 @@
 
           {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
             <footer class="post__footer grid">
-              <img src="{{ .Params.photo }}" alt="Portrait of {{ .Params.name }}" />
+              <img src="{{ .Params.photo }}" alt="" />
               <p>{{ .Params.bio }}</p>
             </footer>
           {{ end }}

@@ -90,7 +90,7 @@ ul {
 }
 
 a {
-  color: var(--red);
+  color: inherit;
   text-decoration: none;
   transition: color 300ms ease-in-out, outline 300ms ease-in-out, text-decoration 300ms ease-in-out;
 

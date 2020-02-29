@@ -1,4 +1,5 @@
 {{ define "main" }}
+
   <section class="list gray-background">
     <div class="container container--wide container--white">
 
@@ -8,31 +9,13 @@
 
       <div class="grid grid--four-column list__grid">
 
-        {{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") }}
-
-        {{ range $index, $page := $paginator.Pages }}
+        {{ range .Pages }}
 
           {{ .Render "summary" }}
 
         {{ end }}
 
       </div>
-
-      {{ if gt $paginator.TotalPages 1 }}
-
-        <div class="pagination pagination--numbers">
-          <ul class="pagination__numbers">
-            {{ range $paginator.Pagers }}
-              <li>
-                <a class="pagination__number{{ if eq . $paginator }} pagination__number--current{{ end }}" href="{{ .URL }}">
-                  {{ .PageNumber }}
-                </a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-
-      {{ end }}
 
     </div>
   </section>
