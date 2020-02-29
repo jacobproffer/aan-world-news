@@ -1,0 +1,44 @@
+.form {
+  grid-gap: 20px;
+  max-width: 80ch;
+  padding-bottom: 34px;
+  margin: 20px auto auto;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--gray);
+    border: 0;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__message {
+    grid-column: span 2;
+  }
+
+  .button {
+    width: 175px;
+    padding: 10px 20px;
+    color: var(--white);
+    background-color: var(--red);
+    cursor: pointer;
+    appearance: none;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+
+    &:hover {
+      color: var(--black);
+      background-color: var(--gray);
+    }
+  }
+}
