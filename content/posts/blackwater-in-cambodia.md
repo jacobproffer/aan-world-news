@@ -8,8 +8,8 @@ category: ["World"]
 tags: ["Asia"]
 date: 2020-02-28T23:16:41-05:00
 asidePhoto: /images/prei-khmaoch-luong.jpg
-asideAltText: "A muddy road within Prei Khmaoch Luong, Cambodia."
-asideText: "Prei Khmaoch Luong, Cambodia"
+asideAltText: "A muddy road in Prei Khmaoch Luong, Cambodia."
+asideText: "Prei Khmaoch Luong, Cambodia."
 images: ["/images/blackwater-contractor.jpg"]
 thumbnail: /images/blackwater-contractor.jpg
 featured: true

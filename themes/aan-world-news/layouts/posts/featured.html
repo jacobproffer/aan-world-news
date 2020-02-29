@@ -1,7 +1,7 @@
 <article class="list__article list__article--featured">
   <a class="article-link" href="{{ .Permalink }}">
 
-    {{ if isset .Params "thumbnail" }}
+    {{ if .Params.thumbnail }}
       <img src="{{ .Params.thumbnail }}" alt="Test" />
     {{ end }}
 
@@ -14,7 +14,7 @@
       </time>
     </header>
 
-    {{ if isset .Params "description" }}
+    {{ if .Params.description }}
       <p>{{ .Params.description }}</p>
     {{ end }}
 
