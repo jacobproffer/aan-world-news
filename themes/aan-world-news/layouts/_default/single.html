@@ -5,14 +5,20 @@
     <div class="post__container grid">
 
       <aside class="post__aside">
-        {{ if .Params.asideText }}
+
+        {{ if isset .Params "asidePhoto" }}
           <figure>
             <img src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideText }}" />
-            <figcaption>
-              <p>{{ .Params.asideText }}</p>
-            </figcaption>
+
+            {{ if isset .Params "asideText" }}
+              <figcaption>
+                <p>{{ .Params.asideText }}</p>
+              </figcaption>
+            {{ end }}
+
           </figure>
         {{ end }}
+
       </aside>
 
       <article class="content">
@@ -45,7 +51,7 @@
 
           {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
             <footer class="post__footer grid">
-              <img src="{{ .Params.photo }}" alt="Portrait of {{ .Params.name }}" />
+              <img src="{{ .Params.photo }}" alt="" />
               <p>{{ .Params.bio }}</p>
             </footer>
           {{ end }}
