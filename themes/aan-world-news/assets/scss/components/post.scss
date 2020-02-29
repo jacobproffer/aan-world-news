@@ -24,8 +24,14 @@
   }
 
   &__aside {
+    position: relative;
+    margin-top: 178px;
     margin-left: 10px;
-    align-self: center;
+
+    figure {
+      position: sticky;
+      top: 178px;
+    }
 
     @include screen-between($tablet, $laptop) {
       margin-left: 8px;
