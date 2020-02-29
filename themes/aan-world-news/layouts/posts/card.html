@@ -1,13 +1,7 @@
-<article class="article-card" itemscope itemtype="https://schema.org/NewsArticle">
-
-  <meta itemprop="wordCount" content="{{ .WordCount }}" />
-  <meta itemprop="image" content="{{ .Params.thumbnail }}" />
-  <meta itemprop="author" content="{{ .Params.author }}" />
-  <meta itemprop="datePublished" content="{{ .PublishDate }}" />
-  <meta itemprop="dateModified" content="{{ .Params.lastmod }}" />
+<article class="article-card">
 
   <header>
-    <h3 itemprop="headline">
+    <h3>
       <a href="{{ .Permalink }}">
         {{ .Title }}
       </a>
@@ -18,7 +12,5 @@
     </time>
 
   </header>
-
-  {{ partial "seo/publisher-hidden.html" . }}
 
 </article>

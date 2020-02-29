@@ -1,14 +1,7 @@
-<article class="list__article list__article--featured" itemscope itemtype="https://schema.org/NewsArticle">
-
-  <meta itemprop="wordCount" content="{{ .WordCount }}" />
-  <meta itemprop="image" content="{{ .Params.thumbnail }}" />
-  <meta itemprop="author" content="{{ .Params.author }}" />
-  <meta itemprop="datePublished" content="{{ .PublishDate }}" />
-  <meta itemprop="dateModified" content="{{ .Params.lastmod }}" />
-
+<article class="list__article list__article--featured">
   <img src="{{ .Params.thumbnail }}" alt="Test" />
   <header>
-    <h2 class="h3" itemprop="headline">
+    <h2 class="h3">
       <a href="{{ .Permalink }}">
         {{ .Title }}
       </a>
@@ -18,7 +11,4 @@
     </time>
   </header>
   <p>{{ .Params.description }}</p>
-
-  {{ partial "seo/publisher-hidden" . }}
-
 </article>

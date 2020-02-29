@@ -15,26 +15,17 @@
         {{ end }}
       </aside>
 
-      <article class="content" itemscope itemtype="https://schema.org/NewsArticle">
-
-        <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" />
-        <meta itemprop="wordCount" content="{{ .WordCount }}" />
-        <meta itemprop="datePublished" content="{{ .PublishDate }}" />
-        <meta itemprop="dateModified" content="{{ .Params.lastmod }}" />
-
-        {{ if isset .Params "thumbnail" }}
-          <meta itemprop="image" content="{{ .Params.thumbnail }}" />
-        {{ end }}
+      <article class="content">
 
         <header class="post__header padding">
 
           {{ if isset .Params "title" }}
-            <h1 itemprop="headline">{{ .Title }}</h1>
+            <h1>{{ .Title }}</h1>
           {{ end }}
 
           {{ if isset .Params "author" }}
-            <span class="post__author h4" itemprop="author" itemscope itemtype="https://schema.org/Person">
-              by <a href="{{ .Params.profileURL }}"><span itemprop="name">{{ .Params.author }}</span></a>
+            <span class="post__author h4">
+              by <a href="{{ .Params.profileURL }}">{{ .Params.author }}</a>
             </span>
           {{ end }}
 
@@ -45,24 +36,15 @@
         </header>
 
         {{ if isset .Params "description" }}
-          <p class="post__description h4 padding" itemprop="description">{{ .Params.description }}</p>
+          <p class="post__description h4 padding">{{ .Params.description }}</p>
         {{ end }}
 
-        <div itemprop="articleBody">
-          {{ .Content }}
-        </div>
+        {{ .Content }}
 
         {{ range .Params.profiles }}
 
           {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
-            <footer class="post__footer grid" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-              <meta itemprop="name" content="{{ .Site.Title }}" />
-              <div class="visually-hide" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                <img src="{{ .Site.Params.logo }}" alt="AAN World News logo." />
-                <meta itemprop="url" content="{{ .Site.Params.logo }}" />
-                <meta itemprop="width" content="386" />
-                <meta itemprop="height" content="104" />
-              </div>
+            <footer class="post__footer grid">
               <img src="{{ .Params.photo }}" alt="Portrait of {{ .Params.name }}" />
               <p>{{ .Params.bio }}</p>
             </footer>
@@ -97,5 +79,7 @@
     </div>
   </div>
 </div>
+
+{{ partial "seo/single-schema.html" . }}
 
 {{- end }}

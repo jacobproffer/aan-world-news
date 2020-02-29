@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<article class="profile gray-background" itemscope itemtype="https://schema.org/Person">
+<article class="profile gray-background">
   <div class="container container--wide container--white">
     <div class="container container--small">
 
@@ -8,13 +8,13 @@
         <header class="profile__header">
 
           {{ if .Params.name }}
-            <h1 itemprop="name">
+            <h1>
               {{ .Params.name }}
             </h1>
           {{ end }}
 
           {{ if .Params.title }}
-            <span class="h4" itemprop="jobTitle">
+            <span class="h4">
               {{ .Params.title }}
             </span>
           {{ end }}
@@ -23,7 +23,7 @@
       {{ end }}
 
       {{ if .Params.bio }}
-        <p itemprop="description">{{ .Params.bio }}</p>
+        <p>{{ .Params.bio }}</p>
       {{ end }}
 
       <hr />
@@ -45,5 +45,7 @@
     </div>
   </div>
 </article>
+
+{{ partial "seo/person-schema.html" . }}
 
 {{ end }}

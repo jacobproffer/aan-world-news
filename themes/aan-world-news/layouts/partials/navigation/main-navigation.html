@@ -1,6 +1,8 @@
 <nav class="navigation navigation--primary" aria-label="primary-navigation">
   <ul>
+
     {{ $currentPage := . }}
+
     {{ range .Site.Menus.main }}
 
       {{ if .URL }}
@@ -14,17 +16,9 @@
             {{ .Name }}
           </a>
         </li>
-      {{ else }}
-        <li class="inline-link">
-          <a
-            class="disabled"
-            aria-hidden="true"
-            >
-              {{ .Name }}
-            </a>
-        </li>
       {{ end }}
 
     {{ end }}
+
   </ul>
 </nav>

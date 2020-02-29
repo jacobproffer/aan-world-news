@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "@id": "{{ .Permalink }}",
+    "headline": "{{ .Title }}",
+    "description": "{{ .Params.description }}",
+    "wordCount": "{{ .WordCount }}",
+    "datePublished": "{{ .PublishDate }}",
+    "dateModified": "{{ .Params.lastmod }}",
+    "image": "{{ .Params.thumbnail }}",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "{{ .Params.author }}"
+      }
+    ],
+    "publisher": [
+      {
+        "@type": "Organization",
+        "name": "AAN News",
+        "logo": [
+          {
+            "@type": "ImageObject",
+            "url": "{{ .Site.Params.logo }}",
+            "width": "386",
+            "height": "104"
+          }
+        ]
+      }
+    ],
+    "mainEntityOfPage": {
+      "@id": "{{ .Permalink }}"
+    },
+    "name": "AAN News Organization"
+  }
+</script>

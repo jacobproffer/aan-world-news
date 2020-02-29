@@ -29,20 +29,8 @@ paginatePath = "posts"
     url = "/categories/world/"
     weight = 2
 
-  [[menu.main]]
-    identifier = "travel"
-    name = "Travel"
-    url = "/categories/travel/"
-    weight = 3
-
   [[menu.tags]]
-    identifier = "europe"
-    name = "europe"
-    url = "/tags/europe/"
+    identifier = "asia"
+    name = "asia"
+    url = "/tags/asia/"
     weight = 1
-
-  [[menu.tags]]
-    identifier = "oceania"
-    Name = "oceania"
-    url = "/tags/oceania/"
-    weight = 2
