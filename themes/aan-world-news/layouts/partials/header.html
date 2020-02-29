@@ -15,14 +15,11 @@
           </li>
         </ul>
       </div>
+
       {{ if .Site.Menus.main }}
         {{ partial "navigation/main-navigation" . }}
       {{ end }}
-    </div>
-  </div>
-  <div class="site-header__bottom">
-    <div class="container container--wide">
-      {{ partial "navigation/tags.html" . }}
+
     </div>
   </div>
 </header>
