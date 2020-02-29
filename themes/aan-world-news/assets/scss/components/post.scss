@@ -25,12 +25,21 @@
 
   &__aside {
     position: relative;
-    margin-top: 178px;
+    margin-top: 193px;
     margin-left: 10px;
 
     figure {
+      position: -webkit-sticky;
       position: sticky;
-      top: 178px;
+      top: 193px;
+
+      @include screen-below($laptop) {
+        top: 178px;
+      }
+    }
+
+    @include screen-below($laptop) {
+      margin-top: 178px;
     }
 
     @include screen-between($tablet, $laptop) {
