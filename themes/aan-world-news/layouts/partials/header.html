@@ -3,17 +3,15 @@
     <div class="container container--wide">
       <a class="site-header__skip-to-content" href="#content">Skip to Main Content</a>
       <div class="grid grid--two-column site-header__grid">
+
         <a class="site-header__site-logo" href="{{ .Site.BaseURL }}">
           {{ partial "svg/logo.html" }}
         </a>
-        <ul class="site-header__user-links">
-          <li>
-            <a class="disabled" aria-hidden="true">Search</a>
-          </li>
-          <li>
-            <a class="disabled" aria-hidden="true">Sign In</a>
-          </li>
-        </ul>
+
+        {{ if .Site.Menus.internal }}
+          {{ partial "navigation/internal-navigation.html" . }}
+        {{ end }}
+
       </div>
 
       {{ if .Site.Menus.main }}

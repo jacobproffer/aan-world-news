@@ -7,13 +7,13 @@
       {{ if or .Params.name .Params.title }}
         <header class="profile__header">
 
-          {{ if .Params.name }}
+          {{ if isset .Params "name" }}
             <h1>
               {{ .Params.name }}
             </h1>
           {{ end }}
 
-          {{ if .Params.title }}
+          {{ if isset .Params "title" }}
             <span class="h4">
               {{ .Params.title }}
             </span>
@@ -22,7 +22,7 @@
         </header>
       {{ end }}
 
-      {{ if .Params.bio }}
+      {{ if isset .Params "bio" }}
         <p>{{ .Params.bio }}</p>
       {{ end }}
 
@@ -30,7 +30,7 @@
 
       <section class="profile__articles">
 
-        {{ if .Params.name }}
+        {{ if isset .Params "name" }}
           <header>
             <h2>Articles by {{ .Params.name }}</h2>
           </header>

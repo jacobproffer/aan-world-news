@@ -1,5 +1,9 @@
 <article class="list__article list__article--featured">
-  <img src="{{ .Params.thumbnail }}" alt="Test" />
+
+  {{ if isset .Params "thumbnail" }}
+    <img src="{{ .Params.thumbnail }}" alt="Test" />
+  {{ end }}
+
   <header>
     <h2 class="h3">
       <a href="{{ .Permalink }}">
@@ -10,5 +14,9 @@
       {{ .PublishDate.Format "2006-01-02 400 EDT" }}
     </time>
   </header>
-  <p>{{ .Params.description }}</p>
+
+  {{ if isset .Params "description" }}
+    <p>{{ .Params.description }}</p>
+  {{ end }}
+
 </article>
