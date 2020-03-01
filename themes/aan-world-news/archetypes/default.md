@@ -7,9 +7,9 @@ profileURL: /profiles/jacob-proffer
 category: ["World"]
 tags: ["Asia"]
 date: {{ .Date }}
-asidePhoto:
-asideAltText:
-asideText:
+asidePhoto: /images/placeholder.png
+asideAltText: "Alternative text."
+asideText: "Aside text."
 images: ["/images/placeholder.png"]
 thumbnail: /images/placeholder.png
 draft: true
