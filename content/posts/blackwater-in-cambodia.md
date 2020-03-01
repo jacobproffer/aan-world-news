@@ -21,8 +21,8 @@ Some 200 contractors, working for Blackwater, have been operating throughout the
 
 Allegations have recently spread of a failed operation conducted by the private military company, which claimed the lives of 7 Cambodian soldiers. Although there is no current proof, the operation is suspected to be a show of force against the Royal Cambodian Navy after two IDAP employees were killed by Cambodian forces when delivering supplies to the local populace. Blackwater continues to deny any involvement.
 
-Cambodian officials say that Blackwater has caused trouble since their arrival and that they continue to be a threat to security.
-
 Blackwater president, Poda Makarovich said: "We are strictly in Cambodia for IDAP security only. Combat operations would be counterproductive and against our contract."
+
+Cambodian officials say that Blackwater has caused trouble since their arrival and that they continue to be a threat to security.
 
 The investigation is ongoing.
