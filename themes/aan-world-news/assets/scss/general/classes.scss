@@ -11,14 +11,6 @@
 
 .inline-link {
   display: inline-block;
-
-  &:not(:last-of-type) {
-    margin-right: 30px;
-
-    @include screen-below($mobile) {
-      margin-right: 15px;
-    }
-  }
 }
 
 .gray-background {

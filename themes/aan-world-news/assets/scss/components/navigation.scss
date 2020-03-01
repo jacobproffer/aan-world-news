@@ -1,10 +1,16 @@
 .navigation {
-  padding: 8px 10px;
 
   &--primary {
     background-color: var(--medium-red);
 
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     a {
+      display: block;
+      padding: 8px 10px;
       color: var(--white);
       text-transform: lowercase;
     }
