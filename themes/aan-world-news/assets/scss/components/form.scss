@@ -18,6 +18,10 @@
     font-size: 1rem;
   }
 
+  textarea {
+    font-family: inherit;
+  }
+
   label {
     display: block;
     margin-bottom: 10px;
@@ -25,20 +29,5 @@
 
   &__message {
     grid-column: span 2;
-  }
-
-  .button {
-    width: 175px;
-    padding: 10px 20px;
-    color: var(--white);
-    background-color: var(--red);
-    cursor: pointer;
-    appearance: none;
-    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
-
-    &:hover {
-      color: var(--black);
-      background-color: var(--gray);
-    }
   }
 }

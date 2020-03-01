@@ -6,7 +6,7 @@
     {{ range .Site.Menus.main }}
 
       {{ if .URL }}
-        <li class="inline-link">
+        <li>
           <a
             {{ if $currentPage.IsMenuCurrent "main" . }}
               aria-current="page"

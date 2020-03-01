@@ -8,6 +8,7 @@
     position: fixed;
     top: -2.5em;
     left: 50%;
+    padding: 10px;
     color: var(--white);
     background-color: var(--dark-red);
     transform: translateX(-50%);
@@ -33,22 +34,10 @@
   }
 
   &__user-links {
-    padding-right: 10px;
     text-align: right;
 
-    li {
-      display: inline-block;
-
-      &:not(:last-of-type) {
-        margin-right: 20px;
-
-        @include screen-below($mobile) {
-          margin-right: 10px;
-        }
-      }
-    }
-
     a {
+      padding: 10px;
       color: var(--white);
     }
   }

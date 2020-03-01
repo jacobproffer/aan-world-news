@@ -1,0 +1,14 @@
+.button {
+  width: 175px;
+  padding: 10px 20px;
+  color: var(--white);
+  background-color: var(--red);
+  border: 0;
+  cursor: pointer;
+  appearance: none;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+
+  &:hover {
+    background-color: var(--dark-red);
+  }
+}

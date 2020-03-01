@@ -2,15 +2,9 @@
   <a class="article-link" href="{{ .Permalink }}">
 
     <header>
-
       <h2 class="h3 red">
         {{ .Title }}
       </h2>
-
-      <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-        {{ .PublishDate.Format "2006-01-02 400 EDT" }}
-      </time>
-
     </header>
 
     {{ if .Params.description }}
