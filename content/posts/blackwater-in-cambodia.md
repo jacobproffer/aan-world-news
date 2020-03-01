@@ -10,12 +10,12 @@ date: 2020-02-28T23:16:41-05:00
 asidePhoto: /images/prei-khmaoch-luong.jpg
 asideAltText: "A muddy road in Prei Khmaoch Luong, Cambodia."
 asideText: "Prei Khmaoch Luong, Cambodia."
-images: ["/images/blackwater-contractor.jpg"]
-thumbnail: /images/blackwater-contractor.jpg
+images: ["/images/blackwater-contractors.jpg"]
+thumbnail: /images/blackwater-contractors.jpg
 featured: true
 ---
 
-{{< figure src="/images/blackwater-contractor.jpg" alt="Blackwater contractor guarding two men near a truck." caption="Blackwater contractor on guard in Prei Khmaoch Luong. (AAN World News)" >}}
+{{< figure src="/images/blackwater-contractors.jpg" alt="Blackwater contractors guarding two men near a truck." caption="Blackwater contractors on guard in Prei Khmaoch Luong. (AAN World News)" >}}
 
 Some 200 contractors, working for Blackwater, have been operating throughout the province of Prei Khmaoch Luong since August, six months since their initial arrival in Cambodia.
 
