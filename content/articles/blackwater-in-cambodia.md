@@ -12,6 +12,7 @@ asideAltText: "A muddy road in Prei Khmaoch Luong, Cambodia."
 asideText: "Prei Khmaoch Luong, Cambodia."
 images: ["/images/blackwater-contractors.jpg"]
 thumbnail: /images/blackwater-contractors.jpg
+aliases: ["/posts/blackwater-in-cambodia/"]
 featured: true
 ---
 
