@@ -7,6 +7,7 @@ enableRobotsTXT = true
 [params]
   description = "AAN is a privately-owned, independent news broadcaster that provides global coverage of worldwide events and conflicts."
   subTitle = "Our World, Your News"
+  images = ["/images/aan-social.jpg"]
   logo = "/images/aan-world-news-logo.png"
 
 [taxonomies]
