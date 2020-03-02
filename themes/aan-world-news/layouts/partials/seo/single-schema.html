@@ -5,6 +5,7 @@
     "@id": "{{ .Permalink }}",
     "headline": "{{ .Title }}",
     "description": "{{ .Params.description }}",
+    "articleBody": "{{ htmlUnescape .Content | plainify }}",
     "wordCount": "{{ .WordCount }}",
     "datePublished": "{{ .PublishDate }}",
     "dateModified": "{{ .Params.lastmod }}",
