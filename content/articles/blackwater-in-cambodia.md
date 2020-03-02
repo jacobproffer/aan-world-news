@@ -13,6 +13,7 @@ asideText: "Prei Khmaoch Luong, Cambodia."
 images: ["/images/blackwater-contractors.jpg"]
 thumbnail: /images/blackwater-contractors.jpg
 featured: true
+weight: 1
 ---
 
 {{< figure src="/images/blackwater-contractors.jpg" alt="Blackwater contractors guarding two men near a truck." caption="Blackwater contractors on guard in Prei Khmaoch Luong. (AAN World News)" >}}

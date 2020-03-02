@@ -23,6 +23,12 @@ enableRobotsTXT = true
     url = "/tags/asia/"
     weight = 1
 
+  [[menu.main]]
+    identifier = "oceania"
+    name = "Oceania"
+    url = "/tags/oceania/"
+    weight = 2
+
   [[menu.internal]]
     identifier = "about"
     name = "About"
