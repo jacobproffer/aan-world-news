@@ -36,6 +36,10 @@
   &__user-links {
     text-align: right;
 
+    li {
+      line-height: 1;
+    }
+
     a {
       padding: 10px;
       color: var(--white);

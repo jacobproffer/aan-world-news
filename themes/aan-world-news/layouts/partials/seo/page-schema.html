@@ -1,14 +1,11 @@
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "mainEntityOfPage": {{ .Permalink }},
-    "name": {{ .Params.name }},
-    "additionalName": {{ .Params.additionalName }},
-    "jobTitle": {{ .Params.title }},
-    "description": {{ .Params.bio }},
-    "award": {{ .Params.award }},
-    "worksFor": [
+    "@type": "WebPage",
+    "name": {{ .Title }},
+    "description": {{ .Description }},
+    "lastReviewed": {{ .Params.lastmod }},
+    "publisher": [
       {
         "@type": "Organization",
         "name": "AAN News",

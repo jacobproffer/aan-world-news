@@ -83,10 +83,10 @@ figcaption {
 
 ul {
   padding: 0;
-  margin: 0;
+  list-style-position: inside;
 
   li {
-    list-style: none;
+    line-height: 2;
   }
 }
 

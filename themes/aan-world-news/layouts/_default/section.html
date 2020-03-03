@@ -1,14 +1,21 @@
 {{ define "main" }}
 
-<section class="about gray-background">
+{{ template "_internal/schema.html" . }}
+
+<section class="gray-background">
   <div class="container container--wide container--white">
-    <div class="container container--small bottom-spacing">
+    <div class="container container--small page-spacing">
+
       <header>
         <h1>{{ .Title }}</h1>
       </header>
+
       {{ .Content }}
+
     </div>
   </div>
 </section>
+
+{{ partial "seo/page-schema.html" . }}
 
 {{ end }}

@@ -2,20 +2,7 @@
   {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
-    "headline": {{ .Title }},
-    "mainEntityOfPage": {{ .Permalink }},
-    "description": {{ .Params.description }},
-    "articleBody": {{ htmlUnescape .Plain | plainify }},
-    "wordCount": {{ .WordCount }},
-    "datePublished": {{ .PublishDate }},
-    "dateModified": {{ .Params.lastmod }},
-    "image": {{ .Params.thumbnail }},
-    "author": [
-      {
-        "@type": "Person",
-        "name": {{ .Params.author }}
-      }
-    ],
+    "url": {{ .Permalink }},
     "publisher": [
       {
         "@type": "Organization",
@@ -28,6 +15,20 @@
             "height": "104"
           }
         ]
+      }
+    ],
+    "headline": {{ .Title }},
+    "mainEntityOfPage": {{ .Permalink }},
+    "articleBody": {{ htmlUnescape .Plain | plainify }},
+    "image": {{ .Params.thumbnail }},
+    "description": {{ .Params.description }},
+    "wordCount": {{ .WordCount }},
+    "datePublished": {{ .PublishDate }},
+    "dateModified": {{ .Params.lastmod }},
+    "author": [
+      {
+        "@type": "Person",
+        "name": {{ .Params.author }}
       }
     ]
   }
