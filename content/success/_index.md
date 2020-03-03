@@ -1,6 +1,6 @@
 ---
 title: "Thank You"
-description: "Post description"
+description: "AAN is a privately-owned, independent news broadcaster that provides global coverage of worldwide events and conflicts."
 date: 2020-03-01T10:11:16-05:00
 images: ["/images/aan-social.jpg"]
 ---

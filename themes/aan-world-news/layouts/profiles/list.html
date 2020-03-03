@@ -1,8 +1,8 @@
 {{ define "main" }}
 
-<article class="profile gray-background">
+<article class="gray-background">
   <div class="container container--wide container--white">
-    <div class="container container--small">
+    <div class="container container--small page-spacing">
 
       {{ if or .Params.name .Params.title }}
         <header class="profile__header">
@@ -28,7 +28,7 @@
 
       <hr />
 
-      <section class="profile__articles">
+      <section>
 
         {{ if .Params.name }}
           <header>

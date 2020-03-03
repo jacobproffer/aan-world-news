@@ -1,15 +1,14 @@
 .form {
   grid-gap: 20px;
   max-width: 80ch;
-  padding-bottom: 34px;
   margin: 20px auto auto;
 
   input,
   textarea {
     width: 100%;
     padding: 10px;
-    background-color: var(--gray);
-    border: 0;
+    background-color: transparent;
+    border: 1px solid var(--border);
   }
 
   input,
