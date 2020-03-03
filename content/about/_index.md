@@ -9,6 +9,20 @@ AAN is a privately-owned, independent news broadcaster that has provided global 
 
 ## Staff
 
-- **Editor in Chief** - Tamie Michaud
-- **Senior Managing Editor** - Myles Kedrowski
-- **Specialist Correspondent** - [Jacob Proffer](/profiles/jacob-proffer/)
+- **Editor in Chief** - Jacob Proffer
+- **Senior Managing Editor** - Jacob Proffer
+- **Specialist Correspondent** - Jacob Proffer
+
+## Frequently Asked Questions
+
+### Is this a real news organization?
+
+No, AAN is a fictional news organization created by [Bohemia Interactive](https://www.bohemia.net/) for the computer game [Arma](https://arma3.com/).
+
+### Can I submit an article?
+
+Arma related article submissions are welcomed but require at least one related photo.
+
+### How is this site built?
+
+The AAN website is a custom built [Hugo](https://gohugo.io/) theme built by [Jacob Proffer](https://proffer.dev/) that is running on [Netlify](https://www.netlify.com/). The [AAN News Hugo theme](https://github.com/jacobproffer/aan-world-news) is open source.
