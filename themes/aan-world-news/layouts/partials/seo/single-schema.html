@@ -2,18 +2,18 @@
   {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
-    "@id": "{{ .Permalink }}",
-    "headline": "{{ .Title }}",
-    "description": "{{ .Params.description }}",
-    "articleBody": "{{ htmlUnescape .Content | plainify }}",
-    "wordCount": "{{ .WordCount }}",
-    "datePublished": "{{ .PublishDate }}",
-    "dateModified": "{{ .Params.lastmod }}",
-    "image": "{{ .Params.thumbnail }}",
+    "headline": {{ .Title }},
+    "mainEntityOfPage": {{ .Permalink }},
+    "description": {{ .Params.description }},
+    "articleBody": {{ htmlUnescape .Plain | plainify }},
+    "wordCount": {{ .WordCount }},
+    "datePublished": {{ .PublishDate }},
+    "dateModified": {{ .Params.lastmod }},
+    "image": {{ .Params.thumbnail }},
     "author": [
       {
         "@type": "Person",
-        "name": "{{ .Params.author }}"
+        "name": {{ .Params.author }}
       }
     ],
     "publisher": [
@@ -23,16 +23,12 @@
         "logo": [
           {
             "@type": "ImageObject",
-            "url": "{{ .Site.Params.logo }}",
+            "url": {{ .Site.Params.logo }},
             "width": "386",
             "height": "104"
           }
         ]
       }
-    ],
-    "mainEntityOfPage": {
-      "@id": "{{ .Permalink }}"
-    },
-    "name": "AAN News Organization"
+    ]
   }
 </script>
