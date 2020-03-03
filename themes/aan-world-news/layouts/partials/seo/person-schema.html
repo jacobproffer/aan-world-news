@@ -2,8 +2,25 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "{{ .Params.name }}",
-    "description": "{{ .Params.bio }}",
-    "jobTitle": "{{ .Params.title }}"
+    "mainEntityOfPage": {{ .Permalink }},
+    "name": {{ .Params.name }},
+    "additionalName": {{ .Params.additionalName }},
+    "jobTitle": {{ .Params.title }},
+    "description": {{ .Params.bio }},
+    "award": {{ .Params.award }},
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "AAN News",
+        "logo": [
+          {
+            "@type": "ImageObject",
+            "url": {{ .Site.Params.logo }},
+            "width": "386",
+            "height": "104"
+          }
+        ]
+      }
+    ]
   }
 </script>
