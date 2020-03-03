@@ -1,0 +1,22 @@
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": {{ .Title }},
+    "description": {{ .Description }},
+    "publisher": [
+      {
+        "@type": "Organization",
+        "name": "AAN News",
+        "logo": [
+          {
+            "@type": "ImageObject",
+            "url": {{ .Site.Params.logo }},
+            "width": "386",
+            "height": "104"
+          }
+        ]
+      }
+    ]
+  }
+</script>

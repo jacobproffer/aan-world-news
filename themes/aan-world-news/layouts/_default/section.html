@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+{{ template "_internal/schema.html" . }}
+
 <section class="gray-background">
   <div class="container container--wide container--white">
     <div class="container container--small page-spacing">
@@ -13,5 +15,7 @@
     </div>
   </div>
 </section>
+
+{{ partial "seo/page-schema.html" . }}
 
 {{ end }}
