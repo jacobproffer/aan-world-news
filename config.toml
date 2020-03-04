@@ -24,10 +24,16 @@ enableRobotsTXT = true
     weight = 1
 
   [[menu.main]]
+    identifier = "middle-east"
+    name = "Middle East"
+    url = "/tags/middle-east/"
+    weight = 2
+
+  [[menu.main]]
     identifier = "oceania"
     name = "Oceania"
     url = "/tags/oceania/"
-    weight = 2
+    weight = 3
 
   [[menu.internal]]
     identifier = "about"
