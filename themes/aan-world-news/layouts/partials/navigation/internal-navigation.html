@@ -8,6 +8,7 @@
       {{ if .URL }}
         <li class="inline-link">
           <a
+            class="no-underline"
             {{ if $currentPage.IsMenuCurrent "internal" . }}
               aria-current="page"
             {{ end }}

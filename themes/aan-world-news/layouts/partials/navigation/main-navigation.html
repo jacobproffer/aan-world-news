@@ -8,6 +8,7 @@
       {{ if .URL }}
         <li>
           <a
+            class="no-underline"
             {{ if $currentPage.IsMenuCurrent "main" . }}
               aria-current="page"
             {{ end }}
