@@ -6,7 +6,7 @@
 
   &__skip-to-content {
     position: fixed;
-    top: -3em;
+    top: -5em;
     left: 50%;
     padding: 16px 24px;
     color: var(--white);
@@ -24,12 +24,20 @@
   }
 
   &__site-logo {
-    height: 52px;
+    @include size(auto, 52px);
     margin-left: 10px;
     justify-self: start;
 
     svg {
-      height: 52px;
+      @include size(auto, 52px);
+
+      @include screen-below($mobile) {
+        @include size(auto, 39px);
+      }
+    }
+
+    @include screen-below($mobile) {
+      @include size(auto, 39px);
     }
   }
 
