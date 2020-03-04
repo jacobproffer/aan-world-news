@@ -13,7 +13,11 @@
 
   {{ template "_internal/twitter_cards.html" . }}
 
-  <link rel="canonical" href="{{ .Site.BaseURL }}"/>
+  {{ if .IsHome }}
+    <link rel="canonical" href="{{ .Site.BaseURL }}"/>
+  {{ else }}
+    <link rel="canonical" href="{{ .Permalink }}"/>
+  {{ end }}
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
