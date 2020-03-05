@@ -1,6 +1,10 @@
 <article class="article-card">
   <header>
 
+    {{ if .Params.thumbnail }}
+      <img src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideAltText }}" />
+    {{ end }}
+
     <h3 class="red">
       <a class="no-underline" href="{{ .Permalink }}">
         {{ .Title }}

@@ -54,3 +54,10 @@
 .no-underline {
   text-decoration: none;
 }
+
+.tag {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--dark-gray);
+  font-weight: 400;
+}
