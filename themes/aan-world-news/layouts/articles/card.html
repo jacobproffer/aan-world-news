@@ -1,15 +1,31 @@
 <article class="article-card">
-  <header>
+  <a class="no-underline grid gap grid--article-card" href="{{ .Permalink }}">
 
     {{ if .Params.thumbnail }}
       <img src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideAltText }}" />
     {{ end }}
 
-    <h3 class="red">
-      <a class="no-underline" href="{{ .Permalink }}">
-        {{ .Title }}
-      </a>
-    </h3>
+    <div>
 
-  </header>
+      {{ if (.GetTerms "tags") }}
+        <ul class="unstyled-list">
+
+          {{ range (.GetTerms "tags") }}
+            <li>
+              <span class="tag">{{ .LinkTitle }}</span>
+            </li>
+          {{ end }}
+
+        </ul>
+      {{ end }}
+
+      <header>
+        <h3 class="red">
+          {{ .Title }}
+        </h3>
+      </header>
+
+    </div>
+
+  </a>
 </article>

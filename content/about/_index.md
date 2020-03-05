@@ -13,7 +13,6 @@ AAN is a privately-owned, independent news broadcaster that has provided global 
 - **Senior Managing Editor** - Jacob Proffer
 - **Specialist Correspondents** - Jacob Proffer
 
-
 ## Frequently Asked Questions
 
 ### Is this a real news organization

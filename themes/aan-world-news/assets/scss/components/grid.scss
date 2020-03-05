@@ -1,6 +1,11 @@
 .grid {
   display: grid;
 
+  &--article-card {
+    grid-template-columns: 232px 1fr;
+    align-items: center;
+  }
+
   &--two-column {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -21,4 +26,8 @@
       grid-template-columns: 1fr;
     }
   }
+}
+
+.gap {
+  grid-gap: 20px;
 }
