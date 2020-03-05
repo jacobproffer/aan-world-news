@@ -1,5 +1,17 @@
-<article class="list__article">
+<article class="list__article list__article--summary">
   <a class="no-underline article-link" href="{{ .Permalink }}">
+
+    {{ if (.GetTerms "tags") }}
+      <ul class="unstyled-list">
+
+        {{ range (.GetTerms "tags") }}
+          <li>
+            <span class="tag">{{ .LinkTitle }}</span>
+          </li>
+        {{ end }}
+
+      </ul>
+    {{ end }}
 
     <header>
       <h2 class="h3 red">

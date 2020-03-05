@@ -36,9 +36,15 @@
           </header>
         {{ end }}
 
-        {{ range .Data.Pages }}
-          {{ .Render "card" }}
-        {{ end }}
+        <ul class="unstyled-list grid gap">
+
+          {{ range .Data.Pages }}
+            <li>
+              {{ .Render "card" }}
+            </li>
+          {{ end }}
+
+        </ul>
 
       </section>
 

@@ -5,8 +5,20 @@
       <img src="{{ .Params.thumbnail }}" alt="Test" />
     {{ end }}
 
+    {{ if (.GetTerms "tags") }}
+      <ul class="unstyled-list">
+
+        {{ range (.GetTerms "tags") }}
+          <li>
+            <span class="tag">{{ .LinkTitle }}</span>
+          </li>
+        {{ end }}
+
+      </ul>
+    {{ end }}
+
     <header>
-      <h2 class="h3 red">
+      <h2 class="red">
         {{ .Title }}
       </h2>
     </header>
