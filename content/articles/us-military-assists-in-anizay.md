@@ -6,14 +6,13 @@ profiles: ["Jacob Proffer"]
 profileURL: /profiles/jacob-proffer
 category: ["World"]
 tags: ["Middle East"]
-date: 2020-03-04T17:47:59-05:00
+date: 2020-03-05T18:41:03-05:00
 asidePhoto: /images/anizay-2.jpg
 asideAltText: "Walled compounds surround a mosque in the village of Anizay."
 asideText: "The small village of Landay in Anizay."
 images: ["/images/anizay-1.jpg"]
 thumbnail: /images/anizay-1.jpg
 featured: true
-weight: 1
 ---
 
 {{< figure src="/images/anizay-1.jpg" alt="A soldier with a sniper rifle provides overwatch on a rooftoop." caption="A NATO soldier provides overwatch in the village of Landay. (AAN World News)" >}}
