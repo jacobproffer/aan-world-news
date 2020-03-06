@@ -54,7 +54,7 @@
   &__author {
     margin-right: 15px;
 
-    @include screen-below($mobile) {
+    @include screen-below($mobile-sm) {
       display: block;
       margin-bottom: 10px;
     }
@@ -75,6 +75,14 @@
       font-size: 1rem;
       padding: 0;
       margin: 0;
+    }
+
+    @include screen-below($mobile-sm) {
+      grid-template-columns: 1fr;
+
+      img {
+        display: none;
+      }
     }
   }
 
