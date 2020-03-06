@@ -1,23 +1,23 @@
 # AAN World News Hugo Theme
 
+![ANN News](https://raw.githubusercontent.com/jacobproffer/aan-world-news/master/static/images/aan-social.jpg)
+
 This repository contains the content and theme for the fictional news agency AAN News, which is featured throughout the various Arma games.
 
-## Compile public folder
+## Hugo Commands
 
-`hugo`
+### Add new article
 
-## Compile public folder with minification
+`hugo new article/<article-name>.md`
 
-`hugo --minify`
-
-## Run Hugo server
+### Run Hugo server
 
 `hugo server`
 
-## Run Hugo server with drafts
+### Run Hugo server with drafts
 
 `hugo server -D`
 
-### Note
+#### Note
 
 This repository uses Netlify.
