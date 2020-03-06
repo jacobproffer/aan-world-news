@@ -26,7 +26,7 @@
       grid-template-columns: repeat(3, 1fr);
     }
 
-    @include screen-below($mobile) {
+    @include screen-below($portrait) {
       grid-template-columns: repeat(2, 1fr);
     }
 
