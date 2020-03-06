@@ -51,7 +51,7 @@
 
           {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
             <footer class="post__footer grid">
-              <img src="{{ .Params.photo }}" alt="" />
+              <img data-src="{{ .Params.photo }}" alt="" />
               <p>{{ .Params.bio }}</p>
             </footer>
           {{ end }}
