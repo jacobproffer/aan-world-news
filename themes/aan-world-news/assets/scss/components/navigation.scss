@@ -5,6 +5,10 @@
     ul {
       display: flex;
       flex-wrap: wrap;
+
+      @include screen-below($mobile) {
+        justify-content: space-between;
+      }
     }
 
     a {
