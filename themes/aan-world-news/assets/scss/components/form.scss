@@ -11,6 +11,8 @@
     border: 1px solid var(--border);
     border-radius: 0;
     box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
   }
 
   input,
