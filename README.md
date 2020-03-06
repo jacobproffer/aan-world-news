@@ -2,13 +2,13 @@
 
 ![ANN News](https://raw.githubusercontent.com/jacobproffer/aan-world-news/master/static/images/aan-social.jpg)
 
-This repository contains the content and theme for the fictional news agency AAN News, which is featured throughout the various Arma games.
+ANN World News is a clean and simple responsive theme for Hugo based on the website featured in [Arma 3](https://arma3.com/).
 
 ## Hugo Commands
 
 ### Add new article
 
-`hugo new article/<article-name>.md`
+`hugo new articles/<article-name>.md`
 
 ### Run Hugo server
 
