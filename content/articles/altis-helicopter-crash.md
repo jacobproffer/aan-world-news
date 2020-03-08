@@ -8,8 +8,8 @@ category: ["World"]
 tags: ["Europe"]
 date: 2020-03-04T17:47:59-05:00
 asidePhoto: /images/crash-2.jpg
-asideAltText: "A crashed KC-60 helicopter with a broken windsheld."
-asideText: "A front-side of the crashed KC-60 helicopter."
+asideAltText: "A crashed KA-60 helicopter with a broken windsheld."
+asideText: "A front-side of the crashed KA-60 helicopter."
 images: ["/images/crash-1.jpg"]
 thumbnail: /images/crash-1.jpg
 ---
