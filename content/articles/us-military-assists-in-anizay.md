@@ -6,7 +6,7 @@ profiles: ["Jacob Proffer"]
 profileURL: /profiles/jacob-proffer
 category: ["World"]
 tags: ["Middle East"]
-date: 2020-03-05T18:41:03-05:00
+date: 2020-03-07T22:38:50-05:00
 asidePhoto: /images/anizay-2.jpg
 asideAltText: "Walled compounds surround a mosque in the village of Anizay."
 asideText: "The small village of Landay in Anizay."
