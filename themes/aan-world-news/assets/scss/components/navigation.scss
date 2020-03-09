@@ -7,7 +7,7 @@
       flex-wrap: wrap;
 
       @include screen-below($mobile) {
-        justify-content: space-between;
+        justify-content: space-evenly;
       }
     }
 
