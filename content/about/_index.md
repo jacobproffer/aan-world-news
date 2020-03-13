@@ -9,15 +9,25 @@ AAN is a privately-owned, independent news broadcaster that has provided global 
 
 ## Staff
 
-- **Editor in Chief** - Jacob Proffer
-- **Senior Managing Editor** - Jacob Proffer
-- **Specialist Correspondents** - Jacob Proffer
+- **Editor in Chief** - Marian Quandt
+- **Senior Managing Editor** - Thomas Nordwick
+- **Cameraman** - Arthur Stark
+- **Journalist** - Katherine Bishop
+- **Reporter** - Mark Cole
+- **Reporter** - Joe Harris
+- **Correspondent** - Sean Bradwell
+- **Correspondent** - Jacob Proffer
+- **Writer** - Peter Lederman
 
 ## Frequently Asked Questions
 
 ### Is this a real news organization
 
 No, AAN is a fictional news organization created by [Bohemia Interactive](https://www.bohemia.net/) for the computer game [Arma](https://arma3.com/).
+
+### Are any AAN articles based on real life events
+
+Absolutely not. All articles and names are fictional.
 
 ### Can I submit an article
 

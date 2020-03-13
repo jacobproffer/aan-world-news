@@ -15,7 +15,9 @@
       </div>
 
       {{ if .Site.Menus.main }}
-        {{ partial "navigation/main-navigation" . }}
+        <nav class="navigation navigation--primary" aria-label="primary-navigation">
+          {{ partial "navigation/main-navigation" . }}
+        </nav>
       {{ end }}
 
     </div>

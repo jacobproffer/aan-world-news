@@ -1,25 +1,23 @@
-<nav class="navigation navigation--primary" aria-label="primary-navigation">
-  <ul class="unstyled-list">
+<ul class="unstyled-list">
 
-    {{ $currentPage := . }}
+  {{ $currentPage := . }}
 
-    {{ range .Site.Menus.main }}
+  {{ range .Site.Menus.main }}
 
-      {{ if .URL }}
-        <li>
-          <a
-            class="no-underline"
-            {{ if $currentPage.IsMenuCurrent "main" . }}
-              aria-current="page"
-            {{ end }}
-              href="{{ .URL }}"
-          >
-            {{ .Name }}
-          </a>
-        </li>
-      {{ end }}
-
+    {{ if .URL }}
+      <li>
+        <a
+          class="no-underline"
+          {{ if $currentPage.IsMenuCurrent "main" . }}
+            aria-current="page"
+          {{ end }}
+            href="{{ .URL }}"
+        >
+          {{ .Name }}
+        </a>
+      </li>
     {{ end }}
 
-  </ul>
-</nav>
+  {{ end }}
+
+</ul>
