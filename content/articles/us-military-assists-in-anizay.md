@@ -8,8 +8,8 @@ category: ["World"]
 tags: ["Middle East"]
 date: 2020-03-07T22:38:50-05:00
 asidePhoto: /images/anizay-2.jpg
-asideAltText: "Walled compounds surround a mosque in the village of Anizay."
-asideText: "The small village of Landay in Anizay."
+asideAltText: "Walled compounds surround a mosque in the town of Anizay."
+asideText: "The town of Landay in Anizay."
 images: ["/images/anizay-1.jpg"]
 thumbnail: /images/anizay-1.jpg
 featured: true
@@ -21,6 +21,6 @@ As the Islamic State poured into the northern regions of Anizay this past Friday
 
 A rapid response force, consisting of nearly 500 US soldiers and sailors, have arrived to defend the diplomatic embassy in Landay. ISIS forces are said to be within miles of Landay and continue to gain ground each day.
 
-The commanding officer for the response force, Major Don Homewood said: "We are extremely prepared to defend Landay. Our outer perimeter is heavily mined and we have aerial support constantly monitoring for inbound threats."
+This morning, a suspected suicide bomber was killed in a drone strike just five miles from the embassy. The driver failed to stop at a military checkpoint and did not comply with further demands from military personnel to stop. Once positive control was lost, a strike was ordered.
 
-A suspected suicide bomber was killed in a drone strike just five miles from the embassy this morning. The driver failed to stop at a military checkpoint and did not comply with further demands from military personnel to stop. Once positive control was lost, a strike was ordered.
+The commanding officer for the response force, Major Don Homewood said: "We are prepared to defend Landay. The outer perimeter of Landay is heavily mined and we have aerial support constantly monitoring for inbound threats."
