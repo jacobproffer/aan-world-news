@@ -6,7 +6,11 @@
 
     </div>
 
-    {{ partial "navigation/main-navigation.html" . }}
+    {{ if .Site.Menus.main }}
+      <nav class="navigation navigation--primary" aria-label="footer-navigation">
+        {{ partial "navigation/main-navigation.html" . }}
+      </nav>
+    {{ end }}
 
   </div>
 </footer>
