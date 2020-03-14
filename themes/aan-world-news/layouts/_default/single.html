@@ -8,7 +8,7 @@
 
         {{ if .Params.asidePhoto }}
           <figure>
-            <img src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideAltText }}" />
+            <img class="lazy" data-src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideAltText }}" />
 
             {{ if .Params.asideText }}
               <figcaption>
@@ -51,7 +51,7 @@
 
           {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
             <footer class="post__footer grid">
-              <img data-src="{{ .Params.photo }}" alt="" />
+              <img class="lazy" data-src="{{ .Params.photo }}" alt="" />
               <p>{{ .Params.bio }}</p>
             </footer>
           {{ end }}

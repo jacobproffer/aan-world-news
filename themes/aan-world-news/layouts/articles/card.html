@@ -2,7 +2,7 @@
   <a class="no-underline grid gap grid--article-card" href="{{ .Permalink }}">
 
     {{ if .Params.thumbnail }}
-      <img data-src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideAltText }}" />
+      <img class="lazy" data-src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideAltText }}" />
     {{ end }}
 
     <div>
