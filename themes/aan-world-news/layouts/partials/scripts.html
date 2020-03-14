@@ -1,3 +1,4 @@
 {{ $siteJS := resources.Get "js/site.js" }}
 {{ $minify := $siteJS | resources.Minify }}
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@13.0.1/dist/lazyload.min.js"></script>
 <script src="{{ $minify.Permalink }}"></script>
