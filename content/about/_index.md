@@ -31,7 +31,7 @@ Absolutely not. All articles and names are fictional.
 
 ### Can I submit an article
 
-At this time, no. However, in a future update, there will be a submission form for Arma related articles.
+Yes. Please visit the Submit page.
 
 ### How is this site built
 
