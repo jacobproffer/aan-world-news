@@ -1,5 +1,5 @@
 ---
-title: "Nato Forces Deploy to Dingor"
+title: "NATO Forces Deploy to Dingor"
 description: "Following the collapse of the provincial government, NATO coalition forces begin operations as tribal warlords attempt to stake their claim on the island nation."
 author: "Matthew Becker"
 profiles: ["Matthew Becker"]
