@@ -1,0 +1,74 @@
+{{ define "main" }}
+
+<section class="gray-background">
+  <div class="container container--wide container--white">
+    <div class="container container--small page-spacing">
+
+      <header>
+        <h1>{{ .Title }}</h1>
+      </header>
+
+      <form class="grid grid--two-column form" name="contact" action="/success/" netlify>
+
+        <label for="name">
+          <span class="visually-hide">
+            Author Name
+          </span>
+          <input type="text" id="name" name="name" placeholder="Author Name" required aria-required="true" />
+        </label>
+
+        <label for="email">
+          <span class="visually-hide">
+            Author Email
+          </span>
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </label>
+
+        <label for="article-title">
+          <span class="visually-hide">
+            Article Title
+          </span>
+          <input type="text" id="article-title" name="article-title" placeholder="Article Title" required aria-required="true" />
+        </label>
+
+        <label for="article-description">
+          <span class="visually-hide">
+            Article Description
+          </span>
+          <input type="text" id="article-description" name="article-description" placeholder="Article Description" required aria-required="true" />
+        </label>
+
+        <div class="form__select">
+          <label for="tag-select" class="visually-hide">Choose a Tag</label>
+          <i></i>
+          <select id="tag-select" name="tag-select" required aria-required="true">
+            <option value="">Select Tag</option>
+
+            {{ range .Site.Taxonomies.tags }}
+              <option value="{{ .Page.Title }}">{{ .Page.Title }}</option>
+            {{ end }}
+
+          </select>
+        </div>
+
+        <label for="photo" class="form__photo">
+          <span>Attach Photos</span>
+          <input name="photo" id="photo" type="file" accept="image/*" multiple required aria-required="true" />
+        </label>
+
+        <label class="form__message" for="article">
+          <span class="visually-hide">
+            Article Body
+          </span>
+          <textarea name="message" id="article" cols="30" rows="10" placeholder="Article Body..." required aria-required="true"></textarea>
+        </label>
+        <button class="button" type="submit">Submit Article</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+{{ partial "seo/page-schema.html" . }}
+
+{{ end }}
