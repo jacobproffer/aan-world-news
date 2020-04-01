@@ -1,21 +1,42 @@
 <form class="grid grid--two-column form" name="contact" action="/success/" netlify>
   <label for="name">
     <span class="visually-hide">
-      Your Name
+      Author Name
     </span>
-    <input type="text" id="name" name="name" placeholder="Name" required />
+    <input type="text" id="name" name="name" placeholder="Author Name" required />
   </label>
   <label for="email">
     <span class="visually-hide">
-      Your Email
+      Author Email
     </span>
     <input type="email" id="email" name="email" placeholder="Email" />
   </label>
-  <label class="form__message" for="message">
+  <label for="article-title">
     <span class="visually-hide">
-      Your Message
+      Article Title
     </span>
-    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message..." required></textarea>
+    <input type="text" id="article-title" name="article-title" placeholder="Article Title" required />
   </label>
-  <button class="button" type="submit">Submit</button>
+  <label for="article-description">
+    <span class="visually-hide">
+      Article Description
+    </span>
+    <input type="text" id="article-description" name="article-description" placeholder="Article Description" required />
+  </label>
+
+  <label for="photo" class="form__photo">
+
+    <span>Attach Photo</span>
+
+    <input name="photo" id="photo" type="file" accept="image/*" />
+
+  </label>
+
+  <label class="form__message" for="article">
+    <span class="visually-hide">
+      Article Body
+    </span>
+    <textarea name="message" id="article" cols="30" rows="10" placeholder="Article Body..." required></textarea>
+  </label>
+  <button class="button" type="submit">Submit Article</button>
 </form>
