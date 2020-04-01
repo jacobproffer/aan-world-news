@@ -12,7 +12,6 @@ asideAltText: "Walled compounds surround a mosque in the town of Anizay."
 asideText: "The town of Landay in Anizay."
 images: ["/images/anizay-1.jpg"]
 thumbnail: /images/anizay-1.jpg
-featured: true
 ---
 
 {{< figure src="/images/anizay-1.jpg" alt="A soldier with a sniper rifle provides overwatch on a rooftoop." caption="A NATO soldier provides overwatch in Landay. (AAN World News)" >}}
