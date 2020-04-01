@@ -11,4 +11,8 @@
   &:hover {
     background-color: var(--dark-red);
   }
+
+  &:active {
+    background-color: var(--dark-gray);
+  }
 }
