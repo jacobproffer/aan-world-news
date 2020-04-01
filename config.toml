@@ -54,7 +54,7 @@ enableRobotsTXT = true
     weight = 1
 
   [[menu.internal]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
+    identifier = "submit"
+    name = "Submit"
+    url = "/submit/"
     weight = 2
