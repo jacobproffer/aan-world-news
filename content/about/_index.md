@@ -17,6 +17,7 @@ AAN is a privately-owned, independent news broadcaster that has provided global 
 - **Reporter** - Joe Harris
 - **Correspondent** - Sean Bradwell
 - **Correspondent** - Jacob Proffer
+- **Correspondent** - Matthew Becker
 - **Writer** - Peter Lederman
 
 ## Frequently Asked Questions
