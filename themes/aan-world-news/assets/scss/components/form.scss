@@ -89,6 +89,7 @@
     }
   }
 
+  &__author-email,
   &__message {
     @include screen-above($tablet) {
       grid-column: span 2;

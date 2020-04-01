@@ -10,6 +10,13 @@
 
       <form class="grid grid--two-column form" name="contact" action="/success/" netlify>
 
+        <label for="email" class="form__author-email">
+          <span class="visually-hide">
+            Author Email
+          </span>
+          <input type="email" id="email" name="email" placeholder="Your Email" />
+        </label>
+
         <label for="name">
           <span class="visually-hide">
             Author Name
@@ -17,11 +24,11 @@
           <input type="text" id="name" name="name" placeholder="Author Name" required aria-required="true" />
         </label>
 
-        <label for="email">
+        <label for="author-description">
           <span class="visually-hide">
-            Author Email
+            Author Description
           </span>
-          <input type="email" id="email" name="email" placeholder="Email" />
+          <input type="text" id="author-description" name="author-description" placeholder="Author Description" required aria-required="true">
         </label>
 
         <label for="article-title">
