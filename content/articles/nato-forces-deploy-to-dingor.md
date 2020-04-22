@@ -9,7 +9,6 @@ tags: ["Asia"]
 date: 2020-04-01T09:17:32-04:00
 images: ["/images/dingor-01.jpg"]
 thumbnail: /images/dingor-01.jpg
-featured: true
 ---
 
 {{< figure src="/images/dingor-01.jpg" alt="Soldiers gather around a Huey helicopter on an airfield." caption="NATO soldiers on an airfield in Dingor. (AAN World News)" >}}
