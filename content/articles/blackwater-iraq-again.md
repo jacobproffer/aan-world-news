@@ -1,6 +1,6 @@
 ---
 title: "Blackwater, Iraq...Again"
-description: "U.S. Forces have returned to Iraq for an advisory mission ide notified by the Pentagon earlier this year."
+description: "The infamous private military company has returned to Iraq after securing a contract with the announcement of LOGCAP 5."
 author: "Jullian Mendez"
 profiles: ["Jullian Mendez"]
 profileURL: /profiles/jullian-mendez
@@ -14,4 +14,4 @@ featured: true
 
 {{< figure src="/images/blackwater-iraq-again.jpg" alt="Blackwater contractors pose near captured money in Iraq. (AAN World News)" >}}
 
-U.S. Forces have returned to Iraq for an advisory mission ide notified by the Pentagon earlier this year. Questions were quickly raised as the infamous Blackwater contracting group was awarded the primary security contract for LOGCAP V. With Blackwater returning to Iraq only time will tell how the  policital climate in Iraq will react to thier presence.
+Questions were quickly raised as the infamous Blackwater contracting group was awarded the primary security contract for LOGCAP V. With Blackwater returning to Iraq only time will tell how the  policital climate in Iraq will react to thier presence.
