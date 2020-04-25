@@ -9,7 +9,6 @@ tags: ["Middle East"]
 date: 2020-04-22T17:20:38-04:00
 images: ["/images/iranian-back-cell.jpg"]
 thumbnail: /images/iranian-back-cell.jpg
-featured: true
 ---
 
 {{< figure src="/images/iranian-back-cell.jpg" alt="Milita members with firearms in the mountains." caption="Iranian backed milita members. (BBN Global)" >}}
