@@ -9,7 +9,6 @@ tags: ["Middle East"]
 date: 2020-04-25T18:22:47-04:00
 images: ["/images/blackwater-iraq-again.jpg"]
 thumbnail: /images/blackwater-iraq-again.jpg
-featured: true
 ---
 
 {{< figure src="/images/blackwater-iraq-again.jpg" alt="Blackwater contractors pose near captured money in Iraq. (AAN World News)" >}}
