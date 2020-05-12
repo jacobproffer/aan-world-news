@@ -9,7 +9,6 @@ tags: ["Middle East"]
 date: 2020-05-09T18:11:26-04:00
 images: ["/images/iraq.jpg"]
 thumbnail: /images/iraq.jpg
-featured: true
 ---
 
 {{< figure src="/images/iraq.jpg" alt="A marine firing a heavy machine gun." caption="A U.S. Marine provides covering fire with a heavy machine gun. (AAN World News)" >}}
