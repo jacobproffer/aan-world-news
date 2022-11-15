@@ -12,7 +12,6 @@ asideAltText: "A group of civilians watch acting SECDEF Mike Hammer arrive in Gr
 asideText: "A crowd of civilians gathered to watch SECDEF Mike Hammer arrive."
 images: ["/images/secdef-1.jpg"]
 thumbnail: /images/secdef-1.jpg
-featured: true
 ---
 
 {{< figure src="/images/secdef-1.jpg" alt="Security personnel and SECDEF Mike Hammer next to a C-17." caption="Security personnel surround SECDEF Mike Hammer as he arrives in Greece. (AAN World News)" >}}
