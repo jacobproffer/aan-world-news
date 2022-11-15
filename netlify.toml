@@ -3,7 +3,10 @@
   command = "hugo --gc --minify"
 
 [context.production.environment]
-  HUGO_VERSION = "0.70.0"
+  HUGO_VERSION = "0.105.0"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.70.0"
+  HUGO_VERSION = "0.105.0"
+
+[context.deploy-preview]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"

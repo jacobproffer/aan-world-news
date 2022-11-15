@@ -20,41 +20,41 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = "asia"
     name = "Asia"
-    url = "/tags/asia/"
+    pageRef = "/tags/asia/"
     weight = 1
 
   [[menu.main]]
     identifier = "europe"
     name = "Europe"
-    url = "/tags/europe/"
+    pageRef = "/tags/europe/"
     weight = 2
 
   [[menu.main]]
     identifier = "middle-east"
     name = "Middle East"
-    url = "/tags/middle-east/"
+    pageRef = "/tags/middle-east/"
     weight = 3
 
   [[menu.main]]
     identifier = "oceania"
     name = "Oceania"
-    url = "/tags/oceania/"
+    pageRef = "/tags/oceania/"
     weight = 4
 
   [[menu.main]]
     identifier = "usa"
     name = "USA"
-    url = "/tags/usa/"
+    pageRef = "/tags/usa/"
     weight = 5
 
   [[menu.internal]]
     identifier = "about"
     name = "About"
-    url = "/about/"
+    pageRef = "/about/"
     weight = 1
 
   [[menu.internal]]
     identifier = "submit"
     name = "Submit"
-    url = "/submit/"
+    pageRef = "/submit/"
     weight = 2
