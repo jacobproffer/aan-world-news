@@ -4,72 +4,117 @@
   <div class="container container--wide container--white">
     <div class="container container--small page-spacing">
 
-      <header>
-        <h1>{{ .Title }}</h1>
-      </header>
+      <h1>{{ .Title }}</h1>
 
       <form class="grid grid--two-column form" name="contact" action="/success/" netlify>
 
-        <label for="email" class="form__author-email">
-          <span class="visually-hide">
-            Author Email
-          </span>
-          <input type="email" id="email" name="email" placeholder="Your Email" />
-        </label>
-
-        <label for="name">
-          <span class="visually-hide">
-            Author Name
-          </span>
-          <input type="text" id="name" name="name" placeholder="Author Name" required aria-required="true" />
-        </label>
-
-        <label for="author-description">
-          <span class="visually-hide">
-            Author Description
-          </span>
-          <input type="text" id="author-description" name="author-description" placeholder="Author Description" required aria-required="true">
-        </label>
-
-        <label for="article-title">
-          <span class="visually-hide">
-            Article Title
-          </span>
-          <input type="text" id="article-title" name="article-title" placeholder="Article Title" required aria-required="true" />
-        </label>
-
-        <label for="article-description">
-          <span class="visually-hide">
-            Article Description
-          </span>
-          <input type="text" id="article-description" name="article-description" placeholder="Article Description" required aria-required="true" />
-        </label>
-
-        <div class="form__select">
-          <label for="tag-select" class="visually-hide">Choose a Tag</label>
-          <i></i>
-          <select id="tag-select" name="tag-select" required aria-required="true">
-            <option value="">Select Tag</option>
-
-            {{ range .Site.Taxonomies.tags }}
-              <option value="{{ .Page.Title }}">{{ .Page.Title }}</option>
-            {{ end }}
-
-          </select>
+        <div class="grid form__field">
+          <label for="email">
+            Your Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="johnsmith@mail.com"
+          />
         </div>
 
-        <label for="photo" class="form__photo">
+        <div class="grid form__field">
+          <label for="name">
+            Author Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Katherine Bishop"
+            required
+            aria-required="true"
+          />
+        </div>
+
+        <div class="form__span-across grid form__field">
+          <label for="author-description">Author Description</label>
+          <textarea type="text" id="author-description" name="author-description" placeholder="Katherine Bishop is a specialist correspondent..." cols="30" rows="5" required aria-required="true"></textarea>
+        </div>
+
+        <div class="grid form__field">
+          <label for="article-title">
+            Article Title
+          </label>
+          <input
+            type="text"
+            id="article-title"
+            name="article-title"
+            placeholder="Skydive Over Tanoa"
+            required
+            aria-required="true"
+          />
+        </div>
+
+        <div class="grid form__field">
+          <label for="tag-select">
+            Article Tag
+          </label>
+          <div class="form__select">
+            <i></i>
+            <select
+              id="tag-select"
+              name="tag-select"
+              required
+              aria-required="true"
+            >
+              <option value="">Select Tag</option>
+
+              {{ range .Site.Taxonomies.tags }}
+                <option value="{{ .Page.Title }}">
+                  {{ .Page.Title }}
+                </option>
+              {{ end }}
+
+            </select>
+          </div>
+        </div>
+
+        <div class="form__span-across grid form__field">
+          <label for="article-description">
+            Article Description
+          </label>
+          <textarea name="article-description" id="article-description" cols="30" rows="5" placeholder="Skydiving has taken over Tanoa with cost-effective lessons..." required aria-required="true"></textarea>
+        </div>
+
+        <label
+          for="photo"
+          class="form__photo
+          form__span-across"
+        >
           <span>Attach Photos</span>
-          <input name="photo" id="photo" type="file" accept="image/*" multiple required aria-required="true" />
+          <input
+            name="photo"
+            id="photo"
+            type="file"
+            accept="image/*"
+            multiple
+            required
+            aria-required="true"
+          />
         </label>
 
-        <label class="form__message" for="article">
-          <span class="visually-hide">
+        <div class="form__span-across grid form__field">
+          <label for="article">
             Article Body
-          </span>
-          <textarea name="message" id="article" cols="30" rows="10" placeholder="Article Body..." required aria-required="true"></textarea>
-        </label>
-        <button class="button" type="submit">Submit Article</button>
+          </label>
+          <textarea name="message" id="article" cols="30" rows="10" placeholder="Skydiving is the new trend for tourists and locals alike in Tanoa..." required aria-required="true"></textarea>
+        </div>
+
+        <button
+          class="button"
+          type="submit"
+        >
+          Submit Article
+        </button>
+
       </form>
 
     </div>

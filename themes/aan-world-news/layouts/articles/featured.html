@@ -2,7 +2,7 @@
   <a class="no-underline article-link" href="{{ .Permalink }}">
 
     {{ if .Params.thumbnail }}
-      <img class="lazy" data-src="{{ .Params.thumbnail }}" alt="Test" />
+      <img class="lazy" data-src="{{ .Params.thumbnail }}" alt="" />
     {{ end }}
 
     {{ if (.GetTerms "tags") }}
@@ -17,11 +17,9 @@
       </ul>
     {{ end }}
 
-    <header>
-      <h2 class="red">
-        {{ .Title }}
-      </h2>
-    </header>
+    <h2 class="red">
+      {{ .Title }}
+    </h2>
 
     {{ if .Params.description }}
       <p>{{ .Params.description }}</p>

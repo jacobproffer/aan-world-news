@@ -23,7 +23,7 @@
 
       <article class="content">
 
-        <header class="post__header padding">
+        <div class="post__header padding">
 
           {{ if .Params.title }}
             <h1>{{ .Title }}</h1>
@@ -39,7 +39,7 @@
             {{ .PublishDate.Format "01/02/2006 15:04 EDT" }}
           </time>
 
-        </header>
+        </div>
 
         {{ if .Params.description }}
           <p class="post__description h4 padding">{{ .Params.description }}</p>
@@ -66,11 +66,9 @@
 
         <div class="post__related">
 
-          <header>
-            <h2 id="related-posts">Related Posts</h2>
-          </header>
+          <h2>Related Posts</h2>
 
-          <ul class="unstyled-list grid gap" aria-labelledby="related-posts">
+          <ul class="unstyled-list grid gap">
             {{ range . }}
               <li>
                 {{ .Render "card" }}

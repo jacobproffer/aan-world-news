@@ -5,7 +5,7 @@
     <div class="container container--small page-spacing">
 
       {{ if or .Params.name .Params.title }}
-        <header class="profile__header">
+        <div class="profile__header">
 
           {{ if .Params.name }}
             <h1>
@@ -19,7 +19,7 @@
             </span>
           {{ end }}
 
-        </header>
+        </div>
       {{ end }}
 
       {{ if .Params.bio }}
@@ -31,9 +31,7 @@
       <section>
 
         {{ if .Params.name }}
-          <header>
-            <h2>Articles by {{ .Params.name }}</h2>
-          </header>
+          <h2>Articles by {{ .Params.name }}</h2>
         {{ end }}
 
         <ul class="unstyled-list grid gap">
