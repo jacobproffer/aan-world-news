@@ -50,9 +50,23 @@
         {{ range .Params.profiles }}
 
           {{ with $.Site.GetPage "taxonomyTerm" (printf "profiles/%s" (urlize .)) }}
-            <footer class="post__footer grid">
-              <img class="lazy" data-src="{{ .Params.photo }}" alt="" />
+
+            {{ $classes := "" }}
+
+            {{ if .Params.photo }}
+              {{ $classes = "post__footer grid" }}
+            {{ else }}
+              {{ $classes = "post__footer" }}
+            {{ end }}
+
+            <footer class="{{ $classes }}">
+
+              {{ if .Params.photo }}
+                <img class="lazy" data-src="{{ .Params.photo }}" alt="" />
+              {{ end }}
+
               <p>{{ .Params.bio }}</p>
+
             </footer>
           {{ end }}
 
