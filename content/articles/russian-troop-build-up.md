@@ -9,8 +9,6 @@ tags: ["Europe"]
 date: 2022-11-15T14:30:02-05:00
 images: ["/images/russia-buildup.jpg"]
 thumbnail: /images/russia-buildup.jpg
-featured: true
-weight: 1
 ---
 
 {{< figure src="/images/russia-buildup.jpg" alt="" caption="Russian forces on the move on the Russia-Estonian border. (BBN Global)" >}}
