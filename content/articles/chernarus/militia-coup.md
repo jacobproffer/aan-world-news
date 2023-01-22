@@ -6,7 +6,7 @@ profiles: ["Jacob Proffer"]
 profileURL: /profiles/jacob-proffer
 category: ["World"]
 tags: ["Europe"]
-date: 2023-02-14T17:17:24+02:00
+date: 2023-01-23T17:17:24+02:00
 asidePhoto: /images/russia-buildup.jpg
 asideAltText: "Russian forces marching near convoy"
 asideText: "Russian forces gather near Chernarus border."
