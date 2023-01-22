@@ -12,7 +12,7 @@
             {{ if $currentPage.IsMenuCurrent "internal" . }}
               aria-current="page"
             {{ end }}
-              href="{{ .URL }}"
+              href="{{ .URL | relURL }}"
           >
             {{ .Name }}
           </a>
