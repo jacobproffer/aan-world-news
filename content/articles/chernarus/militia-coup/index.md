@@ -16,7 +16,7 @@ featured: true
 weight: 1
 ---
 
-{{< figure src="/images/russia-buildup.jpg" alt="Tens of russian soldiers march in mud." caption="Russian forces on alert, move near the Chernarus border. (AAN World News)" >}}
+{{< figure src="/images/russia-advances.jpg" alt="Tens of russian soldiers march in mud." caption="Russian forces on alert, move near the Chernarus border. (AAN World News)" >}}
 
 After weeks of skirmishes in Northern Chernarus, today Chedaki militia surprised local militia as well as Chernarus Defense Forces and stormed Chernogorsk, Chernarus capital city. They've quickly pushed militia out of the city centre and surrounded the town hall. Quick negotiations took place between Chedaks and government authorities, while militia tried to break through to the town hall. After 15 minutes it was over, the coup has succeeded.
 
