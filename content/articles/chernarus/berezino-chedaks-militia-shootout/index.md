@@ -10,8 +10,8 @@ date: 2021-01-22T09:23:16+02:00
 asidePhoto: /images/bags.jpg
 asideAltText: "PLACEHOLDER"
 asideText: "PLACEHOLDER"
-images: ["/images/bags.jpg"]
-thumbnail: /images/bags.jpg
+images: ["images/bags.jpg"]
+thumbnail: images/bags.jpg
 ---
 
 Today at 7 AM, heavy shootout occurred in the outskirts of Berezino. Militia convoy heading for last known location of Chedaki fighters was ambushed in the forest 2 km west of Berezino. Shots were heard in the city as well as in surrounding villages.

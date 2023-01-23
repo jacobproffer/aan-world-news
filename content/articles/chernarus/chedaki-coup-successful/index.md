@@ -10,8 +10,8 @@ date: 2023-01-23T17:17:24+02:00
 asidePhoto: /images/russia-buildup.jpg
 asideAltText: "Russian forces marching near convoy"
 asideText: "Russian forces gather near Chernarus border."
-images: ["/images/russia-advances.jpg"]
-thumbnail: /images/russia-advances.jpg
+images: ["images/russia-advances.jpg"]
+thumbnail: images/russia-advances.jpg
 featured: true
 weight: 1
 ---
