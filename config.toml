@@ -19,34 +19,40 @@ enableRobotsTXT = true
 [menu]
 
   [[menu.main]]
+    identifier = "chernarus"
+    name = "Chernarus"
+    pageRef = "/tags/chernarus/"
+    weight = 1
+
+  [[menu.main]]
     identifier = "asia"
     name = "Asia"
     pageRef = "/tags/asia/"
-    weight = 1
+    weight = 3
 
   [[menu.main]]
     identifier = "europe"
     name = "Europe"
     pageRef = "/tags/europe/"
-    weight = 2
+    weight = 4
 
   [[menu.main]]
     identifier = "middle-east"
     name = "Middle East"
     pageRef = "/tags/middle-east/"
-    weight = 3
+    weight = 5
 
   [[menu.main]]
     identifier = "oceania"
     name = "Oceania"
     pageRef = "/tags/oceania/"
-    weight = 4
+    weight = 6
 
   [[menu.main]]
     identifier = "usa"
     name = "USA"
     pageRef = "/tags/usa/"
-    weight = 5
+    weight = 7
 
   [[menu.internal]]
     identifier = "about"

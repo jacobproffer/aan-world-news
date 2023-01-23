@@ -6,15 +6,17 @@
     {{ end }}
 
     {{ if (.GetTerms "tags") }}
-      <ul class="unstyled-list">
-
-        {{ range (.GetTerms "tags") }}
-          <li>
-            <span class="tag">{{ .LinkTitle }}</span>
-          </li>
+      <span class="tag">
+      {{ $tags := (.GetTerms "tags") }}
+      {{ $len := (len $tags) }}
+      {{ range $index, $element := $tags }}
+        {{ if eq (add $index 1) $len }}
+          {{ .LinkTitle }}
+        {{ else }}
+          {{ .LinkTitle }},
         {{ end }}
-
-      </ul>
+      {{ end }}
+    </span>
     {{ end }}
 
     <h2 class="h3 red">
