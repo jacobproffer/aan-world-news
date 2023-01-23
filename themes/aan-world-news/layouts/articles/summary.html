@@ -1,6 +1,10 @@
 <article class="list__article list__article--summary">
   <a class="no-underline article-link" href="{{ .Permalink }}">
 
+    {{ if .Params.thumbnail }}
+      <img class="lazy" data-src="{{ .Params.thumbnail }}" alt="" />
+    {{ end }}
+
     {{ if (.GetTerms "tags") }}
       <ul class="unstyled-list">
 

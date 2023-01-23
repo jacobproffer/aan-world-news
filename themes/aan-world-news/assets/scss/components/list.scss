@@ -28,7 +28,7 @@
 
       @include screen-above($portrait) {
         grid-column: span 2;
-        grid-row: span 2;
+        grid-row: span 1;
       }
 
       @include screen-between($mobile-sm, $portrait) {
