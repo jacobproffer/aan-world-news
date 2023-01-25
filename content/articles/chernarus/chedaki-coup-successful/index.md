@@ -1,8 +1,8 @@
 ---
 title: "Chedaki coup in Chernarus successful"
 description: "Black day for Chernarus. Chedaks have taken the control over the capital and proclaimed new Chedaki republic."
-author: "Daniel Špaděl"
-profiles: ["Daniel Špaděl"]
+author: "Daniel Spadel"
+profiles: ["Daniel Spadel"]
 profileURL: /profiles/daniel-spadel
 category: ["World"]
 tags: ["Chernarus", "Europe"]

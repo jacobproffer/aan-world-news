@@ -1,8 +1,8 @@
 ---
 title: "Shootout in Berezino, dozens killed"
 description: "38 killed, 20 wounded, 14 missing are the casualties of todays shootout near Berezino."
-author: "Daniel Špaděl"
-profiles: ["Daniel Špaděl"]
+author: "Daniel Spadel"
+profiles: ["Daniel Spadel"]
 profileURL: /profiles/daniel-spadel
 category: ["World"]
 tags: ["Chernarus", "Europe"]
