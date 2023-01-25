@@ -1,9 +1,9 @@
 ---
 title: "Shootout in Berezino, dozens killed"
 description: "38 killed, 20 wounded, 14 missing are the casualties of todays shootout near Berezino."
-author: "Jacob Proffer"
-profiles: ["Jacob Proffer"]
-profileURL: /profiles/jacob-proffer
+author: "Daniel Špaděl"
+profiles: ["Daniel Špaděl"]
+profileURL: /profiles/daniel-spadel
 category: ["World"]
 tags: ["Chernarus", "Europe"]
 date: 2021-01-22T09:23:16+02:00

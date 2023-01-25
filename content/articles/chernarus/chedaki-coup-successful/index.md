@@ -1,9 +1,9 @@
 ---
 title: "Chedaki coup in Chernarus successful"
-description: "Black day for Chernarus. Chedaks have taken the control over the capital of Chernarus and proclaimed new Chedaki republic."
-author: "Jacob Proffer"
-profiles: ["Jacob Proffer"]
-profileURL: /profiles/jacob-proffer
+description: "Black day for Chernarus. Chedaks have taken the control over the capital and proclaimed new Chedaki republic."
+author: "Daniel Špaděl"
+profiles: ["Daniel Špaděl"]
+profileURL: /profiles/daniel-spadel
 category: ["World"]
 tags: ["Chernarus", "Europe"]
 date: 2023-01-23T17:17:24+02:00
