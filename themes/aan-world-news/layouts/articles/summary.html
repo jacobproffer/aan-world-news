@@ -2,7 +2,11 @@
   <a class="no-underline article-link" href="{{ .Permalink }}">
 
     {{ if .Params.thumbnail }}
+      {{ if hasPrefix .Params.thumbnail "/"}}
       <img class="lazy" data-src="{{ .Params.thumbnail }}" alt="" />
+      {{ else }}
+      <img class="lazy" data-src="{{ .Permalink }}{{ .Params.thumbnail }}" alt="" />
+      {{ end }}
     {{ end }}
 
     {{ if (.GetTerms "tags") }}

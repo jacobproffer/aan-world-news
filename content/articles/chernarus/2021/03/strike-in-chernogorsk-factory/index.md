@@ -10,8 +10,8 @@ date: 2021-03-14T08:32:12+02:00
 asidePhoto: /images/bags.jpg
 asideAltText: "PLACEHOLDER"
 asideText: "PLACEHOLDER"
-images: ["images/bags.jpg"]
-thumbnail: images/bags.jpg
+images: ["/images/bags.jpg"]
+thumbnail: /images/bags.jpg
 ---
 
 Workers demand better pay and work conditions.

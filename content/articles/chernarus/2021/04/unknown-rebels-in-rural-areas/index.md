@@ -10,8 +10,8 @@ date: 2021-04-14T17:31:47+02:00
 asidePhoto: /images/bags.jpg
 asideAltText: "PLACEHOLDER"
 asideText: "PLACEHOLDER"
-images: ["images/bags.jpg"]
-thumbnail: images/bags.jpg
+images: ["/images/bags.jpg"]
+thumbnail: /images/bags.jpg
 ---
 
 Over the last days, there were multiple reports of paramilitary-like personnel in the woods in northern Chernarus. There are little details known right now, but our sources report shots were fired several times already, although no one was hurt in any way yet.

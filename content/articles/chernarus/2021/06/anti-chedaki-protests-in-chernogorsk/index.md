@@ -10,8 +10,8 @@ date: 2021-06-08T14:17:25+02:00
 asidePhoto: /images/bags.jpg
 asideAltText: "PLACEHOLDER"
 asideText: "PLACEHOLDER"
-images: ["images/bags.jpg"]
-thumbnail: images/bags.jpg
+images: ["/images/bags.jpg"]
+thumbnail: /images/bags.jpg
 ---
 
 Authorities already warned that students that participated in the riot might end up expelled from Chernogorsk University.
