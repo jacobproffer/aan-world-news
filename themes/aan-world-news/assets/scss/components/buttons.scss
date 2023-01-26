@@ -8,11 +8,19 @@
   appearance: none;
   transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 
-  &:hover {
-    background-color: var(--dark-red);
+  &:disabled {
+    color: var(--black);
+    background-color: var(--medium-gray);
+    cursor: default;
   }
 
   &:active {
     background-color: var(--dark-gray);
+  }
+
+  @include hover {
+    &:not(:disabled) {
+      background-color: var(--dark-red);
+    }
   }
 }
