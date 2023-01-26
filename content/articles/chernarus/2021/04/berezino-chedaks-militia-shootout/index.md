@@ -7,12 +7,11 @@ profileURL: /profiles/daniel-spadel
 category: ["World"]
 tags: ["Chernarus", "Europe"]
 date: 2021-04-22T09:23:16+02:00
-asidePhoto: /images/bags.jpg
-asideAltText: "PLACEHOLDER"
-asideText: "PLACEHOLDER"
-images: ["/images/bags.jpg"]
-thumbnail: /images/bags.jpg
+images: ["image.png"]
+thumbnail: image.png
 ---
+
+{{< figure src="image.png" alt="Militia armed with AKs inspects the ambush site. Militia cars with bullet holes. Few body bags and blood pool." caption="Militia secures the scene. Lada took heavy fire, but provided enough cover. Some blood and bodybags visible. (AAN World News)" >}}
 
 Today at 7 AM, heavy shootout occurred in the outskirts of Berezino. Militia squad supported by few local farmers were heading for last known location of Chedaki fighters. They were ambushed in the forest 1 km west of Berezino. Shots were heard in the city as well as in surrounding villages.
 
