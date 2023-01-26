@@ -1,9 +1,9 @@
 ---
 title: "Takistan cigarette smugglers caught by Border Guard"
 description: "They have been caught during illegal border crossing to Anizay."
-author: "Jacob Proffer"
-profiles: ["Jacob Proffer"]
-profileURL: /profiles/jacob-proffer
+author: "Daniel Spadel"
+profiles: ["Daniel Spadel"]
+profileURL: /profiles/daniel-spadel
 category: ["World"]
 tags: ["Middle East"]
 date: 2023-01-23T17:17:24+02:00
