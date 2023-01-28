@@ -20,13 +20,13 @@ This morning Berezino was shocked with brutal murder committed in a household in
 
 Other reports from neighbors are very similar, but there is only one thing everyone said exactly the same. It's Militia's Commander Igiel's house.
 
-## Chedaks revenge for clash in the forest?
+### Chedaks revenge for clash in the forest?
 
 Some say this could be a revenge for [shootout in the forest few days ago](../berezino-chedaks-militia-shootout/). Probably Chedaks lost more men than there were found in the forest.
 
 Fate of Commander Igiel and two other missing men is still unknown, although even if alive, they don't have easy time in captivity.
 
-## Militia response too slow
+### Militia response too slow
 
 The Militia arrived few minutes later, too late to save the victims. Some say they didn't want to encounter heavily armed Chedaks, who are suspects for this and other heavy crimes lately. Militia secured the scene and by doing so, they've blocked whole street.
 

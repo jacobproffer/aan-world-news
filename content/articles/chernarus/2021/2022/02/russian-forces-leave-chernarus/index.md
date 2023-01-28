@@ -17,10 +17,10 @@ Today Russian Forces left Chernarus entirely.
 
 This is the result of talks between Chedaks and Russians, which were ongoing in December. On 27th December, Russians have agreed their Armed Forces to leave Chernarus. However, there will still be some civilian personnel remaining for undisclosed period of time, including government advisors.
 
-## Chedaks grateful for help
+### Chedaks grateful for help
 
 Chedaki leader, <TODO_INSERT_NAME_HERE>, expressed his gratitude towards Russian brothers. "Thank you for your help in those dark times for Chedakia. Now we can handle things on our own, we will not forget your invaluable assitance."
 
-## NATO - this does not change anything
+### NATO - this does not change anything
 
 Few days ago, when the decision was announced by Russian MoD, NATO General Secretary Magnus Oldenberg said "This changes nothing" at the press conference. "Even if Russian Forces leave Chernarus, they will definitely be ready to reenter promptly."

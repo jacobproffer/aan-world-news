@@ -15,6 +15,6 @@ thumbnail: /images/russia-advances.jpg
 
 Following the successful Chedaki coup in Chernarus and proclamation of Chedaki Republic, Russian Defense Secretary Dimitry Strogonov recognized Chedakia and announced help package for new government, including providing security during the transition.
 
-## Russian Forces enter Chernarus
+### Russian Forces enter Chernarus
 
 Today at 11 AM local time, Russian Forces crossed Chernarus border and moved to secure main cities and government buildings.

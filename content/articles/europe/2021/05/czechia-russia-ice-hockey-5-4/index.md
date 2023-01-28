@@ -16,6 +16,8 @@ thumbnail: /images/bags.jpg
 
 Optimism, disappointment, lack of faith in making up for losses and incredible joy after an unbelievable win are just few of the vast range of emotions that Czech players gave their fans tonight.
 
+### Optimistic start and utter defeat
+
 Before the match, Czechia fans were quite optimistic. Rival was definitely in range for a hard earned win. Czechs gained an advantage very early in the first period and the crowd at Prague arena went crazy. That gave Russians some anger they needed to recover and bully Czechs 1-3 till the end of the first period.
 
 The second period was totally controlled by Russians. They managed to increase their advantage to 3 goals, making it to 1-4. The arena was silent at that point, with only some Russian fans cheering for the next goals.
