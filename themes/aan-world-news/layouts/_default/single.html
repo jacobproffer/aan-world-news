@@ -7,16 +7,36 @@
       <aside class="post__aside">
 
         {{ if .Params.asidePhoto }}
-          <figure>
-            <img class="lazy" data-src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideAltText }}" />
-
-            {{ if .Params.asideText }}
-              <figcaption>
-                <p>{{ .Params.asideText }}</p>
-              </figcaption>
+          {{ $image := "" }}
+          {{ if hasPrefix .Params.asidePhoto "/"}}
+            <!-- Ugly, but works for now -->
+            {{ if hasPrefix .Params.asidePhoto "/articles" }}
+              {{ $imageName := path.Base (.Params.asidePhoto) }}
+              {{ range .Site.Pages }}
+                {{ with .Page.Resources.Get $imageName }}
+                  {{ $image = . }}
+                {{ end }}
+              {{ end }}
+            {{ else }}
+              {{ $image = resources.Get (.Params.asidePhoto) }}
             {{ end }}
+          {{ else }}
+            {{ $image = .Resources.Get (.Params.asidePhoto) }}
+          {{ end }}
+          {{ $imageText := .Params.asideText }}
+          {{ with $image }}
+            {{ $image := $image.Resize "250x" }}
+            <figure>
+              <img class="lazy" data-src="{{ $image.RelPermalink }}" alt="{{ $imageText }}" />
 
-          </figure>
+              {{ if $imageText }}
+                <figcaption>
+                  <p>{{ $imageText }}</p>
+                </figcaption>
+              {{ end }}
+
+            </figure>
+          {{ end }}
         {{ end }}
 
       </aside>
