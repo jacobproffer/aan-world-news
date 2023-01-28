@@ -18,6 +18,7 @@ AAN is a privately-owned, independent news broadcaster that has provided global 
 - **Correspondent** - Sean Bradwell
 - **Correspondent** - Jacob Proffer
 - **Correspondent** - Matthew Becker
+- **Correspondent** - Daniel Spadel
 - **Writer** - Peter Lederman
 
 ## Frequently Asked Questions
@@ -30,10 +31,10 @@ No, AAN is a fictional news organization created by [Bohemia Interactive](https:
 
 Absolutely not. All articles and names are fictional.
 
-### Can I submit an article
+### What is it about
 
-Yes. Please visit the Submit page.
+This site's aim is to provide background & lore for a resistance campaign in [ArmaForces](https://armaforces.com/).
 
 ### How is this site built
 
-The AAN website is a custom built [Hugo](https://gohugo.io/) theme built by [Jacob Proffer](https://proffer.dev/) that is running on [Netlify](https://www.netlify.com/). The [AAN News Hugo site](https://github.com/jacobproffer/aan-world-news) is open source.
+The AAN website is a custom built [Hugo](https://gohugo.io/) theme built by [Jacob Proffer](https://proffer.dev/), modified by [3Mydlo3](github.com/3Mydlo3/aan-world-news) that is running on [Netlify](https://www.netlify.com/). The [AAN News Hugo site](https://github.com/jacobproffer/aan-world-news) is open source.

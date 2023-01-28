@@ -62,7 +62,7 @@
             <footer class="{{ $classes }}">
 
               {{ if .Params.photo }}
-                <img class="lazy" data-src="{{ .Params.photo }}" alt="" />
+                <img class="lazy" data-src="{{ .Params.photo | relURL }}" alt="" />
               {{ end }}
 
               <p>{{ .Params.bio }}</p>
