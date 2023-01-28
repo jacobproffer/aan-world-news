@@ -62,7 +62,16 @@
             <footer class="{{ $classes }}">
 
               {{ if .Params.photo }}
-                <img class="lazy" data-src="{{ .Params.photo | relURL }}" alt="" />
+                {{ $image := "" }}
+                {{ if hasPrefix .Params.photo "/" }}
+                  {{ $image = resources.Get (.Params.photo) }}
+                {{ else }}
+                  {{ $image = .Resources.Get (.Params.photo) }}
+                {{ end }}
+                {{ with $image }}
+                  {{ $image := $image.Resize "100x" }}
+                  <img class="lazy" data-src="{{ $image.RelPermalink }}" alt="" />
+                {{ end }}
               {{ end }}
 
               <p>{{ .Params.bio }}</p>

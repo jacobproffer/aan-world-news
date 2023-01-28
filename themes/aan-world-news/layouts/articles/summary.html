@@ -2,10 +2,15 @@
   <a class="no-underline article-link" href="{{ .Permalink }}">
 
     {{ if .Params.thumbnail }}
+      {{ $image := "" }}
       {{ if hasPrefix .Params.thumbnail "/"}}
-      <img class="lazy" data-src="{{ .Params.thumbnail }}" alt="" />
+        {{ $image = resources.Get (.Params.thumbnail) }}
       {{ else }}
-      <img class="lazy" data-src="{{ .Permalink }}{{ .Params.thumbnail }}" alt="" />
+        {{ $image = .Resources.Get (.Params.thumbnail) }}
+      {{ end }}
+      {{ with $image }}
+        {{ $image := $image.Resize "300x" }}
+        <img class="lazy" data-src="{{ $image.RelPermalink }}" alt="" />
       {{ end }}
     {{ end }}
 
