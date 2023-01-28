@@ -19,7 +19,7 @@ This is the result of talks between Chedaks and Russians, which were ongoing in 
 
 ### Chedaks grateful for help
 
-Chedaki leader, <TODO_INSERT_NAME_HERE>, expressed his gratitude towards Russian brothers. "Thank you for your help in those dark times for Chedakia. Now we can handle things on our own, we will not forget your invaluable assitance."
+Chedaki leader, Serafim Smirnov, expressed his gratitude towards Russian brothers. "Thank you for your help in those dark times for Chedakia. Now we can handle things on our own, we will not forget your invaluable assitance."
 
 ### NATO - this does not change anything
 
