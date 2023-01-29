@@ -8,7 +8,7 @@ category: ["World"]
 tags: ["Chernarus", "Europe"]
 date: 2022-01-01T08:00:00+02:00
 featured: true
-weight: 1
+weight: 2
 ---
 
 ## TODO: Add image of Russian vehicles at Chernarus checkpoint

@@ -1,9 +1,9 @@
 ---
 title: "Czechia beats Russia in ice hockey"
 description: "Czechs won 5-4 after making up for losses in an extraordinary third period."
-author: "Daniel Spadel"
-profiles: ["Daniel Spadel"]
-profileURL: /profiles/daniel-spadel
+author: "Mark MacMahon"
+profiles: ["Mark MacMahon"]
+profileURL: /profiles/mark-macmahon
 category: ["World", "Sport"]
 tags: ["Europe"]
 date: 2021-05-21T22:34:02+02:00

@@ -1,9 +1,9 @@
 ---
 title: "NATO Statement on coup in Chernarus"
 description: "No NATO country will recognize Chedakia, says General Secretary Magnus Odenberg"
-author: "Daniel Spadel"
-profiles: ["Daniel Spadel"]
-profileURL: /profiles/daniel-spadel
+author: "Tess Cortez"
+profiles: ["Tess Cortez"]
+profileURL: /profiles/tess-cortez
 category: ["World"]
 tags: ["Chernarus", "Europe"]
 date: 2021-05-02T20:21:32+02:00
