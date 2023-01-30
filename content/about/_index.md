@@ -9,17 +9,9 @@ AAN is a privately-owned, independent news broadcaster that has provided global 
 
 ## Staff
 
-- **Editor in Chief** - Marian Quandt
-- **Senior Managing Editor** - Thomas Nordwick
-- **Cameraman** - Arthur Stark
-- **Journalist** - Katherine Bishop
-- **Reporter** - Mark Cole
-- **Reporter** - Joe Harris
-- **Correspondent** - Sean Bradwell
-- **Correspondent** - Jacob Proffer
-- **Correspondent** - Matthew Becker
+- **Journalist** - Mark MacMahon
+- **Reporter** - Tess Cortez
 - **Correspondent** - Daniel Spadel
-- **Writer** - Peter Lederman
 
 ## Frequently Asked Questions
 
