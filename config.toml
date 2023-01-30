@@ -60,8 +60,3 @@ enableRobotsTXT = true
     pageRef = "/about/"
     weight = 1
 
-  [[menu.internal]]
-    identifier = "submit"
-    name = "Submit"
-    pageRef = "/submit/"
-    weight = 2
