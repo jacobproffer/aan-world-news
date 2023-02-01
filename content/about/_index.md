@@ -29,4 +29,4 @@ This site's aim is to provide background & lore for a resistance campaign in [Ar
 
 ### How is this site built
 
-The AAN website is a custom built [Hugo](https://gohugo.io/) theme built by [Jacob Proffer](https://proffer.dev/), modified by [3Mydlo3](github.com/3Mydlo3/aan-world-news) that is running on [Netlify](https://www.netlify.com/). The [AAN News Hugo site](https://github.com/jacobproffer/aan-world-news) is open source.
+The AAN website is a custom built [Hugo](https://gohugo.io/) theme built by [Jacob Proffer](https://proffer.dev/), modified by [3Mydlo3](github.com/3Mydlo3) that is running on [Netlify](https://www.netlify.com/). The [AAN News Hugo site](https://github.com/jacobproffer/aan-world-news) is open source.
