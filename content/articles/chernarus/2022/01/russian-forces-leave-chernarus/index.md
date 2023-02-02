@@ -11,7 +11,7 @@ featured: true
 weight: 2
 ---
 
-## TODO: Add image of Russian vehicles at Chernarus checkpoint
+{{< figure src="image.jpg" alt="" caption="Last Russian Forces crossed the Russia-Chernarus border, leaving to Russia. (AAN News)" >}}
 
 Today Russian Forces left Chernarus entirely.
 
