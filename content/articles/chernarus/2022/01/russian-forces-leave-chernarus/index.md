@@ -11,7 +11,7 @@ featured: true
 weight: 2
 ---
 
-{{< figure src="image.jpg" alt="" caption="Last Russian Forces crossed the Russia-Chernarus border, leaving to Russia. (AAN News)" >}}
+{{< figure src="image.jpg" alt="Russian trucks leave Chernarus border outpost towards Russia" caption="Last Russian Forces crossed the Russia-Chernarus border, leaving to Russia. (AAN News)" >}}
 
 Today Russian Forces left Chernarus entirely.
 
