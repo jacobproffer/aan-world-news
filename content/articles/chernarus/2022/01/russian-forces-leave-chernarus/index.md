@@ -7,6 +7,8 @@ profileURL: /profiles/daniel-spadel
 category: ["World"]
 tags: ["Chernarus", "Europe"]
 date: 2022-01-01T08:00:00+02:00
+images: ["image.jpg"]
+thumbnail: image.jpg
 featured: true
 weight: 2
 ---
