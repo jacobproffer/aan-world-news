@@ -6,13 +6,12 @@ profiles: ["Daniel Spadel"]
 profileURL: /profiles/daniel-spadel
 category: ["World"]
 tags: ["Middle East"]
-date: 2023-01-23T17:17:24+02:00
-asidePhoto: /images/anizay-2.jpg
-asideAltText: "Village in arid Anizay terrain"
-asideText: "One of Takistan-bordering villages of Anizay where smugglers had their hideout"
-images: ["/images/anizay-2.jpg"]
-thumbnail: /images/anizay-2.jpg
+date: 2022-01-23T17:17:24+02:00
+images: ["image.jpg"]
+thumbnail: image.jpg
 ---
+
+{{< figure src="image.jpg" alt="Anizay police secured smuggler's hideout" caption="Police secured smuggler's hideout in southern Anizay with multiple crates of illegal goods. (AAN News)" >}}
 
 After months of infiltration and espionage, Takistan's security services finally managed to get their hands on cigarette smuglers that tried to avoid export tax.
 
