@@ -7,14 +7,14 @@ profileURL: /profiles/daniel-spadel
 category: ["World"]
 tags: ["Chernarus", "Europe"]
 date: 2021-04-27T08:01:18+02:00
-images: ["image.png"]
-thumbnail: image.png
+images: ["image.jpg"]
+thumbnail: image.jpg
 asidePhoto: /articles/chernarus/2021/04/berezino-chedaks-militia-shootout/image.png
 asideAltText: "Forest shootout scene secured by Militia"
 asideText: "Forest shootout from a few days ago"
 ---
 
-{{< figure src="image.png" alt="Militia men standing, dead body in blood pool just in front of him. Woman is hanging on a tree in the distance." caption="Militia patrol arrived just to find dead bodies in a very disturbing scene. (photo courtesy of an anonymous citizen)" >}}
+{{< figure src="image.jpg" alt="Militia men standing, dead body in blood pool just in front of him. Woman is hanging on a tree in the distance." caption="Militia patrol arrived just to find dead bodies in a very disturbing scene. (photo courtesy of an anonymous citizen)" >}}
 
 ### Disturbing morning violence
 
