@@ -7,12 +7,11 @@ profileURL: /profiles/daniel-spadel
 category: ["World"]
 tags: ["Chernarus", "Europe"]
 date: 2021-04-14T17:31:47+02:00
-asidePhoto: /images/bags.jpg
-asideAltText: "PLACEHOLDER"
-asideText: "PLACEHOLDER"
-images: ["/images/bags.jpg"]
-thumbnail: /images/bags.jpg
+images: ["image.jpg"]
+thumbnail: image.jpg
 ---
+
+{{< figure src="image.jpg" alt="General goods store in Stary Sobor during normal day." caption="Delivery truck full of goods was stolen from general goods store in Stary Sobor. (AAN World News)" >}}
 
 Over the last days, there were multiple reports of paramilitary-like personnel in the woods in northern Chernarus. There are little details known right now, but our sources report shots were fired several times already, although no one was hurt in any way yet.
 
