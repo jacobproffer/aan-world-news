@@ -13,11 +13,11 @@ thumbnail: /images/russia-buildup.jpg
 
 {{< figure src="/images/russia-buildup.jpg" alt="" caption="Russian forces on the move on the Russia-Chernarus border. (BBN Global)" >}}
 
-Russian MoD announced increasing the military presence on the border with Chernarus as a response to rebels in northern Chernarus.
+Russian MoD announced increase in the military presence on the Chernarus border as a response to rebels in northern Chernarus.
 
 ## Rebels in Chernarus concern Russia
 
-"Chernarus cannot handle the rebels within their territory and we are concerned about our security." says Colonel Anatolii Dragutin. "We have decided to move three motorized brigades near the border to prevent the rebels from illegally crossing the border."
+"Chernarus cannot handle the rebels within their territory and we are concerned about our security." says Colonel Anatolii Dragutin. "We have decided to move three motorized brigades near the border to prevent the rebels from crossing the border illegally."
 
 "We are open to cooperation with Chernarus to end the rebellion."
 

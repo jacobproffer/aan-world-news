@@ -16,14 +16,14 @@ thumbnail: /images/bags.jpg
 
 ### Workers demand better pay and work conditions
 
-Tensions in Chernogorsk's stink factory grew for a last couple of days. Workers were unhappy about their pay and work conditions, arguing that they should have additional healthcare days off. Additionally, their pay should grow at least 10% due to, in their opinion, exceptional performance and stink production rates last year.
+Tensions had been growing in Chernogorsk stink factory for the last couple of days. Workers were unhappy about their pay and work conditions, arguing that they should have additional healthcare days off. Moreover, their pay should be raised by at least 10% due to, in their opinion, exceptional performance and stink production rates last year.
 
-Factory's Management however, kept ignoring all signs of an incoming spontaneous and out of nothing rebellion. They told workers that they've indeed produced record high stink amounts, but predictions for this year show much lower demand for stink.
+Factory management, however, kept ignoring all signs of an incoming spontaneous rebellion. They told workers that stink production levels were at a record high, but stink demand is predicted to be much lower this year.
 
-Today workers decided for an all-out strike and immediately after coming to the factory at 6 AM, they've refused working and blocked all entrances to the factory. After an hour, one of the factory managers came to calm down workers. This failed and he called for the rest of the management board to come to the factory and negotiate with workers. In the meantime Militia surrounded the factory entrances and kept order, without direct involvement.
+Today, workers decided for an all-out strike and refused to do any work immediately after coming to the factory at 6 AM, then blocked all entrances to the building. After an hour, one of the factory managers came to calm the workers down. This failed and he called for the rest of the management board to come and negotiate with workers at the site. In the meantime, Militia surrounded the factory entrances and kept order, without direct involvement.
 
 As of writing this article, the situation is still open and the negotiations should start soon.
 
-### Update 4 PM: Factory's management agreed to pay a bonus to each worker to end the strike immediately
+### Update 4 PM: Factory management agreed to pay a bonus to every worker to end the strike immediately
 
 Although newly formed union would definitely want more, they are happy they've received additional pay instead of Militia's batons.

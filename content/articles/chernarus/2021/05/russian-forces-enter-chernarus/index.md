@@ -13,7 +13,7 @@ thumbnail: image.jpg
 
 {{< figure src="image.jpg" alt="" caption="Russian forces on the move towards the Russia-Chernarus border. (BBN Global)" >}}
 
-Following the successful Chedaki coup in Chernarus and proclamation of Chedaki Republic, Russian Defense Secretary Dimitry Strogonov recognized Chedakia and announced help package for new government, including providing security during the transition.
+Following the successful Chedaki coup in Chernarus and proclamation of Chedaki Republic, Russian Defense Secretary Dimitry Strogonov recognized Chedakia and announced help package for the new government, including providing security during the transition.
 
 ### Russian Forces enter Chernarus
 

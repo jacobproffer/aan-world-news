@@ -14,18 +14,18 @@ images: ["/images/bags.jpg"]
 thumbnail: /images/bags.jpg
 ---
 
-Following today's coup in Chernarus and Russian Forces entering Chernarus, NATO General Secretary called a press conference at 8 PM.
+Following today's coup in Chernarus and Russian Forces entering the country, NATO General Secretary called a press conference at 8 PM.
 
 ### Russian-made coup in Chernarus
 
-"We believe the Chedaks were sponsored, armed and trained by Russia" - says General Secretary Magnus Odenberd - "Recent Russian Forces relocation near the Chernarus border. Moreover, Russian Forces entered Chernarus barely hours after Chedaks captured Chernogorsk."
+"We believe the Chedaks were sponsored, armed and trained by Russia" - says General Secretary Magnus Odenberd - "Recent Russian Forces relocation near the Chernarus border. Moreover, Russian Forces entered Chernarus just hours after Chedaks captured Chernogorsk."
 
 ### No NATO country will recognize Chedakia
 
-"This is unacceptable infringement of an European country sovereignty." - "No NATO country will recognize Chedakia."
+"This is an unacceptable infringement of a European country sovereignty." - "No NATO country will recognize Chedakia."
 
 ### Czechia and Poland invoke Article 4
 
-Meanwhile, Czechia and Poland decided to invoke Article 4 of the NATO treaty on their emergency meeting. This will trigger a NATO-wide discussion and consultation regarding possible threat to territorial integrity, political independence and security of the Eastern Europe NATO members, following the coup and Russian Forces entering Chernarus.
+Meanwhile, Czechia and Poland decided to invoke Article 4 of the NATO treaty at their emergency meeting. This will trigger a NATO-wide discussion and consultations regarding possible threat to territorial integrity, political independence and security of the Eastern Europe NATO members, following the coup and Russian Forces entering Chernarus.
 
 The tensions in Europe grow.

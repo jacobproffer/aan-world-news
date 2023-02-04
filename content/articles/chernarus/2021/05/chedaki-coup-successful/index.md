@@ -1,6 +1,6 @@
 ---
 title: "Chedaki coup in Chernarus successful"
-description: "Black day for Chernarus. Chedaks have taken the control over the capital and proclaimed new Chedaki republic."
+description: "Black day for Chernarus. Chedaks took control over the capital and proclaimed new Chedaki republic."
 author: "Daniel Spadel"
 profiles: ["Daniel Spadel"]
 profileURL: /profiles/daniel-spadel
@@ -14,11 +14,11 @@ images: ["/images/russia-advances.jpg"]
 thumbnail: /images/russia-advances.jpg
 ---
 
-{{< figure src="/images/russia-advances.jpg" alt="Tens of russian soldiers march in mud." caption="Russian forces on alert, move near the Chernarus border. (AAN World News)" >}}
+{{< figure src="/images/russia-advances.jpg" alt="Dozens of russian soldiers march in mud." caption="Russian forces on alert, move near Chernarus border. (AAN World News)" >}}
 
-After weeks of skirmishes in Northern Chernarus, today Chedaki fighters surprised local Militia as well as Chernarus Defense Forces and stormed Chernogorsk, Chernarus capital city. They've quickly pushed Militia out of the city centre and surrounded the town hall. Quick negotiations took place between Chedaks and government authorities, while Militia tried to break through to the town hall. After 15 minutes it was over, the coup has succeeded.
+After weeks of skirmishes in Northern Chernarus, today Chedaki fighters surprised local Militia as well as Chernarus Defense Forces and stormed Chernogorsk, the capital city of Chernarus. They've quickly pushed Militia out of the city centre and surrounded the town hall. Quick negotiations took place between Chedaks and government authorities, while Militia tried to break through to the town hall. After 15 minutes it was over, the coup succeeded.
 
-Chernarus Defense Forces were ordered by MOD to stand down and avoid unnecessary bloodshed. Surprisingly, CDF didn't have one single encounter with Chedaks, at least they didn't report any.
+Chernarus Defense Forces were ordered by MOD to stand down and avoid unnecessary bloodshed. Surprisingly, the CDF didn't have one single encounter with Chedaks, at least they didn't report any.
 
 This seems like a very bad day for people in Chernarus.
 
