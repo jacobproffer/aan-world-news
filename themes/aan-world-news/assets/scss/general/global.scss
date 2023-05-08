@@ -48,12 +48,17 @@
   }
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 200;
   color: var(--black);
+  text-rendering: optimizeSpeed;
   background-color: var(--red);
 
   @include screen-above($tablet) {
@@ -62,6 +67,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -81,6 +87,10 @@ figcaption {
   }
 }
 
+:is(ul, ol)[role="list"] {
+  list-style: none;
+}
+
 ul {
   padding: 0;
   list-style-position: inside;
@@ -94,13 +104,17 @@ a {
   color: inherit;
   transition: color 300ms ease-in-out, outline 300ms ease-in-out, text-decoration 300ms ease-in-out;
 
-  &:hover {
-    color: var(--dark-gray);
-    outline: dotted 1px var(--dark-gray);
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
   }
 
   &[aria-current="page"] {
     text-decoration: underline;
+  }
+
+  @include hover {
+    color: var(--dark-gray);
+    outline: dotted 1px var(--dark-gray);
   }
 }
 

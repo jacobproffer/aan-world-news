@@ -1,11 +1,17 @@
-<header class="site-header">
+<div class="site-header">
   <div class="site-header__top">
     <div class="container container--wide">
-      <div class="grid grid--two-column site-header__grid">
+      <div class="grid site-header__grid">
 
-        <a class="site-header__site-logo" href="{{ .Site.BaseURL }}" aria-label="Home">
-          {{ partial "svg/logo.html" }}
-        </a>
+        <header>
+          <a
+            class="site-header__site-logo"
+            href="{{ .Site.BaseURL }}"
+            aria-label="Go to home page"
+          >
+            {{ partial "svg/logo.html" }}
+          </a>
+        </header>
 
         {{ if .Site.Menus.internal }}
           {{ partial "navigation/internal-navigation.html" . }}
@@ -21,4 +27,4 @@
 
     </div>
   </div>
-</header>
+</div>

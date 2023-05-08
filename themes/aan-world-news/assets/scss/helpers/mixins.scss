@@ -1,7 +1,3 @@
-@mixin box-sizing($box-model) {
-  box-sizing: $box-model;
-}
-
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;
@@ -25,20 +21,8 @@
   }
 }
 
-@mixin font-size($fs-map) {
-  @each $fs-breakpoint, $fs-font-size in $fs-map {
-    @if $fs-breakpoint == null {
-      font-size: $fs-font-size;
-    } @else {
-      @media screen and (min-width: $fs-breakpoint) {
-        font-size: $fs-font-size;
-      }
-    }
-  }
-}
-
 @mixin hover {
-  @media (hover: hover) {
+  @media (any-hover: hover) and (any-pointer: fine) {
     &:hover {
       @content;
     }

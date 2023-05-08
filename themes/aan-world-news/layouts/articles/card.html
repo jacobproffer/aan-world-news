@@ -4,15 +4,11 @@
     <div>
 
       {{ if (.GetTerms "tags") }}
-        <ul class="unstyled-list">
 
-          {{ range (.GetTerms "tags") }}
-            <li>
-              <span class="tag">{{ .LinkTitle }}</span>
-            </li>
-          {{ end }}
+        {{ range (.GetTerms "tags") }}
+          <span class="tag">{{ .LinkTitle }}</span>
+        {{ end }}
 
-        </ul>
       {{ end }}
 
       <span class="h3 red">

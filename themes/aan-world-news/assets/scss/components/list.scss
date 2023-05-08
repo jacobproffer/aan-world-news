@@ -1,10 +1,24 @@
 .list {
   &__grid {
     padding: 10px;
-    grid-gap: 10px;
+    gap: 10px;
+  }
+
+  &__featured {
+    @include screen-above($portrait) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    @include screen-between($mobile-sm, $portrait) {
+      grid-column: span 2;
+    }
   }
 
   &__article {
+    position: relative;
+    height: 100%;
+    padding: 20px;
     border: 1px solid var(--border);
 
     img {
@@ -22,18 +36,10 @@
     p {
       margin-bottom: 0;
     }
+  }
 
-    &--featured {
-      height: 100%;
-
-      @include screen-above($portrait) {
-        grid-column: span 2;
-        grid-row: span 2;
-      }
-
-      @include screen-between($mobile-sm, $portrait) {
-        grid-column: span 2;
-      }
-    }
+  &__article-link {
+    position: absolute;
+    inset: 0;
   }
 }

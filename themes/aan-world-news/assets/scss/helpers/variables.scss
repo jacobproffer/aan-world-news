@@ -8,3 +8,8 @@ $mobile: 767px;
 $mobile-mid: 640px;
 $mobile-sm: 580px;
 $mobile-real-sm: 375px;
+
+// Usage
+// The createFluidValue function defaults to these values for the min/max screen sizes
+$fluid-min-screen: 375px;
+$fluid-max-screen: 1800px;
