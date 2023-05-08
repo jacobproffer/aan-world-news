@@ -79,15 +79,15 @@
         content: "Browse";
       }
 
-      &:hover {
-        &::before {
-          background-color: var(--dark-red);
-        }
-      }
-
       &:active {
         &::before {
           background-color: var(--dark-gray);
+        }
+      }
+
+      @include hover {
+        &::before {
+          background-color: var(--dark-red);
         }
       }
     }

@@ -1,25 +1,31 @@
 <article class="list__article list__article--summary">
-  <a class="no-underline article-link" href="{{ .Permalink }}">
 
-    {{ if (.GetTerms "tags") }}
-      <ul class="unstyled-list">
+  {{ if (.GetTerms "tags") }}
 
-        {{ range (.GetTerms "tags") }}
-          <li>
-            <span class="tag">{{ .LinkTitle }}</span>
-          </li>
-        {{ end }}
+    {{ range (.GetTerms "tags") }}
 
-      </ul>
+      <span class="tag">
+        {{ .LinkTitle }}
+      </span>
+
     {{ end }}
 
-    <h2 class="h3 red">
-      {{ .Title }}
-    </h2>
+  {{ end }}
 
-    {{ if .Params.description }}
-      <p>{{ .Params.description }}</p>
-    {{ end }}
+  <h2 class="h3 red">
+    {{ .Title }}
+  </h2>
 
+  {{ if .Params.description }}
+  
+    <p>{{ .Params.description }}</p>
+    
+  {{ end }}
+
+  <a
+    class="list__article-link"
+    href="{{ .Permalink }}"
+    aria-label="Go to {{ .Title }}"
+  >
   </a>
 </article>

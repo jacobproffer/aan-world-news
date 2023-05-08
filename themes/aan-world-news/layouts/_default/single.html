@@ -4,22 +4,31 @@
   <div class="container container--wide container--white">
     <div class="post__container grid page-spacing">
 
-      <aside class="post__aside">
+      <div class="post__aside-wrap">
 
         {{ if .Params.asidePhoto }}
-          <figure>
-            <img class="lazy" data-src="{{ .Params.asidePhoto }}" alt="{{ .Params.asideAltText }}" />
 
-            {{ if .Params.asideText }}
-              <figcaption>
-                <p>{{ .Params.asideText }}</p>
-              </figcaption>
-            {{ end }}
+          <aside class="post__aside">
+            <figure>
+              
+              <img
+                class="lazy"
+                src="{{ .Params.asidePhoto }}"
+                alt="{{ .Params.asideAltText }}"
+              />
 
-          </figure>
+              {{ if .Params.asideText }}
+                <figcaption>
+                  <p>{{ .Params.asideText }}</p>
+                </figcaption>
+              {{ end }}
+
+            </figure>
+          </aside>
+
         {{ end }}
 
-      </aside>
+      </div>
 
       <article class="content">
 
@@ -62,12 +71,18 @@
             <footer class="{{ $classes }}">
 
               {{ if .Params.photo }}
-                <img class="lazy" data-src="{{ .Params.photo }}" alt="" />
+                <img
+                  class="lazy"
+                  src="{{ .Params.photo }}"
+                  alt=""
+                  loading="lazy"
+                />
               {{ end }}
 
               <p>{{ .Params.bio }}</p>
 
             </footer>
+
           {{ end }}
 
         {{ end }}
@@ -82,7 +97,10 @@
 
           <h2>Related Posts</h2>
 
-          <ul class="unstyled-list grid gap">
+          <ul
+            class="grid gap"
+            role="list"
+          >
             {{ range . }}
               <li>
                 {{ .Render "card" }}

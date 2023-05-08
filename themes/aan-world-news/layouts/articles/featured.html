@@ -1,29 +1,40 @@
 <article class="list__article list__article--featured">
-  <a class="no-underline article-link" href="{{ .Permalink }}">
 
-    {{ if .Params.thumbnail }}
-      <img class="lazy" data-src="{{ .Params.thumbnail }}" alt="" />
+  {{ if .Params.thumbnail }}
+
+    <img
+      class="lazy"
+      src="{{ .Params.thumbnail }}"
+      alt=""
+    />
+
+  {{ end }}
+
+  {{ if (.GetTerms "tags") }}
+  
+    {{ range (.GetTerms "tags") }}
+
+      <span class="tag">
+        {{ .LinkTitle }}
+      </span>
+
     {{ end }}
 
-    {{ if (.GetTerms "tags") }}
-      <ul class="unstyled-list">
+  {{ end }}
 
-        {{ range (.GetTerms "tags") }}
-          <li>
-            <span class="tag">{{ .LinkTitle }}</span>
-          </li>
-        {{ end }}
+  <h2 class="red">
+    {{ .Title }}
+  </h2>
 
-      </ul>
-    {{ end }}
+  {{ if .Params.description }}
+    <p>{{ .Params.description }}</p>
+  {{ end }}
 
-    <h2 class="red">
-      {{ .Title }}
-    </h2>
-
-    {{ if .Params.description }}
-      <p>{{ .Params.description }}</p>
-    {{ end }}
-
+  <a
+    class="list__article-link"
+    href="{{ .Permalink }}"
+    aria-label="Go to {{ .Title }}"
+  >
   </a>
+
 </article>

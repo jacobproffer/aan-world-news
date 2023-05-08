@@ -5,25 +5,29 @@
     <div class="container container--small page-spacing">
 
       {{ if or .Params.name .Params.title }}
+
         <div class="profile__header">
 
           {{ if .Params.name }}
-            <h1>
-              {{ .Params.name }}
-            </h1>
+
+            <h1>{{ .Params.name }}</h1>
+
           {{ end }}
 
           {{ if .Params.title }}
-            <span class="h4">
-              {{ .Params.title }}
-            </span>
+
+            <span class="h4">{{ .Params.title }}</span>
+
           {{ end }}
 
         </div>
+
       {{ end }}
 
       {{ if .Params.bio }}
+
         <p>{{ .Params.bio }}</p>
+
       {{ end }}
 
       <hr />
@@ -34,12 +38,17 @@
           <h2>Articles by {{ .Params.name }}</h2>
         {{ end }}
 
-        <ul class="unstyled-list grid gap">
+        <ul
+          class="unstyled-list grid gap"
+          role="list"
+        >
 
           {{ range .Data.Pages }}
+          
             <li>
               {{ .Render "card" }}
             </li>
+            
           {{ end }}
 
         </ul>

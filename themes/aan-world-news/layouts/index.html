@@ -5,23 +5,34 @@
 
       <h1 class="visually-hide">Recent Articles</h1>
 
-      <div class="grid grid--four-column list__grid">
+      <ul
+        class="grid grid--four-column list__grid"
+        role="list"
+      >
 
         {{ range .Site.RegularPages }}
 
           {{ if eq .Params.featured true }}
 
-            {{ .Render "featured" }}
+            <li class="list__featured">
+
+              {{ .Render "featured" }}
+
+            </li>
 
           {{ else }}
 
-            {{ .Render "summary" }}
+            <li>
+
+              {{ .Render "summary" }}
+
+            </li>
 
           {{ end }}
 
         {{ end }}
 
-      </div>
+      </ul>
 
     </div>
   </section>

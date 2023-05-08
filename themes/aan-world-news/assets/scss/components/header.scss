@@ -20,11 +20,13 @@
   }
 
   &__grid {
+    grid-template-columns: max-content 1fr;
     padding: 20px 0;
   }
 
   &__site-logo {
     @include size(auto, 52px);
+    display: block;
     margin-left: 10px;
     justify-self: start;
 

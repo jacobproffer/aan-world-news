@@ -3,15 +3,13 @@
   background-color: var(--red);
 
   &__logo {
+    @include size(114px, 40px);
     display: block;
-    width: 144px;
-    height: 40px;
     margin-left: 10px;
     margin-bottom: 8px;
 
     svg {
-      width: 100%;
-      height: 100%;
+      @include size(100%);
     }
   }
 }

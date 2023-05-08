@@ -3,17 +3,30 @@
   <section class="list gray-background">
     <div class="container container--wide container--white">
 
-      <h1 class="visually-hide">{{ .Title | singularize }}</h1>
+      <h1
+        class="visually-hide"
+        id="list-headline"
+      >
+        {{ .Title | singularize }}
+      </h1>
 
-      <div class="grid grid--four-column list__grid">
+      <ul
+        class="grid grid--four-column list__grid"
+        aria-labelledby="list-headline"
+        role="list"
+      >
 
         {{ range .Pages }}
 
-          {{ .Render "summary" }}
+          <li>
+
+            {{ .Render "summary" }}
+
+          </li>
 
         {{ end }}
 
-      </div>
+      </ul>
 
     </div>
   </section>

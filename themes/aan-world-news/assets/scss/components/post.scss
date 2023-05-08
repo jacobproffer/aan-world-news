@@ -23,7 +23,7 @@
     }
   }
 
-  &__aside {
+  &__aside-wrap {
     position: relative;
     margin-top: 161px;
     margin-left: 10px;
@@ -49,6 +49,10 @@
     @include screen-below($tablet) {
       display: none;
     }
+  }
+
+  &__aside {
+    height: 100%;
   }
 
   &__author {
