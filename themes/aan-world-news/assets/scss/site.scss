@@ -11,9 +11,11 @@
 @import "components/container";
 @import "components/grid";
 @import "components/header";
-@import "components/navigation";
 @import "components/footer";
 @import "components/buttons";
 @import "components/form";
 @import "components/list";
 @import "components/post";
+
+@import "components/navigations/navigation";
+@import "components/navigations/mobile-navigation";

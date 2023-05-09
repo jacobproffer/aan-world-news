@@ -1,12 +1,16 @@
 .button {
   width: 175px;
-  padding: 10px 20px;
+  padding: 14px 20px;
   color: var(--white);
-  background-color: var(--red);
+  background-color: var(--button-color, var(--red));
   border: 0;
   cursor: pointer;
   appearance: none;
   transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+
+  &--medium-color {
+    --button-color: var(--medium-red);
+  }
 
   &:disabled {
     color: var(--black);

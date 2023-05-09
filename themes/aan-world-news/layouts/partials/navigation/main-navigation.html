@@ -8,6 +8,7 @@
   {{ range .Site.Menus.main }}
 
     {{ if .URL }}
+    
       <li>
         <a
           class="no-underline"
@@ -19,6 +20,7 @@
           {{ .Name }}
         </a>
       </li>
+      
     {{ end }}
 
   {{ end }}

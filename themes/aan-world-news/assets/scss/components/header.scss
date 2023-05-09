@@ -27,25 +27,31 @@
   &__site-logo {
     @include size(auto, 52px);
     display: block;
-    margin-left: 10px;
     justify-self: start;
 
     svg {
       @include size(auto, 52px);
 
-      @include screen-below($mobile) {
+      @include screen-below($portrait) {
         @include size(auto, 39px);
       }
     }
 
-    @include screen-below($mobile) {
+    @include screen-above($portrait) {
+      margin-left: 10px;
+    }
+
+    @include screen-below($portrait) {
       @include size(auto, 39px);
     }
   }
 
-  &__user-links {
-    text-align: right;
+  &__user-navigation {
+    display: flex;
+    justify-content: end;
+  }
 
+  &__user-links {
     li {
       line-height: 1;
     }

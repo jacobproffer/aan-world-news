@@ -1,0 +1,28 @@
+.navigation {
+  background-color: var(--medium-red);
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include screen-below($portrait) {
+      justify-content: space-evenly;
+    }
+
+    @include screen-below($mobile) {
+      flex-direction: column;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 16px 24px;
+    color: var(--white);
+  }
+
+  &--primary {
+    @include screen-below($portrait) {
+      display: none;
+    }
+  }
+}

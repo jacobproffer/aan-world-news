@@ -1,0 +1,24 @@
+.mobile-navigation {
+    height: var(--navigation-height, 0);
+    opacity: var(--navigation-opacity, 0);
+    text-align: center;
+    pointer-events: var(--navigation-pointer, none);
+
+    &--open {
+        --navigation-height: auto;
+        --navigation-opacity: 1;
+        --navigation-pointer: auto;
+    }
+
+    &__toggle {
+        width: 100%;
+        
+        @include screen-above($portrait) {
+            display: none;
+        }
+    }
+
+    @include screen-above($portrait) {
+        display: none;
+    }
+}

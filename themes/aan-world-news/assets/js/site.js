@@ -1,3 +1,5 @@
+const mobileNavigationTrigger = document.querySelector('#mobile-navigation-trigger');
+const mobileNavigation = document.querySelector('#mobile-navigation');
 const fileInput = document.querySelector('#photo');
 const fileResult = document.querySelector('#file-result');
 const fileSubmit = document.querySelector('#form-submit');
@@ -14,6 +16,21 @@ if (fileInput) {
         fileResult.innerHTML = "Success, your file is " + fileMb.toFixed(1) + "MB.";
         fileSubmit.disabled = false;
       }
+    }
+  });
+}
+
+if (mobileNavigationTrigger && mobileNavigation) {
+  mobileNavigationTrigger.addEventListener('click', function () {
+    mobileNavigation.classList.toggle('mobile-navigation--open');
+    this.classList.toggle('mobile-navigation__toggle--open');
+    
+    if (this.classList.contains('mobile-navigation__toggle--open')) {
+      this.innerHTML = "Close Navigation"
+      this.setAttribute('aria-expanded', 'true');
+    } else {
+      this.innerHTML = "Open Navigation"
+      this.setAttribute('aria-expanded', 'false');
     }
   });
 }

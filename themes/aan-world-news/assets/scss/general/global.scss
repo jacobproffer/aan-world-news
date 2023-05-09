@@ -45,6 +45,7 @@
 * {
   &:focus {
     outline: 1px dotted var(--dark-gray);
+    outline-offset: 2px;
   }
 }
 
