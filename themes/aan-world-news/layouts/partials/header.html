@@ -3,7 +3,7 @@
     <div class="container container--wide">
       <div class="grid site-header__grid">
 
-        <header>
+        <header class="site-header__site-logo-wrap">
           <a
             class="site-header__site-logo"
             href="{{ .Site.BaseURL }}"
@@ -18,12 +18,12 @@
         {{ end }}
 
       </div>
+      
+      <nav class="navigation navigation--primary" aria-label="primary">
+        {{ partial "navigation/main-navigation" . }}
+      </nav>
 
-      {{ if .Site.Menus.main }}
-        <nav class="navigation navigation--primary" aria-label="primary">
-          {{ partial "navigation/main-navigation" . }}
-        </nav>
-      {{ end }}
+      {{ partial "navigation/mobile-navigation" . }}
 
     </div>
   </div>

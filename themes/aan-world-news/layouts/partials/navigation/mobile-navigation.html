@@ -1,0 +1,16 @@
+<button
+    class="unstyled-button button button--medium-color mobile-navigation__toggle"
+    id="mobile-navigation-trigger"
+    aria-controls="mobile-navigation"
+    aria-expanded="false"
+>
+    Open Navigation
+</button>
+
+<nav
+    class="navigation mobile-navigation"
+    id="mobile-navigation"
+    aria-label="mobile"
+>
+    {{ partial "navigation/main-navigation" . }}
+</nav>
