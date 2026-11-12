@@ -46,7 +46,7 @@
           {{ range .Data.Pages }}
           
             <li>
-              {{ .Render "card" }}
+              {{ partial "articles/card.html" . }}
             </li>
             
           {{ end }}
