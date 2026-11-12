@@ -12,7 +12,7 @@
       {{ end }}
 
       <span class="h3 red">
-        {{ .Title }}
+        {{ with .Params.name }}{{ . }}{{ else }}{{ .Title }}{{ end }}
       </span>
 
     </div>

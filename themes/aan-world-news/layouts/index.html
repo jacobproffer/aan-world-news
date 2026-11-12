@@ -16,7 +16,7 @@
 
             <li class="list__featured">
 
-              {{ .Render "featured" }}
+              {{ partial "articles/featured.html" . }}
 
             </li>
 
@@ -24,7 +24,7 @@
 
             <li>
 
-              {{ .Render "summary" }}
+              {{ partial "articles/summary.html" . }}
 
             </li>
 
